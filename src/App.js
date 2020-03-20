@@ -1,17 +1,15 @@
 import React from 'react'
 
-class App extends React.Component {
-  constructor() {
-    super()
-  }
+const App = ({ records }) => {
 
-  render() {
-    return (
-      <>
-      <h1>Hi there</h1>
-      </>
-    )
-  }
+  const recordList = records.map(record => <p>{record.album} - {record.artist}</p>);
+
+  return (
+    <>
+      <h1>Vinyl Collection</h1>
+      {recordList}
+    </>
+  )
 }
 
 export default App
