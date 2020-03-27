@@ -60,7 +60,7 @@ const SortBox = ({ sortDirection, setSort }) => {
     <div className='sort-box'>
       <p><b>Sort by </b>
         <select onChange={handleChange}>
-          <option value='alb-asc'>Random</option>
+          <option value='alb-rnd'>Random</option>
           <option value='art-asc'>Artist A-Z</option>
           <option value='art-dsc'>Artist Z-A</option>
           <option value='yr-asc'>Year &#8593;</option>

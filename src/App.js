@@ -15,6 +15,7 @@ const App = ({ data }) => {
 
   data = handleFilter(data, filterType, filterInput);
   handleSort(data, sortDirection);
+
   return (
     <>
       <h1>vinyl collection</h1>

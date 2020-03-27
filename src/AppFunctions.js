@@ -16,17 +16,8 @@ const handleFilter = (data, filterType, filterInput) => {
 }
 
 const albumRandom = data => {
-  // sort results
-  var n = data.length;
-  var tempArr = [];
-  for ( var i = 0; i < n-1; i++ ) {
-    // The following line removes one random element from arr
-    // and pushes it onto tempArr
-    tempArr.push(data.splice(Math.floor(Math.random()*data.length),1)[0]);
-  }
-  // Push the remaining item onto tempArr
-  data = tempArr.push(data[0]);
-  return data;
+  data.sort(function(a, b){return 0.5 - Math.random()});
+  console.log(data);
 }
 
 const artistAsc = data => {
