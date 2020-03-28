@@ -17,7 +17,6 @@ const handleFilter = (data, filterType, filterInput) => {
 
 const albumRandom = data => {
   data.sort(function(a, b){return 0.5 - Math.random()});
-  console.log(data);
 }
 
 const artistAsc = data => {

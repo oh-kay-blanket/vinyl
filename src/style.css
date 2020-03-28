@@ -85,7 +85,7 @@ input{
 }
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 600px) {
 	.main-box:hover .img{
     opacity: 0.5;
 	}
@@ -162,7 +162,7 @@ input{
 /* Modal Content (Image) */
 .modal-content {
   margin-bottom: 5px;
-  height: 30vh;
+  /* height: 30vh; */
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */

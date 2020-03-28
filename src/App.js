@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import FunctionsBox from './filter-sort';
 import GridBox from './Grid';
+import Modal from './Modal';
 import { handleSort, handleFilter, getQuote, getGrade, modalId, setModalId, buildModalFunctionality } from './AppFunctions.js';
 
 const App = ({ data }) => {
@@ -11,7 +12,6 @@ const App = ({ data }) => {
   const [filterInput, setFilterInput] = useState('');
   const [sortDirection, setSort] = useState('alb-rnd');
   const [modalId, setModalId] = useState('');
-
 
   data = handleFilter(data, filterType, filterInput);
   handleSort(data, sortDirection);
@@ -29,9 +29,17 @@ const App = ({ data }) => {
       />
       <GridBox
         data={data}
-        // modalId={modalId}
-        // setModalId={setModalId}
+        modalId={modalId}
+        setModalId={setModalId}
       />
+      {modalId !== '' &&
+        <Modal
+          data={data}
+          modalId={modalId}
+          setModalId={setModalId}
+        />
+      }
+
     </>
   )
 }
