@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FunctionsBox = ({ filterType, setFilterType, filterInput, setFilterInput, sortDirection, setSort }) => {
+const FunctionsBox = ({ data, setData, filterType, setFilterType, filterInput, setFilterInput, sortDirection, setSortDirection }) => {
 
   return(
     <div className='functions-box'>
@@ -11,8 +11,9 @@ const FunctionsBox = ({ filterType, setFilterType, filterInput, setFilterInput, 
         setFilterInput={setFilterInput}
       />
       <SortBox
+        data={data}
         sortDirection={sortDirection}
-        setSort={setSort}
+        setSortDirection={setSortDirection}
       />
     </div>
   )
@@ -20,18 +21,10 @@ const FunctionsBox = ({ filterType, setFilterType, filterInput, setFilterInput, 
 
 const FilterBox = ({ filterType, setFilterType, filterInput, setFilterInput }) => {
 
-  const handleType = event => {
-    setFilterType(event.target.value);
-  }
-
-  const handleInput = event => {
-    setFilterInput(event.target.value);
-  }
-
   return (
     <div className='filter-box'>
       <p><b>Filter by </b>
-        <select onChange={handleType}>
+        <select onChange={e => setFilterType(e.target.value)}>
           <option value='artist'>Artist</option>
           <option value='album'>Album</option>
           <option value='genre'>Genre</option>
@@ -43,23 +36,19 @@ const FilterBox = ({ filterType, setFilterType, filterInput, setFilterInput }) =
           type="text"
           placeholder='Query'
           value={filterInput}
-          onChange={handleInput}
+          onChange={e => setFilterInput(e.target.value)}
           autoFocus
         /></p>
     </div>
   )
 }
 
-const SortBox = ({ sortDirection, setSort }) => {
-
-  const handleChange = event => {
-    setSort(event.target.value);
-  }
+const SortBox = ({ setSortDirection }) => {
 
   return (
     <div className='sort-box'>
       <p><b>Sort by </b>
-        <select onChange={handleChange}>
+        <select onChange={e => setSortDirection(e.target.value)}>
           <option value='alb-rnd'>Random</option>
           <option value='art-asc'>Artist A-Z</option>
           <option value='art-dsc'>Artist Z-A</option>

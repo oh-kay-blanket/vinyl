@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Filter & sort
 const handleFilter = (data, filterType, filterInput) => {
@@ -8,7 +8,7 @@ const handleFilter = (data, filterType, filterInput) => {
     case 'album':
       return data.filter(record => (record.album && record.album.toString().toUpperCase().includes(filterInput.toUpperCase())));
     case 'genre':
-      return data.filter(record => (record.genre && record.genre.toUpperCase().includes(filterInput.toUpperCase())));
+      return data.filter(record => (record.genre && record.genre.toString().toUpperCase().includes(filterInput.toUpperCase())));
     case 'year':
       return data.filter(record => (record.year && record.year.toString().toUpperCase().includes(filterInput.toUpperCase())));
     default:
@@ -54,7 +54,7 @@ const yrDsc = data => {
 const handleSort = (data, sortDirection) => {
   switch(sortDirection) {
     case 'alb-rnd':
-      albumRandom(data);
+      return data;
       break;
     case 'art-asc':
       artistAsc(data);
@@ -73,15 +73,6 @@ const handleSort = (data, sortDirection) => {
   }
 }
 
-const getQuote = quote => {
-  return (quote === '' ? '' : <p><b>Favorite Quote:</b> {quote}</p>)
-};
-
-const getGrade = grade => {
-  grade = +grade;
-  return (grade === 0 ? '' : <p><b>Rating:</b> {grade.toPrecision(2)}</p>)
-};
-
 
 // Modal
 const buildModalFunctionality = (setModalId) => {
@@ -93,4 +84,4 @@ const buildModalFunctionality = (setModalId) => {
   });
 }
 
-export { handleFilter, handleSort, getQuote, getGrade, buildModalFunctionality };
+export { handleFilter, handleSort, buildModalFunctionality };
