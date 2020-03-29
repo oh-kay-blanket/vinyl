@@ -8,7 +8,7 @@ import { handleFilter, handleSort, buildModalFunctionality } from './AppFunction
 const App = ({ rawData }) => {
 
   let data = rawData.slice();
-  console.log(data);
+
   // Set up state
   // const [data, setData] = useState(rawData.slice());
   const [filterType, setFilterType] = useState('artist');
@@ -29,7 +29,7 @@ const App = ({ rawData }) => {
 
   return (
     <>
-      <h1>vinyl collection</h1>
+      <h1>vinyl</h1>
       <FunctionsBox
         data={data}
         filterType={filterType}

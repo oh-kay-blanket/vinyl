@@ -23,7 +23,7 @@ const FilterBox = ({ filterType, setFilterType, filterInput, setFilterInput }) =
 
   return (
     <div className='filter-box'>
-      <p><b>Filter by </b>
+      <p>Filter by
         <select onChange={e => setFilterType(e.target.value)}>
           <option value='artist'>Artist</option>
           <option value='album'>Album</option>
@@ -47,7 +47,7 @@ const SortBox = ({ setSortDirection }) => {
 
   return (
     <div className='sort-box'>
-      <p><b>Sort by </b>
+      <p>Sort by
         <select onChange={e => setSortDirection(e.target.value)}>
           <option value='alb-rnd'>Random</option>
           <option value='art-asc'>Artist A-Z</option>

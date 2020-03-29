@@ -1,8 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import rawData from './records.csv';
-rawData.sort(function(a, b){return 0.5 - Math.random()});
+import ddata from './records.csv';
+
+function shuffle(arra1) {
+    var ctr = arra1.length, temp, index;
+
+// While there are elements in the array
+    while (ctr > 0) {
+// Pick a random index
+        index = Math.floor(Math.random() * ctr);
+// Decrease ctr by 1
+        ctr--;
+// And swap the last element with it
+        temp = arra1[ctr];
+        arra1[ctr] = arra1[index];
+        arra1[index] = temp;
+    }
+    return arra1;
+}
+const rawData = shuffle(ddata);
+// rawData.sort(function(a, b){return 0.5 - Math.random()});
 
 import App from './App';
 import './style.css';

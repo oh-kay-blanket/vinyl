@@ -19,8 +19,6 @@ const Modal = ({ data, modalId, setModalId }) => {
 
   record.image = imagesLarge[`${record.id}.jpg`];
 
-  console.log(record);
-
   return (
     <div className='modal' style={{display: 'grid'}}>
       <div className="modal-table" onClick={() => setModalId('')}>

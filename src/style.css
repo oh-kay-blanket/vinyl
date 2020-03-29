@@ -1,17 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,800|Open+Sans:400,800);
 
-html {
-  font-family: Sans;
+body {
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
+  background-color: #f8f8f8;
 }
 
 h1 {
-  font-family: 'Montserrat';
-  text-align: center;
-  font-size: 4em;
+  margin: 0px auto;
+  font-size: 5em;
   font-weight: 800;
-  color: #f8f8f8;
+  text-align: center;
+  color: #fcfcfc;
   text-shadow:
     -1px 1px 0px #444,
     -1px 2px 0px #444,
@@ -27,19 +27,33 @@ h1 {
     -7px 12px 0px #444;
 }
 
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 7em;
+  }
+}
+
 input{
   margin-left: 0px;
   padding-left: 0px;
   color: #222;
+  font-size: 1rem;
 }
 
 .functions-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 5px 0px;
   padding: 10px;
+  font-size: 1rem;
   color: #222;
+}
+
+@media only screen and (min-width: 600px) {
+  .functions-box {
+    margin: 15px 0px;
+  }
 }
 
 .functions-box select {
@@ -47,7 +61,9 @@ input{
   padding-left: 0px;
   margin-right: 5px;
   color: #222;
-  background-color: rgba(85,85,85,0.2);
+  font-weight: bold;
+  font-size: 1rem;
+  /* background-color: rgba(85,85,85,0.2); */
   border: none;
 }
 
@@ -64,20 +80,34 @@ input{
 
 .record-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
-  grid-auto-rows: 250px;
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-auto-rows: 100px;
   grid-gap: 10px;
 	width: 100%;
   justify-content: center;
   grid-auto-flow: dense;
 }
 
+@media only screen and (min-width: 600px) {
+  .record-list {
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-auto-rows: 250px;
+  }
+}
+
 .main-box {
   display: flex;
   justify-content: center;
 	align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-box {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .main-box h2, .main-box h3, .main-box h4, .main-box p {
@@ -103,19 +133,25 @@ input{
 }
 
 #record-info {
-  display: flex;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-	color: #f8f8f8;
-  width: 250px;
-  height: 250px;
-  opacity: 0;
-	flex-direction: column;
-	justify-content: center;
-  margin: 0px;
-  /* margin-left: 0px; */
-  transition: .35s ease;
-  overflow: hidden;
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #record-info {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+  	color: #f8f8f8;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  	flex-direction: column;
+  	justify-content: center;
+    margin: 0px;
+    /* margin-left: 0px; */
+    transition: .35s ease;
+    overflow: hidden;
+  }
 }
 
 #record-info h2, #record-info h3 {
@@ -159,10 +195,25 @@ input{
   align-items: center;
 }
 
+@media only screen and (min-width: 600px) {
+  .modal-cell {
+  	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* Modal Content (Image) */
 .modal-content {
   margin-bottom: 5px;
-  /* height: 30vh; */
+  width: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+  .modal-content {
+    width: 500px;
+  }
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -178,9 +229,16 @@ input{
   overflow-y: auto;
 }
 
+@media only screen and (min-width: 600px) {
+  .caption {
+    margin-left: 10px;
+    width: auto;
+  }
+}
+
 .caption p {
   display: block;
-	/* margin-bottom: 5px; */
+  margin: 3px 0px 2px;
 	text-align: left;
 	color: #f8f8f8;
 }
