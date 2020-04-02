@@ -29,6 +29,7 @@ const Modal = ({ data, modalId, setModalId }) => {
             <p><b>Artist:</b> {record.artist}</p>
             <p><b>Year:</b> {record.year}</p>
             <p><b>Speed:</b> {record.speed} rpm</p>
+            <p><b>Genre:</b> {record.genre}</p>
           </div>
         </div>
       </div>
