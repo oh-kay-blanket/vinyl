@@ -63,7 +63,6 @@ input{
   color: #222;
   font-weight: bold;
   font-size: 1rem;
-  /* background-color: rgba(85,85,85,0.2); */
   border: none;
 }
 
@@ -149,7 +148,7 @@ input{
   	justify-content: center;
     margin: 0px;
     /* margin-left: 0px; */
-    transition: .35s ease;
+    transition: .25s;
     overflow: hidden;
   }
 }
@@ -240,13 +239,14 @@ input{
   display: block;
   margin: 3px 0px 2px;
 	text-align: left;
+  font-size: 1.2rem;
 	color: #f8f8f8;
 }
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, .caption {
 	animation-name: zoom;
-	animation-duration: 0.5s;
+	animation-duration: 0.25s;
 }
 
 @keyframes zoom {
