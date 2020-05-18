@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import FunctionsBox from './filter-sort';
+import Filter from './Filter';
+import Sort from './Sort';
 import GridBox from './Grid';
 import Modal from './Modal';
 import { handleFilter, handleSort, buildModalFunctionality } from './AppFunctions.js';
@@ -30,15 +31,19 @@ const App = ({ rawData }) => {
   return (
     <>
       <h1>vinyl</h1>
-      <FunctionsBox
-        data={data}
-        filterType={filterType}
-        setFilterType={setFilterType}
-        filterInput={filterInput}
-        setFilterInput={setFilterInput}
-        sortDirection={sortDirection}
-        setSortDirection={setSortDirection}
-      />
+      <div className='functions-box'>
+        <Filter
+          filterType={filterType}
+          setFilterType={setFilterType}
+          filterInput={filterInput}
+          setFilterInput={setFilterInput}
+        />
+        <Sort
+          data={data}
+          sortDirection={sortDirection}
+          setSortDirection={setSortDirection}
+        />
+      </div>
       <GridBox
         data={data}
         modalId={modalId}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import FunctionsBox from './filter-sort';
 import GridBox from './Grid';
 import { handleSort, handleFilter, getQuote, getGrade, modalId, setModalId, buildModalFunctionality } from './AppFunctions.js';
 
