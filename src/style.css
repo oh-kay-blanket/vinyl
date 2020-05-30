@@ -128,7 +128,8 @@ input{
   background-size: cover;
 	display: block;
   margin: auto;
-  transition: .35s ease;
+  width: 100%;
+  transition: .25s ease;
 }
 
 #record-info {
