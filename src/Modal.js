@@ -24,11 +24,11 @@ const Modal = ({ data, modalId, setModalId }) => {
         <div className="modal-cell">
           <img className="modal-content" alt='' src={record.image}></img>
           <div className="caption">
-            <p><b>Album:</b> {record.album}</p>
-            <p><b>Artist:</b> {record.artist}</p>
-            <p><b>Year:</b> {record.year}</p>
-            <p><b>Speed:</b> {record.speed} rpm</p>
-            <p><b>Genre:</b> {record.genre}</p>
+            <h2>{record.album}</h2>
+            <h3>{record.artist}</h3>
+            <p>{record.year}</p>
+            <p>{record.genre}</p>
+            <p>{record.speed} rpm</p>
           </div>
         </div>
       </div>

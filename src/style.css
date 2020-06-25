@@ -236,12 +236,20 @@ input{
   }
 }
 
-.caption p {
+.caption h2, .caption h3, .caption p {
   display: block;
-  margin: 3px 0px 2px;
+  margin: 3px 0px 6px;
 	text-align: left;
-  font-size: 1.2rem;
 	color: #f8f8f8;
+}
+
+.caption h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.caption p {
+  /* font-size: 1.2rem; */
 }
 
 /* Add Animation - Zoom in the Modal */
