@@ -32,7 +32,6 @@ const App = ({ rawData }) => {
     <>
       <h1>vinyl</h1>
       <div className='functions-box'>
-      <i className="fab fa-github"></i>
         <Filter
           filterType={filterType}
           setFilterType={setFilterType}
