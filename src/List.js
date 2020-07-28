@@ -10,12 +10,12 @@ function importAll(r) {
 
 const imagesSmall = importAll(require.context('./img/250', false, /\.(jpe?g)$/));
 
-const GridBox = ({ data, modalId, setModalId }) => {
+const List = ({ data, modalId, setModalId }) => {
 
   const recordList = data.map((record) => (<RecordCell key={record.id} record={record} setModalId={setModalId} />));
 
   return(
-    <div className='record-grid'>
+    <div className='record-list'>
       {recordList}
     </div>
   );
@@ -23,18 +23,12 @@ const GridBox = ({ data, modalId, setModalId }) => {
 
 const RecordCell = ({ record, setModalId }) => {
 
-  // Build image path
-  record.image = imagesSmall[`${record.id}.jpg`];
 
   return(
-    <div className='main-box' onClick={() => setModalId(record.id)}>
-      <img className='img' loading="lazy" alt='' src={record.image}></img>
-      <div id='record-info'>
-        <h2 id="main-box-title">{record.album}</h2>
-        <h3>{record.artist}</h3>
-      </div>
+    <div className="list-item" onClick={() => setModalId(record.id)}>
+        <p>{record.album} - <b>{record.artist}</b></p>
     </div>
   );
 }
 
-export default GridBox;
+export default List;

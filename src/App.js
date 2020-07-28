@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import Filter from './Filter';
 import Sort from './Sort';
-import GridBox from './Grid';
+import Grid from './Grid';
+import List from './List';
 import Modal from './Modal';
 import { handleFilter, handleSort, buildModalFunctionality } from './AppFunctions.js';
 
@@ -16,6 +17,7 @@ const App = ({ rawData }) => {
   const [filterInput, setFilterInput] = useState('');
   const [sortDirection, setSortDirection] = useState('alb-rnd');
   const [modalId, setModalId] = useState('');
+  const [gridView, setGridView] = useState(true);
 
   // Filter data
   // useEffect(() => { setData(handleFilter(data, filterType, filterInput)) }, [filterType, filterInput]);
@@ -43,12 +45,24 @@ const App = ({ rawData }) => {
           sortDirection={sortDirection}
           setSortDirection={setSortDirection}
         />
+        <div className="display-select">
+          <i className={gridView ? `fa fa-th-large active` : `fa fa-th-large`} onClick={() => setGridView(true)}></i>
+          <i className={gridView ? `fa fa-list` : `fa fa-list active`}  onClick={() => setGridView(false)}></i>
+        </div>
       </div>
-      <GridBox
-        data={data}
-        modalId={modalId}
-        setModalId={setModalId}
-      />
+      {gridView ?
+        <Grid
+          data={data}
+          modalId={modalId}
+          setModalId={setModalId}
+        /> :
+        <List
+          data={data}
+          modalId={modalId}
+          setModalId={setModalId}
+        />
+      }
+
       {modalId !== '' &&
         <Modal
           data={data}
