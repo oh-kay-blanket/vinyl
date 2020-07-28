@@ -28,7 +28,7 @@ const RecordCell = ({ record, setModalId }) => {
 
   return(
     <div className='main-box' onClick={() => setModalId(record.id)}>
-      <img className='img' alt='' src={record.image}></img>
+      <img className='img' loading="lazy" alt='' src={record.image}></img>
       <div id='record-info'>
         <h2 id="main-box-title">{record.album}</h2>
         <h3>{record.artist}</h3>
