@@ -4,7 +4,7 @@ const Filter = ({ filterType, setFilterType, filterInput, setFilterInput }) => {
 
   return (
     <div className='filter-box'>
-      <p>Filter by
+      <p>Filter &nbsp;
         <select onChange={e => setFilterType(e.target.value)}>
           <option value='artist'>Artist</option>
           <option value='album'>Album</option>

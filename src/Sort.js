@@ -4,7 +4,7 @@ const Sort = ({ setSortDirection }) => {
 
   return (
     <div className='sort-box'>
-      <p>Sort by
+      <p>Sort &nbsp;
         <select onChange={e => setSortDirection(e.target.value)}>
           <option value='alb-rnd'>Random</option>
           <option value='art-asc'>Artist A-Z</option>

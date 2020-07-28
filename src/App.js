@@ -32,7 +32,7 @@ const App = ({ rawData }) => {
 
   return (
     <>
-      <h1>vinyl</h1>
+      <h1 class="title">vinyl</h1>
       <div className='functions-box'>
         <Filter
           filterType={filterType}
@@ -46,8 +46,8 @@ const App = ({ rawData }) => {
           setSortDirection={setSortDirection}
         />
         <div className="display-select">
-          <i className={gridView ? `fa fa-th-large active` : `fa fa-th-large`} onClick={() => setGridView(true)}></i>
-          <i className={gridView ? `fa fa-list` : `fa fa-list active`}  onClick={() => setGridView(false)}></i>
+          <i className={gridView ? `fa fa-th-large` : `fa fa-th-large active`} onClick={() => setGridView(true)}></i>
+          <i className={gridView ? `fa fa-list active` : `fa fa-list`}  onClick={() => setGridView(false)}></i>
         </div>
       </div>
       {gridView ?
