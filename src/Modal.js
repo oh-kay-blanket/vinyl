@@ -22,7 +22,7 @@ const Modal = ({ data, modalId, setModalId }) => {
     <div className='modal' style={{display: 'grid'}}>
       <div className="modal-table" onClick={() => setModalId('')}>
         <div className="modal-cell">
-          <img className="modal-content" alt='' src={record.image}></img>
+          <img className="modal-content" loading="lazy" alt='' src={record.image}></img>
           <div className="caption">
             <h2>{record.album}</h2>
             <h3>{record.artist}</h3>
