@@ -32,7 +32,7 @@ const App = ({ rawData }) => {
 
   return (
     <>
-      <h1 class="title">vinyl</h1>
+      <h1 className="title">vinyl</h1>
       <div className='functions-box'>
         <Filter
           filterType={filterType}
