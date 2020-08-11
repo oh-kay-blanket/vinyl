@@ -21,32 +21,40 @@ const Modal = ({ data, modalId, setModalId }) => {
   let pos = data.map(function(e) { return e.id; }).indexOf(record.id);
 
   // Move function
-  function modalAction(e) {
+  function modalAction(dir) {
 
     let back = pos-1;
     let forward = pos+1;
 
     // Back
-    if (e.keyCode === 37) {
+    if (dir === 'prev') {
       back < 0 ? setModalId(data[data.length-1].id) : setModalId(data[back].id);
     }
 
     // Forward
-    if (e.keyCode === 39) {
+    if (dir === 'next') {
       forward >= data.length ? setModalId(data[0].id) : setModalId(data[forward].id);
     }
+  }
 
+  // HandleKeyPress
+  const handleKeyPress = e => {
+    if (e.keyCode === 37) {
+      modalAction('prev');
+    }
+
+    // Forward
     if (e.keyCode === 39) {
-      forward >= data.length ? setModalId(data[0].id) : setModalId(data[forward].id);
+      modalAction('next');
     }
   }
 
   // Keypress listen
   useEffect(() => {
-    document.addEventListener('keydown', modalAction);
+    document.addEventListener('keydown', handleKeyPress);
 
     return () => {
-      document.removeEventListener('keydown', modalAction);
+      document.removeEventListener('keydown', handleKeyPress);
     };
 
   }, [modalId]);
@@ -58,6 +66,8 @@ const Modal = ({ data, modalId, setModalId }) => {
   return (
     <div className='modal' style={{display: 'grid'}}>
       <div className="modal-table" onClick={() => setModalId('')}>
+        <i className="fas fa-chevron-left" onClick={e => {e.stopPropagation();modalAction('prev')}}></i>
+        <i className="fas fa-chevron-right" onClick={e => {e.stopPropagation();modalAction('next')}}></i>
         <div className="modal-cell">
           <img className="modal-content" loading="lazy" alt='' src={record.image}></img>
           <div className="caption">

@@ -244,6 +244,32 @@ input{
 	justify-content: center;
   align-items: center;
   align-content: center;
+  position: relative;
+
+  .fa-chevron-left, .fa-chevron-right {
+    position: absolute;
+    z-index: 2;
+    padding: 50px;
+    color: #f8f8f8;
+    font-size: 2rem;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .fa-chevron-left {
+    left: 20px;
+  }
+
+  .fa-chevron-right {
+    right: 20px;
+  }
 }
 
 .modal-cell {
@@ -251,6 +277,7 @@ input{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 
   @media (min-width: 1000px) {
   	display: flex;
@@ -282,7 +309,7 @@ input{
 
   @media (min-width: 1000px) {
     margin-left: 10px;
-    width: auto;
+    width: 300px;
   }
 
   h2, h3, p {
