@@ -80,10 +80,10 @@ const Modal = ({ data, modalId, setModalId }) => {
       // e.preventDefault()
 
       // Swipe forward
-      dist < -150 && modalAction('next');
+      dist < -70 && modalAction('next');
 
       // Swipe back
-      dist > 150 && modalAction('prev');
+      dist > 70 && modalAction('prev');
     }
 
     // Listen for start point
