@@ -59,16 +59,56 @@ const Modal = ({ data, modalId, setModalId }) => {
 
   }, [modalId]);
 
+  // Swipe Listen
+  useEffect(() => {
+
+    var box1 = document.getElementById('modal-table')
+    var startx = 0
+    var dist = 0
+
+    // Get start point function
+    const getStart = e => {
+      var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
+      startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
+      // e.preventDefault()
+    }
+
+    // Calculate distance function
+    const getDist = e => {
+      var touchobj = e.changedTouches[0] // reference first touch point for this event
+      dist = parseInt(touchobj.clientX) - startx;
+      // e.preventDefault()
+
+      // Swipe forward
+      dist < -150 && modalAction('next');
+
+      // Swipe back
+      dist > 150 && modalAction('prev');
+    }
+
+    // Listen for start point
+    box1.addEventListener('touchstart', getStart, false);
+
+    // Listen for end point
+    box1.addEventListener('touchend', getDist, false);
+
+    return () => {
+      box1.removeEventListener('touchstart', getStart);
+      box1.removeEventListener('touchend', getDist);
+    };
+
+  }, [modalId]);
 
 
   record.image = imagesLarge[`${record.id}.jpg`];
 
   return (
     <div className='modal' style={{display: 'grid'}}>
-      <div className="modal-table" onClick={() => setModalId('')}>
+      <div id="modal-table" className="modal-table">
         <i className="fas fa-chevron-left" onClick={e => {e.stopPropagation();modalAction('prev')}}></i>
         <i className="fas fa-chevron-right" onClick={e => {e.stopPropagation();modalAction('next')}}></i>
         <div className="modal-cell">
+          <i className="fa fa-times" aria-hidden="true" onClick={() => setModalId('')}></i>
           <img className="modal-content" loading="lazy" alt='' src={record.image}></img>
           <div className="caption">
             <h2>{record.album}</h2>

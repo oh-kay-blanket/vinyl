@@ -252,7 +252,7 @@ input{
     padding: 50px;
     color: #f8f8f8;
     font-size: 2rem;
-    opacity: 0.7;
+    opacity: 0.4;
 
     &:hover {
       opacity: 1;
@@ -277,13 +277,31 @@ input{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  position: relative;
 
   @media (min-width: 1000px) {
   	display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  .fa-times {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    padding: 10px;
+    font-size: 1.6rem;
+    color: #f8f8f8;
+    opacity: 0.4;
+
+    @media (min-width: 1000px) {
+      padding: 30px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
