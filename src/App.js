@@ -25,7 +25,7 @@ const App = ({ rawData }) => {
 
   useEffect(() => {
     const fixedColor = "#665200"
-    const shadowProp = {
+    const settings = {
       shadowType:   "shadow", // "shadow", "dropShadow"
       selector:     ".title", // tag, class, or id to apply shadow to
       angle:        20, // height of view source. Should be between 10 - 100
@@ -47,7 +47,7 @@ const App = ({ rawData }) => {
         -6px 11px 0px ${fixedColor},
         -7px 12px 0px ${fixedColor}`,  // "5px 5px #555" to include an optional fixed shadow
     }
-    movingShadow(shadowProp);
+    movingShadow(settings);
   }, [])
 
   // Sort data
