@@ -70,15 +70,27 @@ input{
   }
 
   i {
-    color: #777;
+    color: color.$mustard-shadow;
     cursor: pointer;
     margin: 10px 5px;
     font-size: 1.5rem;
     @include neumorph.neumorph;
+
+    &:hover {
+      @include neumorph.neumorph-hover;
+    }
+
+    &:active {
+      @include neumorph.neumorph-active;
+    }
   }
 
   .active {
     @include neumorph.neumorph-active;
-    color: #555;
+    color: color.$mustard-dark;
+
+    &:hover {
+      @include neumorph.neumorph-active;
+    }
   }
 }

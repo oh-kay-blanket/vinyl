@@ -1,14 +1,16 @@
 @mixin neumorph {
   padding: 10px;
   border-radius: 7px;
-  box-shadow: 6px 6px 6px #997a00, -6px -6px 15px #e6b80077;
-  border: 1px solid #e6b80033;
+  box-shadow: 5px 5px 5px 3px #997a00, -3px -3px 14px 3px #e6b80033;
+  border: 1px solid #e6b80022;
+  transition: .25s;
 }
 
 @mixin neumorph-hover {
-  box-shadow: 3px 3px 6px #806600, -3px -3px 15px #e6b80077;
+  box-shadow: 3px 3px 4px #806600, -1px -1px 2px #e6b80033;
+  transition: .25s;
 }
 
 @mixin neumorph-active {
-  box-shadow: inset 3px 3px 6px #997a00, inset -3px -3px 15px #e6b800aa;
+  box-shadow: inset 1px 1px 10px #997a00, inset -1px -1px 5px #e6b800aa;
 }

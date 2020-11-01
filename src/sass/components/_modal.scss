@@ -54,6 +54,10 @@
           @include neumorph.neumorph-hover;
         }
 
+				&:active {
+		      @include neumorph.neumorph-active;
+		    }
+
         &.icon-left {
           left: -70px;
           @media (max-width: 1000px) {

@@ -12,7 +12,7 @@ body {
 h1 {
   margin: 0px auto;
   padding: 20px 0px;
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 800;
   text-align: center;
   background-color: color.$mustard;
@@ -32,6 +32,6 @@ h1 {
     -7px 12px 0px color.$mustard-dark;
 
     @media (min-width: 1000px) {
-        font-size: 9rem;
+        font-size: 10rem;
     }
 }
