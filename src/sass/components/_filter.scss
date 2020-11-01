@@ -1,0 +1,84 @@
+@use 'mixins/neumorph';
+@use 'base/color';
+
+/* FILTER */
+
+input{
+  margin-left: 0px;
+  padding-left: 0px;
+  font-size: 1rem;
+}
+
+.functions-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 0px 5px 0px;
+  padding: 10px 10px;
+  font-size: 1rem;
+  color: color.$text;
+  background-color: color.$grey;
+
+  @media (min-width: 1000px) {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 15px 0px;
+    padding: 20px 50px;
+  }
+
+  select {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 5px;
+    color: color.$text;
+    background-color: color.$grey;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+  }
+}
+
+// FILTER & SORT BOX
+.filter-box, .sort-box {
+  margin: 5px;
+  @include neumorph.neumorph;
+
+  p {
+    margin: 5px;
+  }
+}
+
+.filter-box {
+  padding-right: 10px;
+  text-align: center;
+
+  input {
+    background: none;
+    margin-right: 10px;
+    width: 120px;
+    border: 0px;
+    border-bottom: 1px solid;
+  }
+}
+
+
+// DISPLAY
+.display-select {
+  @media (min-width: 1000px) {
+    margin-left: 15px;
+  }
+
+  i {
+    color: #aaa;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 1.5rem;
+    @include neumorph.neumorph;
+  }
+
+  .active {
+    @include neumorph.neumorph-active;
+    color: #555;
+  }
+}

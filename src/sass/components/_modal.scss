@@ -1,0 +1,134 @@
+@use 'base/color';
+@use 'mixins/neumorph';
+/* MODAL */
+
+.modal {
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100vw; /* Full width */
+	height: 100vh; /* Full height */
+	background-color: color.$grey;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .modal-table {
+  	display: flex;
+  	justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+    .modal-cell {
+      @include neumorph.neumorph;
+      margin: 0px 15px;
+      padding: 15px;
+    	display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      @media (min-width: 1000px) {
+      	display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        @include neumorph.neumorph;
+        position: absolute;
+        z-index: 2;
+        border-radius: 50%;
+
+        &:hover {
+          @include neumorph.neumorph-hover;
+        }
+
+        &.icon-left {
+          left: -70px;
+          @media (max-width: 1000px) {
+            display: none;
+          }
+        }
+
+        &.icon-right {
+          right: -70px;
+          @media (max-width: 1000px) {
+            display: none;
+          }
+        }
+
+        .fa-caret-left, .fa-caret-right {
+          text-align: center;
+          color: color.$text;
+          font-size: 2rem;
+        }
+
+        &.icon-close {
+          top: -70px;
+          right: -70px;
+
+          @media (max-width: 1000px) {
+            right: 0;
+          }
+
+          .fa-times {
+            font-size: 1.6rem;
+            color: color.$text;
+          }
+        }
+      }
+
+      /* IMAGE */
+      img {
+        margin-bottom: 5px;
+        width: 80%;
+        box-shadow: 3px 3px 6px #ccc, -3px -3px 15px #fffc;
+        border-radius: 2px;
+
+        @media (min-width: 1000px) {
+          width: 500px;
+        }
+      }
+
+      /* MODAL TEXT */
+      .caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: auto;
+        max-height: 50vh;
+        width: 80vw;
+        max-width: 550px;
+        overflow-y: auto;
+
+        @media (min-width: 1000px) {
+          margin-left: 10px;
+          width: 300px;
+        }
+
+        h2, h3, p {
+          display: block;
+          margin: 3px 0px 6px;
+        	text-align: left;
+        	color: color.$text;
+        }
+
+        h3 {
+          font-weight: 400;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

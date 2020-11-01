@@ -105,11 +105,11 @@ const Modal = ({ data, modalId, setModalId }) => {
   return (
     <div className='modal' style={{display: 'grid'}}>
       <div id="modal-table" className="modal-table">
-        <i className="fas fa-chevron-left" onClick={e => {e.stopPropagation();modalAction('prev')}}></i>
-        <i className="fas fa-chevron-right" onClick={e => {e.stopPropagation();modalAction('next')}}></i>
         <div className="modal-cell">
-          <i className="fa fa-times" aria-hidden="true" onClick={() => setModalId('')}></i>
-          <img className="modal-content" loading="lazy" alt='' src={record.image}></img>
+          <div class="icon icon-left" onClick={e => {e.stopPropagation();modalAction('prev')}}><i className="fas fa-caret-left"></i></div>
+          <div class="icon icon-right" onClick={e => {e.stopPropagation();modalAction('next')}}><i className="fas fa-caret-right"></i></div>
+          <div class="icon icon-close" onClick={() => setModalId('')}><i className="fa fa-times" aria-hidden="true"></i></div>
+          <img loading="lazy" alt='' src={record.image}></img>
           <div className="caption">
             <h2>{record.album}</h2>
             <h3>{record.artist}</h3>

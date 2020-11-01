@@ -1,0 +1,33 @@
+@use 'base/color';
+@use 'mixins/neumorph';
+
+/* LIST */
+.record-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  cursor: pointer;
+  @include neumorph.neumorph;
+
+  @media (min-width: 1000px) {
+    width: 600px;
+  }
+
+  &:hover {
+    @include neumorph.neumorph-hover;
+  }
+
+  h4, p {
+    margin: 10px 0px;
+    padding: 0px;
+  }
+}

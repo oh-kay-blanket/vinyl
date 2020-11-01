@@ -1,0 +1,14 @@
+@mixin neumorph {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px #ccc, -3px -3px 15px #fffc;
+  border: 1px solid #f3f3f3;
+}
+
+@mixin neumorph-hover {
+  box-shadow: 3px 3px 6px #aaa, -3px -3px 15px #fffc;
+}
+
+@mixin neumorph-active {
+  box-shadow: inset 3px 3px 6px #ddd, inset -3px -3px 6px #fffc;
+}

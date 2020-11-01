@@ -1,0 +1,37 @@
+@use 'base/color';
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,800|Open+Sans:400,800);
+
+body {
+  margin: 0px;
+  font-size: 16px;
+  font-family: 'Montserrat', 'Open Sans', Sans;
+  background-color: color.$grey;
+}
+
+h1 {
+  margin: 0px auto;
+  padding: 20px 0px;
+  font-size: 6rem;
+  font-weight: 800;
+  text-align: center;
+  background-color: color.$mustard;
+  color: color.$mustard;
+  text-shadow:
+    -1px 1px 0px color.$mustard-dark,
+    -1px 2px 0px color.$mustard-dark,
+    -2px 3px 0px color.$mustard-dark,
+    -2px 4px 0px color.$mustard-dark,
+    -3px 5px 0px color.$mustard-dark,
+    -3px 6px 0px color.$mustard-dark,
+    -4px 7px 0px color.$mustard-dark,
+    -4px 8px 0px color.$mustard-dark,
+    -5px 9px 0px color.$mustard-dark,
+    -5px 10px 0px color.$mustard-dark,
+    -6px 11px 0px color.$mustard-dark,
+    -7px 12px 0px color.$mustard-dark;
+
+    @media (min-width: 1000px) {
+        font-size: 9rem;
+    }
+}

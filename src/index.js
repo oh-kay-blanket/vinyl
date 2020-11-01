@@ -23,6 +23,6 @@ const rawData = shuffle(ddata);
 // rawData.sort(function(a, b){return 0.5 - Math.random()});
 
 import App from './App';
-import './style.scss';
+import './sass/style.scss';
 
 ReactDOM.render(<App rawData={rawData} />, document.getElementById("root"));
