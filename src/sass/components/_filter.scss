@@ -32,7 +32,7 @@ input{
     padding-left: 0px;
     margin-right: 5px;
     color: color.$text;
-    background-color: color.$mustard;
+    background-color: color.$grey;
     font-weight: bold;
     font-size: 1rem;
     border: none;
@@ -43,6 +43,7 @@ input{
 .filter-box, .sort-box {
   margin: 5px;
   @include neumorph.neumorph;
+  background-color: color.$grey;
 
   p {
     margin: 5px;
@@ -59,6 +60,10 @@ input{
     width: 120px;
     border: 0px;
     border-bottom: 1px solid;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -70,11 +75,12 @@ input{
   }
 
   i {
-    color: color.$mustard-shadow;
+    color: #8a815c;
     cursor: pointer;
     margin: 10px 5px;
     font-size: 1.5rem;
     @include neumorph.neumorph;
+    background-color: color.$grey;
 
     &:hover {
       @include neumorph.neumorph-hover;
@@ -82,6 +88,10 @@ input{
 
     &:active {
       @include neumorph.neumorph-active;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 

@@ -48,7 +48,7 @@
   width: 100%;
   transition: .25s ease;
   box-shadow: 3px 3px 6px #997a00, -3px -3px 15px #e6b800;
-  border-radius: 2px;
+  border-radius: 7px;
 }
 
 #record-info {
@@ -57,7 +57,7 @@
   @media (min-width: 1000px) {
     display: flex;
     position: absolute;
-    background-color: color.$mustard;
+    background-color: color.$grey;
     color: color.$text;
     width: 200px;
     height: 200px;
@@ -65,7 +65,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 0px;
-    border-radius: 2px;
+    border-radius: 7px;
     transition: .25s;
     overflow: hidden;
   }

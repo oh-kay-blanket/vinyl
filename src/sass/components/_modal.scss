@@ -24,6 +24,7 @@
 
     .modal-cell {
       @include neumorph.neumorph;
+			background-color: color.$grey;
       margin: 0px 15px;
       padding: 15px;
     	display: flex;
@@ -46,6 +47,7 @@
         width: 30px;
         height: 30px;
         @include neumorph.neumorph;
+				background-color: color.$grey;
         position: absolute;
         z-index: 2;
         border-radius: 50%;
@@ -97,8 +99,8 @@
       img {
         margin-bottom: 5px;
         width: 80%;
-		box-shadow: 3px 3px 6px #997a00, -3px -3px 15px #e6b80077;
-        border-radius: 2px;
+				box-shadow: 3px 3px 6px #342f1933, -3px -3px 15px #eeebdd;
+        border-radius: 7px;
 
         @media (min-width: 1000px) {
           width: 500px;

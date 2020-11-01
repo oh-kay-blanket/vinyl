@@ -15,8 +15,10 @@
   justify-content: flex-start;
   margin: 7px 0px;
   width: 90%;
+  max-width: 600px;
   cursor: pointer;
   @include neumorph.neumorph;
+  background-color: color.$grey;
 
   @media (min-width: 1000px) {
     width: 600px;
@@ -26,8 +28,13 @@
     @include neumorph.neumorph-hover;
   }
 
+  &:active {
+    @include neumorph.neumorph-active;
+  }
+
   h4, p {
     margin: 3px 0px;
     padding: 0px;
+    color: color.$text;
   }
 }
