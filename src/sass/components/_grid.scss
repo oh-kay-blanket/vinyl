@@ -46,7 +46,7 @@
   margin: auto;
   width: 100%;
   transition: .25s ease;
-  box-shadow: 3px 3px 6px #ccc, -3px -3px 15px #fffc;
+  box-shadow: 3px 3px 6px #997a00, -3px -3px 15px #e6b800;
   border-radius: 2px;
 }
 
@@ -56,7 +56,7 @@
   @media (min-width: 1000px) {
     display: flex;
     position: absolute;
-    background-color: color.$grey;
+    background-color: color.$mustard;
     color: color.$text;
     width: 200px;
     height: 200px;
