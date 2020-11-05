@@ -70,15 +70,21 @@ input{
 
 // DISPLAY
 .display-select {
+  display: flex;
+
   @media (min-width: 1000px) {
     margin-left: 15px;
   }
 
-  i {
-    color: #8a815c;
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    margin: 10px 5px;
-    font-size: 1.5rem;
+    margin: 5px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.7rem;
     @include neumorph.neumorph;
     background-color: color.$grey;
 
@@ -93,14 +99,22 @@ input{
     &:focus {
       outline: none;
     }
-  }
 
-  .active {
-    @include neumorph.neumorph-active;
-    color: color.$mustard-dark;
-
-    &:hover {
+    &.active {
       @include neumorph.neumorph-active;
+
+
+      &:hover {
+        @include neumorph.neumorph-active;
+      }
+
+      i {
+        color: color.$mustard-dark;
+      }
+    }
+
+    i {
+      color: #8a815c;
     }
   }
 }

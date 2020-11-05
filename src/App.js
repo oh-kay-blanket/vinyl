@@ -74,8 +74,13 @@ const App = ({ rawData }) => {
           setSortDirection={setSortDirection}
         />
         <div className="display-select">
-          <i className={gridView ? `fa fa-th-large active` : `fa fa-th-large`} onClick={() => setGridView(true)}></i>
-          <i className={gridView ? `fa fa-list` : `fa fa-list active`}  onClick={() => setGridView(false)}></i>
+          <div className={gridView && `active`} onClick={() => setGridView(true)}>
+            <i className="fa fa-th-large"></i>
+          </div>
+
+          <div className={!gridView && `active`} onClick={() => setGridView(false)}>
+            <i className="fa fa-list"></i>
+          </div>
         </div>
       </div>
       {gridView ?
