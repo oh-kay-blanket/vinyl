@@ -18,10 +18,19 @@
   max-width: 600px;
   cursor: pointer;
   @include neumorph.neumorph;
+  padding: 7px;
   background-color: color.$grey;
 
+  @media (min-width: 545px) {
+    justify-content: center;
+    padding: 4px;
+    border-radius: 3px;
+  }
+
   @media (min-width: 1000px) {
-    width: 600px;
+    max-width: 1300px;
+    padding: 0px;
+
   }
 
   &:hover {
@@ -33,8 +42,12 @@
   }
 
   h4, p {
-    margin: 3px 0px;
+    margin: 1px 0px;
     padding: 0px;
     color: color.$text;
+
+    @media (min-width: 1200px) {
+      margin: 0px;
+    }
   }
 }

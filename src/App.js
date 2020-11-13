@@ -28,7 +28,7 @@ const App = ({ rawData }) => {
     const settings = {
       shadowType:   "shadow", // "shadow", "dropShadow"
       selector:     ".title", // tag, class, or id to apply shadow to
-      angle:        40, // height of view source. Should be between 10 - 100
+      angle:        20, // height of view source. Should be between 10 - 100
       diffusion:    0, // blur-radius
       color:        "#997a00", // shadow-color
       xOffset:      -7, // X offset value, set to max fixedShadow x offset
