@@ -13,11 +13,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 7px 0px;
+  margin: 3px 0px;
   width: 90%;
   max-width: 600px;
   cursor: pointer;
   @include neumorph.neumorph;
+  box-shadow: 3px 3px 6px #806600, -1px -1px 6px #e6b800aa;
   padding: 7px;
   background-color: color.$grey;
 
@@ -35,6 +36,9 @@
 
   &:hover {
     @include neumorph.neumorph-hover;
+    box-shadow: 5px 5px 5px 3px #816700;
+    transform: scale(1.01, 1.01);
+    width: 90.5%;
   }
 
   &:active {
@@ -42,9 +46,10 @@
   }
 
   h4, p {
-    margin: 1px 0px;
+    margin: 1px auto;
     padding: 0px;
     color: color.$text;
+    text-align: center;
 
     @media (min-width: 1200px) {
       margin: 0px;

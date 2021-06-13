@@ -81,11 +81,11 @@
         }
 
         &.icon-close {
-          top: -40px;
-          right: -25px;
+          top: -60px;
+          right: -45px;
 
           @media (max-width: 1000px) {
-						top: -45px;
+						// top: -45px;
             right: 0;
           }
 

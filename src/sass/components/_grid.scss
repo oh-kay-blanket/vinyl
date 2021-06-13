@@ -8,16 +8,20 @@
   margin: 0px auto;
   justify-content: center;
   grid-auto-flow: dense;
-  max-width: 90%;
+  // max-width: 90%;
+
+  @media (min-width: 1000px) {
+    max-width: 90%;
+  }
 }
 
 .main-box {
   display: flex;
   justify-content: center;
 	align-items: center;
-  margin: 5px;
-  width: 100px;
-  height: 100px;
+  margin: 1%;
+  width: 30%;
+  height: 30%;
 
   h2, h3, h4, p {
     margin: 0px;
@@ -26,6 +30,7 @@
   @media (min-width: 1000px) {
     width: 200px;
     height: 200px;
+    margin: 5px;
 
     &:hover {
       cursor: pointer;
