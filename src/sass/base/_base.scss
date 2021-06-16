@@ -1,6 +1,6 @@
 @use 'base/color';
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500,800|Open+Sans:400,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,800|Open+Sans:400,800|Vibes);
 
 body {
   margin: 0px;
@@ -10,10 +10,13 @@ body {
 }
 
 h1 {
+  // font-family: 'Vibes', 'Open Sans', Sans;
   margin: 0px auto;
   padding: 20px 0px;
-  font-size: 7rem;
+  font-size: 9rem;
   font-weight: 800;
+  line-height: 1;
+  margin-bottom: -35px;
   text-align: center;
   background-color: color.$mustard;
   color: color.$grey;
@@ -32,6 +35,6 @@ h1 {
     -7px 12px 0px color.$mustard-dark;
 
     @media (min-width: 1000px) {
-        font-size: 10rem;
+        font-size: 14rem;
     }
 }
