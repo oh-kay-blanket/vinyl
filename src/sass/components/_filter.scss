@@ -3,13 +3,17 @@
 
 /* FILTER */
 
+.fas {
+  margin-right: 7px;
+}
+
 input{
   margin-left: 0px;
   padding-left: 0px;
   font-size: 1rem;
 }
 
-.functions-box {
+.functions-box { 
   display: flex;
   flex-wrap: wrap;
   align-items: center;

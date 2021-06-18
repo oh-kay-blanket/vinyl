@@ -26,7 +26,7 @@ const RecordCell = ({ record, setModalId }) => {
 
   return(
     <div className="list-item" onClick={() => setModalId(record.id)}>
-        <p><b>{record.artist}</b> - {record.album}</p>
+        <p><span className="list-artist">{record.artist}</span> - {record.album}</p>
     </div>
   );
 }

@@ -4,12 +4,13 @@ const Sort = ({ setSortDirection }) => {
 
   return (
     <div className='sort-box'>
-      <p>Sort &nbsp;
+      <p>
+      <i class="fas fa-sort"></i>
         <select onChange={e => setSortDirection(e.target.value)}>
-          <option value='art-asc'>Artist A-Z</option>
-          <option value='art-dsc'>Artist Z-A</option>
-          <option value='yr-asc'>Year &#8593;</option>
-          <option value='yr-dsc'>Year &#8595;</option>
+          <option value='art-asc'>A-Z</option>
+          <option value='art-dsc'>Z-A</option>
+          <option value='yr-asc'>Year (asc)</option>
+          <option value='yr-dsc'>Year (dsc)</option>
           <option value='alb-rnd'>Random</option>
         </select>
       </p>

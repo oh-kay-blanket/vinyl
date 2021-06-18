@@ -102,20 +102,26 @@ const Modal = ({ data, modalId, setModalId }) => {
 
   record.image = imagesLarge[`${record.id}.jpg`];
 
+  console.log(record.genre);
+
+  if(record.genre) {
+    record.genre = record.genre.replaceAll(", ", ' | ');
+  }
+
   return (
     <div className='modal' style={{display: 'grid'}}>
       <div id="modal-table" className="modal-table">
         <div className="modal-cell">
-          <div class="icon icon-left" onClick={e => {e.stopPropagation();modalAction('prev')}}><i className="fas fa-caret-left"></i></div>
-          <div class="icon icon-right" onClick={e => {e.stopPropagation();modalAction('next')}}><i className="fas fa-caret-right"></i></div>
-          <div class="icon icon-close" onClick={() => setModalId('')}><i className="fa fa-times" aria-hidden="true"></i></div>
+          <div className="icon icon-left" onClick={e => {e.stopPropagation();modalAction('prev')}}><i className="fas fa-caret-left"></i></div>
+          <div className="icon icon-right" onClick={e => {e.stopPropagation();modalAction('next')}}><i className="fas fa-caret-right"></i></div>
+          <div className="icon icon-close" onClick={() => setModalId('')}><i className="fa fa-times" aria-hidden="true"></i></div>
           <img loading="lazy" alt='' src={record.image}></img>
           <div className="caption">
-            <h2>{record.album}</h2>
             <h3>{record.artist}</h3>
-            <p>{record.year}</p>
-            <p>{record.genre}</p>
-            <p>{record.speed} rpm</p>
+            <h2>{record.album}</h2>
+            <p className="record__year">{record.year}</p>
+            <p className="record__genre">{record.genre}</p>
+            <p className="record__speed">{record.speed} rpm</p>
           </div>
         </div>
       </div>

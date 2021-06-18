@@ -124,16 +124,47 @@
           width: 300px;
         }
 
-        h2, h3, p {
+        h2, h3, p { 
           display: block;
           margin: 3px 0px 6px;
         	text-align: left;
         	color: color.$text;
         }
 
+        // Album
+        h2 {
+          font-family: "Righteous";
+          font-size: 1.7rem;
+
+          @media (min-width: 1000px) {
+            font-size: 2rem;
+          }
+        }
+
+        // Artist
         h3 {
           font-weight: 400;
           font-size: 1.2rem;
+        }
+
+        .record__year {
+          // opacity: 0.8;
+          font-size: 1.1rem;
+          font-weight: 400;
+        }
+
+        .record__genre {
+          font-weight: 700;
+          font-size: .9rem;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+        }
+
+        .record__speed {
+          opacity: 0.5;
+          font-size: .9rem;
+          font-weight: bold;
+          text-transform: uppercase;
         }
       }
     }
