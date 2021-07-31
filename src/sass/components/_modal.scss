@@ -72,6 +72,10 @@
           @media (max-width: 1000px) {
             display: none;
           }
+
+          i {
+            margin-left: 10px;
+          }
         }
 
         .fa-caret-left, .fa-caret-right {
@@ -133,7 +137,7 @@
 
         // Album
         h2 {
-          font-family: "Righteous";
+          font-family: "Ubuntu";
           font-size: 1.7rem;
 
           @media (min-width: 1000px) {
