@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import ddata from './records.csv';
+import ddata from './records.json';
 
 function shuffle(arra1) {
     var ctr = arra1.length, temp, index;
