@@ -34,7 +34,7 @@
 
   }
 
-  &:hover {
+  &:hover, &:active {
     @include neumorph.neumorph-hover;
     box-shadow: 5px 5px 5px 3px #816700;
     transform: scale(1.01, 1.01);
@@ -42,7 +42,7 @@
   }
 
   &:active {
-    @include neumorph.neumorph-active;
+    // @include neumorph.neumorph-active;
   }
 
   h4, p {
