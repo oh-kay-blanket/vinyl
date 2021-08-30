@@ -9,7 +9,7 @@
 	top: 0;
 	width: 100vw; /* Full width */
 	height: 100vh; /* Full height */
-	background-color: color.$mustard;
+	background-color: #756f57dd;
 
   &:hover {
     cursor: pointer;
@@ -23,8 +23,6 @@
     position: relative;
 
     .modal-cell {
-      @include neumorph.neumorph;
-			background-color: color.$grey;
       margin: 0px 15px;
       padding: 15px;
     	display: flex;
@@ -35,30 +33,28 @@
 
       @media (min-width: 1000px) {
       	display: flex;
-        flex-direction: row;
+        flex-flow: row-reverse;
         justify-content: center;
         align-items: center;
       }
 
       .icon {
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 30px;
         height: 30px;
-        @include neumorph.neumorph;
-				background-color: color.$grey;
-        position: absolute;
+        color: color.$grey;
         z-index: 2;
         border-radius: 50%;
+        opacity: 1;
+        transition: opacity .25s;
 
         &:hover {
-          @include neumorph.neumorph-hover;
+          opacity: .8;
+          transition: opacity .25s;
         }
-
-				&:active {
-		      @include neumorph.neumorph-active;
-		    }
 
         &.icon-left {
           left: -65px;
@@ -80,8 +76,7 @@
 
         .fa-caret-left, .fa-caret-right {
           text-align: center;
-          color: color.$text;
-          font-size: 2rem;
+          font-size: 3rem;
         }
 
         &.icon-close {
@@ -89,22 +84,19 @@
           right: -45px;
 
           @media (max-width: 1000px) {
-						// top: -45px;
+						top: -25px;
             right: 0;
           }
 
           .fa-times {
-            font-size: 1.6rem;
-            color: color.$text;
+            font-size: 2rem;
           }
         }
       }
 
       /* IMAGE */
       img {
-        margin-bottom: 5px;
-        width: 80%;
-				box-shadow: 3px 3px 6px #342f1933, -3px -3px 15px #eeebdd;
+        width: 85vw;
         border-radius: 3px;
 
         @media (min-width: 1000px) {
@@ -114,31 +106,41 @@
 
       /* MODAL TEXT */
       .caption {
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        margin: auto;
-        max-height: 50vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 -75px 0;
+        padding: 20px;
         width: 80vw;
-        max-width: 550px;
+        height: 80vw;
         overflow-y: auto;
-
+        background-color: #222;
+        border: 5px solid #333;
+        border-radius: 50%;
+        z-index: -1;
+        
         @media (min-width: 1000px) {
-          margin-left: 10px;
-          width: 300px;
+          margin: 0 0 0 -100px;
+          width: 489px;
+          height: 489px;
         }
 
         h2, h3, p { 
           display: block;
-          margin: 3px 0px 6px;
-        	text-align: left;
-        	color: color.$text;
+          text-align: center;
+          margin: 3px 0px 4px;
+        	color: color.$grey;
+          
+          @media (min-width: 1000px) {
+            max-width: 60%;
+          }
         }
 
         // Album
         h2 {
-          font-family: "Ubuntu";
-          font-size: 1.7rem;
+          font-size: 1.5rem;
 
           @media (min-width: 1000px) {
             font-size: 2rem;
@@ -148,18 +150,19 @@
         // Artist
         h3 {
           font-weight: 400;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
+          line-height: 1.4;
         }
 
         .record__year {
-          // opacity: 0.8;
+          opacity: 0.8;
           font-size: 1.1rem;
-          font-weight: 400;
+          font-weight: 600;
         }
 
         .record__genre {
-          font-weight: 700;
-          font-size: .9rem;
+          // font-weight: 500;
+          font-size: .8rem;
           text-transform: uppercase;
           letter-spacing: 1.2px;
         }
@@ -167,8 +170,8 @@
         .record__speed {
           opacity: 0.5;
           font-size: .9rem;
-          font-weight: bold;
-          text-transform: uppercase;
+          // font-weight: bold;
+          // text-transform: uppercase;
         }
       }
     }

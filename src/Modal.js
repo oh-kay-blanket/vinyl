@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import GridBox from './Grid';
-import { handleSort, handleFilter, getQuote, getGrade, modalId, setModalId, buildModalFunctionality } from './AppFunctions.js';
+// import GridBox from './Grid';
+// import { handleSort, handleFilter, getQuote, getGrade, modalId, setModalId, buildModalFunctionality } from './AppFunctions.js';
 
 // Build 'images' var for development
 function importAll(r) {
@@ -99,13 +99,10 @@ const Modal = ({ data, modalId, setModalId }) => {
 
   }, [modalId]);
 
-
   record.image = imagesLarge[`${record.id}.jpg`];
 
-  console.log(record.genre);
-
   if(record.genre) {
-    record.genre = record.genre.replaceAll(", ", ' | ');
+    record.genre = record.genre.replaceAll(", ", ' / ');
   }
 
   return (
@@ -115,14 +112,14 @@ const Modal = ({ data, modalId, setModalId }) => {
           <div className="icon icon-left" onClick={e => {e.stopPropagation();modalAction('prev')}}><i className="fas fa-caret-left"></i></div>
           <div className="icon icon-right" onClick={e => {e.stopPropagation();modalAction('next')}}><i className="fas fa-caret-right"></i></div>
           <div className="icon icon-close" onClick={() => setModalId('')}><i className="fa fa-times" aria-hidden="true"></i></div>
-          <img loading="lazy" alt='' src={record.image}></img>
           <div className="caption">
-            <h3>{record.artist}</h3>
             <h2>{record.album}</h2>
-            <p className="record__year">{record.year}</p>
+            <h3>{record.artist}</h3>
             <p className="record__genre">{record.genre}</p>
+            <p className="record__year">{record.year}</p>
             <p className="record__speed">{record.speed} rpm</p>
           </div>
+          <img loading="lazy" alt='' src={record.image}></img>
         </div>
       </div>
     </div>
