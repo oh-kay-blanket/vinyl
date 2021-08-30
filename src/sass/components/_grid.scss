@@ -37,10 +37,12 @@
 
       .img{
         opacity: 0.5;
+        transition: opacity .25s;
     	}
 
       #record-info {
     	  opacity: 1;
+        transition: opacity .25s;
     	}
     }
   }
@@ -51,7 +53,7 @@
 	display: block;
   margin: auto;
   width: 100%;
-  transition: .25s ease;
+  transition: opacity .25s;
   box-shadow: 3px 3px 6px #997a00, -3px -3px 15px #e6b800;
   border-radius: 3px;
 }
@@ -73,7 +75,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 0px;
-    transition: .25s;
+    transition: opacity .25s;
     overflow: hidden;
   }
 
