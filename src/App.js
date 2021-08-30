@@ -23,6 +23,7 @@ const App = ({ rawData }) => {
   // Filter data
   // useEffect(() => { setData(handleFilter(data, filterType, filterInput)) }, [filterType, filterInput]);
 
+  // Set moving shadow
   useEffect(() => {
     const fixedColor = "#665200"
     const settings = {
@@ -49,6 +50,9 @@ const App = ({ rawData }) => {
     }
     movingShadow(settings);
   }, [])
+
+  // Body no scroll on modal
+  modalId === '' ? document.body.classList.remove('modal-open') : document.body.classList.add('modal-open');
 
   // Sort data
   // Run filter & sort
