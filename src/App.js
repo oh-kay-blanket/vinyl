@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import movingShadow from 'moving-shadow';
 
 import Filter from './Filter';
 import Sort from './Sort';
 import Grid from './Grid';
 import List from './List';
-import Modal from './Modal';
+import ModalSlick from './ModalSlick';
 import { handleFilter, handleSort, buildModalFunctionality } from './AppFunctions.js';
 
 const App = ({ rawData }) => {
@@ -62,6 +62,14 @@ const App = ({ rawData }) => {
   // Listen for ESC key close modal
   buildModalFunctionality(setModalId);
 
+  // Slick ref
+  const slider = useRef(null);
+
+  function handleRecordClick(index, id) {
+      setModalId(id);
+      slider.current.slickGoTo(index, true);
+  }
+
   return (
     <>
       <h1 className="title">vinyl</h1>
@@ -87,27 +95,22 @@ const App = ({ rawData }) => {
           </div>
         </div>
       </div>
+      <ModalSlick
+        data={data}
+        slider={slider}
+        handleRecordClick={handleRecordClick}
+        modalId={modalId}
+      />
       {gridView ?
         <Grid
           data={data}
-          modalId={modalId}
-          setModalId={setModalId}
+          handleRecordClick={handleRecordClick}
         /> :
         <List
           data={data}
-          modalId={modalId}
-          setModalId={setModalId}
+          handleRecordClick={handleRecordClick}
         />
       }
-
-      {modalId !== '' &&
-        <Modal
-          data={data}
-          modalId={modalId}
-          setModalId={setModalId}
-        />
-      }
-
     </>
   )
 }

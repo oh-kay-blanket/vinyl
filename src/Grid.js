@@ -1,5 +1,4 @@
-import React, {useState } from 'react';
-import { getQuote, getGrade, setModalId } from './AppFunctions.js';
+import React from 'react';
 
 // Build 'images' var for development
 function importAll(r) {
@@ -10,9 +9,9 @@ function importAll(r) {
 
 const imagesSmall = importAll(require.context('./img/250', false, /\.(jpe?g)$/));
 
-const GridBox = ({ data, modalId, setModalId }) => {
+const GridBox = ({ data, handleRecordClick }) => {
 
-  const recordList = data.map((record) => (<RecordCell key={record.id} record={record} setModalId={setModalId} />));
+  const recordList = data.map((record, index) => (<RecordCell key={record.id} index={index} record={record} handleRecordClick={handleRecordClick} />));
 
   return(
     <div className='record-grid'>
@@ -21,13 +20,13 @@ const GridBox = ({ data, modalId, setModalId }) => {
   );
 }
 
-const RecordCell = ({ record, setModalId }) => {
+const RecordCell = ({ index, record, handleRecordClick }) => {
 
   // Build image path
   record.image = imagesSmall[`${record.id}.jpg`];
 
   return(
-    <div className='main-box' onClick={() => setModalId(record.id)}>
+    <div className='main-box' onClick={() => handleRecordClick(index)}>
       <img className='img' loading="lazy" alt='' src={record.image}></img>
       <div id='record-info'>
         <h2 id="main-box-title">{record.album}</h2>

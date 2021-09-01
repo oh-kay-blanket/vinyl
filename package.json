@@ -35,7 +35,9 @@
     "moving-shadow": "^1.0.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-slick": "^0.28.1",
     "sass": "^1.26.10",
+    "slick-carousel": "^1.8.1",
     "update": "^0.7.4"
   }
 }

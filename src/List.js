@@ -10,9 +10,9 @@ function importAll(r) {
 
 const imagesSmall = importAll(require.context('./img/250', false, /\.(jpe?g)$/));
 
-const List = ({ data, modalId, setModalId }) => {
+const List = ({ data, handleRecordClick }) => {
 
-  const recordList = data.map((record) => (<RecordCell key={record.id} record={record} setModalId={setModalId} />));
+  const recordList = data.map((record, index) => (<RecordCell key={record.id} index={index} record={record} handleRecordClick={handleRecordClick} />));
 
   return(
     <div className='record-list'>
@@ -21,11 +21,11 @@ const List = ({ data, modalId, setModalId }) => {
   );
 }
 
-const RecordCell = ({ record, setModalId }) => {
+const RecordCell = ({ record, index, handleRecordClick }) => {
 
 
   return(
-    <div className="list-item" onClick={() => setModalId(record.id)}>
+    <div className="list-item" onClick={() => handleRecordClick(index)}>
         <p><span className="list-artist">{record.artist}</span> - {record.album}</p>
     </div>
   );

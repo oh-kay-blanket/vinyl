@@ -7,6 +7,7 @@ body {
   font-size: 16px;
   font-family: "Roboto", 'Open Sans', Sans;
   background-color: color.$mustard;
+  box-sizing: border-box;
 
   &.modal-open {
     overflow: hidden;
