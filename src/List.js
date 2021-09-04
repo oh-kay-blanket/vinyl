@@ -1,14 +1,4 @@
-import React, {useState } from 'react';
-import { getQuote, getGrade, setModalId } from './AppFunctions.js';
-
-// Build 'images' var for development
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
-
-const imagesSmall = importAll(require.context('./img/250', false, /\.(jpe?g)$/));
+import React from 'react';
 
 const List = ({ data, handleRecordClick }) => {
 
@@ -26,7 +16,7 @@ const RecordCell = ({ record, index, handleRecordClick }) => {
 
   return(
     <div className="list-item" onClick={() => handleRecordClick(index)}>
-        <p><span className="list-artist">{record.artist}</span> - {record.album}</p>
+        <p><span className="list-artist">{record.basic_information.artists[0].name}</span> - {record.basic_information.title}</p>
     </div>
   );
 }

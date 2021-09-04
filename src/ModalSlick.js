@@ -75,18 +75,15 @@ const ModalCell = ({ record, setModalId }) => {
 
     record.image = imagesLarge[`${record.id}.jpg`];
 
-    if(record.genre) {
-        record.genre = record.genre.replaceAll(", ", ' / ');
-    }
+    const styles = record.basic_information.styles.join(" / ");
   
     return(
         <div className="modal-cell">
             <div className="caption">
-                <h2>{record.album}</h2>
-                <h3>{record.artist}</h3>
-                <p className="record__genre">{record.genre}</p>
-                <p className="record__year">{record.year}</p>
-                <p className="record__speed">{record.speed} rpm</p>
+                <h3>{record.basic_information.artists[0].name}</h3>
+                <h2>{record.basic_information.title}</h2>
+                <p className="record__genre">{styles}</p>
+                <p className="record__year">{record.basic_information.year}</p>
             </div>
             <img loading="lazy" alt='' src={record.image}></img>
         </div>

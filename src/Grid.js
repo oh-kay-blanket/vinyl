@@ -29,8 +29,8 @@ const RecordCell = ({ index, record, handleRecordClick }) => {
     <div className='main-box' onClick={() => handleRecordClick(index)}>
       <img className='img' loading="lazy" alt='' src={record.image}></img>
       <div id='record-info'>
-        <h2 id="main-box-title">{record.album}</h2>
-        <h3>{record.artist}</h3>
+        <h2 id="main-box-title">{record.basic_information.artists[0].name}</h2> 
+        <h3>{record.basic_information.title}</h3>
       </div>
     </div>
   );
