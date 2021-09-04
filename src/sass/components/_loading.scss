@@ -1,0 +1,11 @@
+@use 'base/color';
+
+.loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+    i {
+        color: color.$text;
+    }
+}

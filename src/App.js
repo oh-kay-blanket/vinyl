@@ -5,6 +5,7 @@ import Filter from './Filter';
 import Sort from './Sort';
 import Grid from './Grid';
 import List from './List';
+import Loading from './Loading';
 import ModalSlick from './ModalSlick';
 import { handleFilter, handleSort, buildModalFunctionality } from './AppFunctions.js';
 
@@ -16,7 +17,7 @@ const App = () => {
     const [data, setData] = useState([]);
     const [filterType, setFilterType] = useState('artist');
     const [filterInput, setFilterInput] = useState('');
-    const [sortDirection, setSortDirection] = useState('art-asc');
+    const [sort, setSort] = useState('sort=artist&sort_order=asc');
     const [modalId, setModalId] = useState('');
     const [gridView, setGridView] = useState(true);
     const [loading, setLoading] = useState(true);
@@ -54,10 +55,12 @@ const App = () => {
 
     // DISCOGS
     useEffect(() => {
-        fetch('https://api.discogs.com/users/misterblanket/collection/folders/0/releases', {
+        setLoading(true);
+
+        fetch(`https://api.discogs.com/users/misterblanket/collection/folders/0/releases?${sort}&page=1&per_page=1`, {
 			Accept: 'application/json',
 			'Content-Type': 'application/json',
-			'User-Agent': 'misterblanket-vinyl-app' // <---
+			'User-Agent': 'misterblanket-vinyl-app'
         })
         .then(response => response.json())
         .then(response => {
@@ -69,7 +72,7 @@ const App = () => {
         .finally(() => {
 			setLoading(false);
         })
-    }, []);
+    }, [sort]);
 
     console.log(data);
 
@@ -87,9 +90,32 @@ const App = () => {
     // Slick ref
     const slider = useRef(null);
 
+    // Click on record
     function handleRecordClick(index, id) {
 		setModalId(id);
 		slider.current.slickGoTo(index, true);
+    }
+
+    // Keypress listen
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyPress);
+
+        return () => {
+        document.removeEventListener('keydown', handleKeyPress);
+        };
+
+    }, [modalId]);
+
+    // Arrow Keys
+    const handleKeyPress = e => {
+        if (e.keyCode === 37) {
+            slider.current.slickPrev();
+        }
+
+        // Forward
+        if (e.keyCode === 39) {
+            slider.current.slickNext();
+        }
     }
 
     return (
@@ -104,8 +130,8 @@ const App = () => {
                 />
                 <Sort
                     data={data}
-                    sortDirection={sortDirection}
-                    setSortDirection={setSortDirection}
+                    sort={sort}
+                    setSort={setSort}
                 />
                 <div className="display-select">
                     <div className={gridView && `active`} onClick={() => setGridView(true)}>
@@ -123,15 +149,16 @@ const App = () => {
                 handleRecordClick={handleRecordClick}
                 modalId={modalId}
             />
-            {gridView ?
-                <Grid
-                    data={data}
-                    handleRecordClick={handleRecordClick}
-                /> :
-                <List
-                    data={data}
-                    handleRecordClick={handleRecordClick}
-                />
+            {loading ? <Loading /> :
+                gridView ?
+                    <Grid
+                        data={data}
+                        handleRecordClick={handleRecordClick}
+                    /> :
+                    <List
+                        data={data}
+                        handleRecordClick={handleRecordClick}
+                    />
             }
         </>
     )

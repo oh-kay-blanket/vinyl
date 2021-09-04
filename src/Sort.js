@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Sort = ({ setSortDirection }) => {
+const Sort = ({ setSort }) => {
 
   return (
     <div className='sort-box'>
       <p>
       <i className="fas fa-sort"></i>
-        <select onChange={e => setSortDirection(e.target.value)}>
-          <option value='art-asc'>A-Z</option>
-          <option value='art-dsc'>Z-A</option>
-          <option value='yr-asc'>Year (asc)</option>
-          <option value='yr-dsc'>Year (dsc)</option>
-          <option value='alb-rnd'>Random</option>
+        <select onChange={e => setSort(e.target.value)}>
+          <option value='sort=artist'>Artist</option>
+          <option value='sort=title'>Album</option>
+          <option value='sort=year'>Year (asc)</option>
+          <option value='sort=year&sort_order=desc'>Year (dsc)</option>
         </select>
       </p>
     </div>
