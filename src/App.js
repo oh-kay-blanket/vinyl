@@ -8,6 +8,14 @@ import List from './List';
 import ModalSlick from './ModalSlick';
 import { handleFilter, handleSort, buildModalFunctionality } from './AppFunctions.js';
 
+import getReleases from './DiscogsAPI';
+
+try {
+  getReleases();
+} catch(err) {
+  console.log(err);
+}
+
 const App = ({ rawData }) => {
 
   let data = rawData.slice();
