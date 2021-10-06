@@ -57,7 +57,7 @@ const App = () => {
     useEffect(() => {
         setLoading(true);
 
-        fetch(`https://api.discogs.com/users/misterblanket/collection/folders/0/releases?${sort}&page=1&per_page=1`, {
+        fetch(`https://api.discogs.com/users/misterblanket/collection/folders/0/releases?${sort}&page=1&per_page=75`, {
 			Accept: 'application/json',
 			'Content-Type': 'application/json',
 			'User-Agent': 'misterblanket-vinyl-app'

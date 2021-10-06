@@ -7,7 +7,7 @@ function importAll(r) {
   return images;
 }
 
-const imagesSmall = importAll(require.context('./img/250', false, /\.(jpe?g)$/));
+const imagesSmall = importAll(require.context('./img/600', false, /\.(jpe?g)$/));
 
 const GridBox = ({ data, handleRecordClick }) => {
 
