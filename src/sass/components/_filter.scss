@@ -22,7 +22,7 @@ input{
   padding: 10px 10px;
   font-size: 1rem;
   color: color.$text;
-  background-color: color.$mustard;
+  // background-color: color.$mustard;
 
   @media (min-width: 1000px) {
     justify-content: center;
@@ -36,7 +36,7 @@ input{
     padding-left: 0px;
     margin-right: 5px;
     color: color.$text;
-    background-color: color.$grey;
+    background-color: color.$mustard;
     font-weight: bold;
     font-size: 1rem;
     border: none;
@@ -46,8 +46,8 @@ input{
 // FILTER & SORT BOX
 .filter-box, .sort-box {
   margin: 5px;
-  @include neumorph.neumorph;
-  background-color: color.$grey;
+  // @include neumorph.neumorph;
+  // background-color: color.$grey;
 
   p {
     margin: 5px;
@@ -89,15 +89,15 @@ input{
     width: 36px;
     height: 36px;
     font-size: 1.7rem;
-    @include neumorph.neumorph;
-    background-color: color.$grey;
+    // @include neumorph.neumorph;
+    // background-color: color.$grey;
 
     &:hover {
-      @include neumorph.neumorph-hover;
+      // @include neumorph.neumorph-hover;
     }
 
     &:active {
-      @include neumorph.neumorph-active;
+      // @include neumorph.neumorph-active;
     }
 
     &:focus {
@@ -105,11 +105,11 @@ input{
     }
 
     &.active {
-      @include neumorph.neumorph-active;
+      // @include neumorph.neumorph-active;
 
 
       &:hover {
-        @include neumorph.neumorph-active;
+        // @include neumorph.neumorph-active;
       }
 
       i {
@@ -118,7 +118,7 @@ input{
     }
 
     i {
-      color: #8a815c;
+      color: #635932;
     }
   }
 }

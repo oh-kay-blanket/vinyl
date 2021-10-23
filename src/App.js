@@ -7,6 +7,7 @@ import Grid from './Grid';
 import List from './List';
 import Loading from './Loading';
 import ModalSlick from './ModalSlick';
+import Pagination from './Pagination';
 import { handleFilter, handleSort, buildModalFunctionality } from './AppFunctions.js';
 
 import getReleases from './DiscogsAPI';
@@ -21,6 +22,8 @@ const App = () => {
     const [modalId, setModalId] = useState('');
     const [gridView, setGridView] = useState(true);
     const [loading, setLoading] = useState(true);
+    const [pagination, setPagination] = useState("");
+    const [fetchURL, setfetchURL] = useState("");
 
     // Filter data
     // useEffect(() => { setData(handleFilter(data, filterType, filterInput)) }, [filterType, filterInput]);
@@ -50,14 +53,16 @@ const App = () => {
                 -6px 11px 0px ${fixedColor},
                 -7px 12px 0px ${fixedColor}`,    // "5px 5px #555" to include an optional fixed shadow
         }
-        movingShadow(settings);
+        // movingShadow(settings);
     }, [])
 
     // DISCOGS
     useEffect(() => {
         setLoading(true);
 
-        fetch(`https://api.discogs.com/users/misterblanket/collection/folders/0/releases?${sort}&page=1&per_page=75`, {
+        const callURL = fetchURL === "" ? "https://api.discogs.com/users/misterblanket/collection/folders/0/releases?page=1&per_page=75" : fetchURL;
+
+        fetch(`${callURL}&${sort}`, {
 			Accept: 'application/json',
 			'Content-Type': 'application/json',
 			'User-Agent': 'misterblanket-vinyl-app'
@@ -65,6 +70,7 @@ const App = () => {
         .then(response => response.json())
         .then(response => {
 			setData(response.releases);
+            setPagination(response.pagination);
         })
         .catch(error => {
 			console.error(error);
@@ -72,9 +78,9 @@ const App = () => {
         .finally(() => {
 			setLoading(false);
         })
-    }, [sort]);
+    }, [sort, fetchURL]);
 
-    console.log(data);
+    // console.log(data);
 
     // Body no scroll on modal
     modalId === '' ? document.body.classList.remove('modal-open') : document.body.classList.add('modal-open');
@@ -122,17 +128,7 @@ const App = () => {
         <>
             <h1 className="title">vinyl</h1>
             <div className='functions-box'>
-                <Filter
-                    filterType={filterType}
-                    setFilterType={setFilterType}
-                    filterInput={filterInput}
-                    setFilterInput={setFilterInput}
-                />
-                <Sort
-                    data={data}
-                    sort={sort}
-                    setSort={setSort}
-                />
+            
                 <div className="display-select">
                     <div className={gridView && `active`} onClick={() => setGridView(true)}>
                         <i className="fa fa-th-large"></i>
@@ -160,8 +156,28 @@ const App = () => {
                         handleRecordClick={handleRecordClick}
                     />
             }
+            {!loading && 
+                <Pagination
+                    pagination={pagination}
+                    setPagination={setPagination}
+                    fetchURL={fetchURL}
+                    setfetchURL={setfetchURL}
+                />
+            }
         </>
     )
 }
+
+{/* <Filter
+filterType={filterType}
+setFilterType={setFilterType}
+filterInput={filterInput}
+setFilterInput={setFilterInput}
+/>
+<Sort
+data={data}
+sort={sort}
+setSort={setSort}
+/> */}
 
 export default App;

@@ -23,7 +23,7 @@ h1 {
   line-height: 1;
   text-align: center;
   background-color: color.$mustard;
-  color: color.$grey;
+  color: color.$mustard;
   text-shadow:
     -1px 1px 0px color.$mustard-dark,
     -1px 2px 0px color.$mustard-dark,
@@ -36,7 +36,22 @@ h1 {
     -5px 9px 0px color.$mustard-dark,
     -5px 10px 0px color.$mustard-dark,
     -6px 11px 0px color.$mustard-dark,
-    -7px 12px 0px color.$mustard-dark;
+    -7px 12px 0px color.$mustard-dark,
+    -8px 13px 0px color.$mustard-shadow,
+    -9px 14px 0px color.$mustard-shadow,
+    -10px 15px 0px color.$mustard-shadow,
+    -11px 16px 0px color.$mustard-shadow,
+    -12px 17px 0px color.$mustard-shadow,
+    -13px 18px 0px color.$mustard-shadow,
+    -14px 19px 0px color.$mustard-shadow,
+    -15px 20px 0px color.$mustard-shadow,
+    -16px 21px 0px color.$mustard-shadow,
+    -17px 22px 0px color.$mustard-shadow,
+    -18px 23px 0px color.$mustard-shadow,
+    -19px 24px 0px color.$mustard-shadow,
+    -20px 25px 0px color.$mustard-shadow,
+    -21px 26px 0px color.$mustard-shadow,
+    -22px 27px 0px color.$mustard-shadow;
 
     @media (min-width: 1000px) {
         font-size: 14rem;

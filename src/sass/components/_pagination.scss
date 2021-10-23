@@ -1,0 +1,14 @@
+@use 'base/color';
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    color: color.$mustard-dark;
+    
+    i {
+        margin: 0 .4em;
+        font-size: 1.6rem;
+    }
+}
