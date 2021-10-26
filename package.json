@@ -31,10 +31,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "disconnect": "^1.2.2",
     "lodash.merge": "^4.6.2",
     "moving-shadow": "^1.0.9",
-    "querystring": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-slick": "^0.28.1",
