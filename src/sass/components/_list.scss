@@ -1,4 +1,4 @@
-@use 'base/color';
+@use 'base/color' as *;
 @use 'mixins/neumorph';
 
 /* LIST */
@@ -18,9 +18,9 @@
   max-width: 600px;
   cursor: pointer;
   @include neumorph.neumorph;
-  box-shadow: 3px 3px 6px #806600, -1px -1px 6px #e6b800aa;
+  box-shadow: -6px 4px 4px $primary-dark;
   padding: 7px;
-  background-color: color.$grey;
+  background-color: $white;
 
   @media (min-width: 545px) {
     justify-content: center;
@@ -36,7 +36,7 @@
 
   &:hover, &:active {
     @include neumorph.neumorph-hover;
-    box-shadow: 5px 5px 5px 3px #816700;
+    box-shadow: -5px 5px 5px 3px $primary-dark;;
     transform: scale(1.01, 1.01);
     width: 90.5%;
   }
@@ -48,15 +48,11 @@
   h4, p {
     margin: 1px auto;
     padding: 0px;
-    color: color.$text;
+    color: $text-dark;
     text-align: center;
 
     @media (min-width: 1200px) {
       margin: 0px;
     }
-  }
-
-  .list-artist {
-    font-family: "Righteous", 'Open Sans', Sans;
   }
 }

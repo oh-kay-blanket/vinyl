@@ -6,7 +6,7 @@ body {
   margin: 0px;
   font-size: 16px;
   font-family: "Roboto", 'Open Sans', Sans;
-  background-color: color.$mustard;
+  background-color: color.$primary;
   box-sizing: border-box;
 
   &.modal-open {
@@ -22,36 +22,36 @@ h1 {
   font-weight: 800;
   line-height: 1;
   text-align: center;
-  background-color: color.$mustard;
-  color: color.$mustard;
+  background-color: color.$primary;
+  color: color.$primary;
   text-shadow:
-    -1px 1px 0px color.$mustard-dark,
-    -1px 2px 0px color.$mustard-dark,
-    -2px 3px 0px color.$mustard-dark,
-    -2px 4px 0px color.$mustard-dark,
-    -3px 5px 0px color.$mustard-dark,
-    -3px 6px 0px color.$mustard-dark,
-    -4px 7px 0px color.$mustard-dark,
-    -4px 8px 0px color.$mustard-dark,
-    -5px 9px 0px color.$mustard-dark,
-    -5px 10px 0px color.$mustard-dark,
-    -6px 11px 0px color.$mustard-dark,
-    -7px 12px 0px color.$mustard-dark,
-    -8px 13px 0px color.$mustard-shadow,
-    -10px 14px 0px color.$mustard-shadow,
-    -12px 15px 0px color.$mustard-shadow,
-    -14px 16px 0px color.$mustard-shadow,
-    -16px 17px 0px color.$mustard-shadow,
-    -18px 18px 0px color.$mustard-shadow,
-    -20px 19px 0px color.$mustard-shadow,
-    -22px 20px 0px color.$mustard-shadow,
-    -24px 21px 0px color.$mustard-shadow,
-    -26px 22px 0px color.$mustard-shadow,
-    -28px 23px 0px color.$mustard-shadow,
-    -30px 24px 0px color.$mustard-shadow,
-    -32px 25px 0px color.$mustard-shadow,
-    -34px 26px 0px color.$mustard-shadow,
-    -36px 27px 0px color.$mustard-shadow;
+    -1px 1px 0px color.$white,
+    -1px 2px 0px color.$white,
+    -2px 3px 0px color.$white,
+    -2px 4px 0px color.$white,
+    -3px 5px 0px color.$white,
+    -3px 6px 0px color.$white,
+    -4px 7px 0px color.$white,
+    -4px 8px 0px color.$white,
+    -5px 9px 0px color.$white,
+    -5px 10px 0px color.$white,
+    -6px 11px 0px color.$white,
+    -7px 12px 0px color.$white,
+    -8px 13px 0px color.$primary-v-dark,
+    -10px 14px 0px color.$primary-v-dark,
+    -12px 15px 0px color.$primary-v-dark,
+    -14px 16px 0px color.$primary-v-dark,
+    -16px 17px 0px color.$primary-v-dark,
+    -18px 18px 0px color.$primary-v-dark,
+    -20px 19px 0px color.$primary-v-dark,
+    -22px 20px 0px color.$primary-v-dark,
+    -24px 21px 0px color.$primary-v-dark,
+    -26px 22px 0px color.$primary-v-dark,
+    -28px 23px 0px color.$primary-v-dark,
+    -30px 24px 0px color.$primary-v-dark,
+    -32px 25px 0px color.$primary-v-dark,
+    -34px 26px 0px color.$primary-v-dark,
+    -36px 27px 0px color.$primary-v-dark;
 
     @media (min-width: 1000px) {
         font-size: 14rem;

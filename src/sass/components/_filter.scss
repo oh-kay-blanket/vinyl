@@ -22,7 +22,7 @@ input{
   padding: 10px 10px;
   font-size: 1rem;
   color: color.$text;
-  // background-color: color.$mustard;
+  // background-color: color.$primary;
 
   @media (min-width: 1000px) {
     justify-content: center;
@@ -36,7 +36,7 @@ input{
     padding-left: 0px;
     margin-right: 5px;
     color: color.$text;
-    background-color: color.$mustard;
+    background-color: color.$primary;
     font-weight: bold;
     font-size: 1rem;
     border: none;
@@ -46,8 +46,6 @@ input{
 // FILTER & SORT BOX
 .filter-box, .sort-box {
   margin: 5px;
-  // @include neumorph.neumorph;
-  // background-color: color.$grey;
 
   p {
     margin: 5px;
@@ -64,6 +62,7 @@ input{
     width: 120px;
     border: 0px;
     border-bottom: 1px solid;
+    color: color.$text;
 
     &:focus {
       outline: none;
@@ -89,36 +88,19 @@ input{
     width: 36px;
     height: 36px;
     font-size: 1.7rem;
-    // @include neumorph.neumorph;
-    // background-color: color.$grey;
-
-    &:hover {
-      // @include neumorph.neumorph-hover;
-    }
-
-    &:active {
-      // @include neumorph.neumorph-active;
-    }
 
     &:focus {
       outline: none;
     }
 
     &.active {
-      // @include neumorph.neumorph-active;
-
-
-      &:hover {
-        // @include neumorph.neumorph-active;
-      }
-
       i {
-        color: color.$mustard-dark;
+        color: color.$white;
       }
     }
 
     i {
-      color: #635932;
+      color: color.$primary-v-light;
     }
   }
 }

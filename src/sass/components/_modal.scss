@@ -1,4 +1,4 @@
-@use 'base/color';
+@use 'base/color' as *;
 @use 'mixins/neumorph';
 /* MODAL */
 
@@ -9,7 +9,7 @@
 	top: 0;
 	width: 100vw; /* Full width */
 	height: 100vh; /* Full height */
-	background-color: #756f57dd;
+	background-color: $primary-v-light;
 
   &:hover {
     cursor: pointer;
@@ -45,7 +45,7 @@
         align-items: center;
         width: 30px;
         height: 30px;
-        color: color.$grey;
+        color: $text-white;
         z-index: 2;
         border-radius: 50%;
         opacity: 1;
@@ -131,7 +131,7 @@
           display: block;
           text-align: center;
           margin: 3px 0px 4px;
-        	color: color.$grey;
+        	color: $text-white;
           
           @media (min-width: 1000px) {
             max-width: 60%;
