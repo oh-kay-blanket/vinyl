@@ -20,37 +20,6 @@ const App = ({ rawData }) => {
   const [modalId, setModalId] = useState('');
   const [gridView, setGridView] = useState(true);
 
-  // Filter data
-  // useEffect(() => { setData(handleFilter(data, filterType, filterInput)) }, [filterType, filterInput]);
-
-  // Set moving shadow
-  useEffect(() => {
-    const fixedColor = "#665200"
-    const settings = {
-      shadowType:   "shadow", // "shadow", "dropShadow"
-      selector:     ".title", // tag, class, or id to apply shadow to
-      angle:        20, // height of view source. Should be between 10 - 100
-      diffusion:    0, // blur-radius
-      color:        "#997a00", // shadow-color
-      xOffset:      -7, // X offset value, set to max fixedShadow x offset
-      yOffset:      12, // Y offset value, set to max fixedShadow y offset
-      fixedShadow:  `
-        -1px 1px 0px ${fixedColor},
-        -1px 2px 0px ${fixedColor},
-        -2px 3px 0px ${fixedColor},
-        -2px 4px 0px ${fixedColor},
-        -3px 5px 0px ${fixedColor},
-        -3px 6px 0px ${fixedColor},
-        -4px 7px 0px ${fixedColor},
-        -4px 8px 0px ${fixedColor},
-        -5px 9px 0px ${fixedColor},
-        -5px 10px 0px ${fixedColor},
-        -6px 11px 0px ${fixedColor},
-        -7px 12px 0px ${fixedColor}`,  // "5px 5px #555" to include an optional fixed shadow
-    }
-    movingShadow(settings);
-  }, [])
-
   // Body no scroll on modal
   modalId === '' ? document.body.classList.remove('modal-open') : document.body.classList.add('modal-open');
 
