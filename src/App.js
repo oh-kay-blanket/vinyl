@@ -128,6 +128,12 @@ const App = () => {
         <>
             <h1 className="title">vinyl</h1>
             <div className='functions-box'>
+
+            <Sort
+                data={data}
+                sort={sort}
+                setSort={setSort}
+            />
             
                 <div className="display-select">
                     <div className={gridView && `active`} onClick={() => setGridView(true)}>
@@ -174,10 +180,6 @@ setFilterType={setFilterType}
 filterInput={filterInput}
 setFilterInput={setFilterInput}
 />
-<Sort
-data={data}
-sort={sort}
-setSort={setSort}
-/> */}
+ */}
 
 export default App;
