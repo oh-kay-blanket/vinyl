@@ -1,14 +1,21 @@
-@use 'base/color';
+@use 'base/color' as *;
 
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2rem 0;
-    color: color.$primary-dark;
-    
-    i {
+    padding: 0;
+    color: $text;
+
+    li {
+        display: inline;
         margin: 0 .4em;
-        font-size: 1.6rem;
+        cursor: pointer;
+
+        &.selected {
+            font-weight: 800;
+            font-size: 1.3rem;
+        }
     }
 }

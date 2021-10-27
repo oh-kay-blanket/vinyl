@@ -19,6 +19,7 @@ function shuffle(arra1) {
     }
     return arra1;
 }
+
 const rawData = shuffle(ddata);
 // rawData.sort(function(a, b){return 0.5 - Math.random()});
 

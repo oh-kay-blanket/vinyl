@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import movingShadow from 'moving-shadow';
+import ReactPaginate from 'react-paginate';
 
 import Filter from './Filter';
 import Sort from './Sort';
@@ -19,24 +19,45 @@ const App = ({ rawData }) => {
   const [sortDirection, setSortDirection] = useState('art-asc');
   const [modalId, setModalId] = useState('');
   const [gridView, setGridView] = useState(true);
+  const [currentItems, setCurrentItems] = useState(data);
+  const [pageCount, setPageCount] = useState(0);
+  const [itemOffset, setItemOffset] = useState(0);
+  const itemsPerPage = 50;
 
   // Body no scroll on modal
   modalId === '' ? document.body.classList.remove('modal-open') : document.body.classList.add('modal-open');
 
-  // Sort data
-  // Run filter & sort
+  // Filter & sort
   data = handleFilter(data, filterType, filterInput);
   handleSort(data, sortDirection);
+  
+  // Pagination
+  useEffect(() => {
+    const endOffset = itemOffset + itemsPerPage;
+    console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+    setCurrentItems(data.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(data.length / itemsPerPage));
+  }, [itemOffset, itemsPerPage, sortDirection, filterType, filterInput]);
+
+  // Invoke when user click to request another page.
+  const handlePaginationClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % data.length;
+    console.log(
+      `User requested page number ${event.selected}, which is offset ${newOffset}`
+    );
+    setItemOffset(newOffset);
+  };
 
   // Listen for ESC key close modal
   buildModalFunctionality(setModalId);
 
   // Slick ref
   const slider = useRef(null);
-
+  
+  // Open Modal
   function handleRecordClick(index, id) {
-      setModalId(id);
-      slider.current.slickGoTo(index, true);
+    setModalId(id);
+    slider.current.slickGoTo(index, true);
   }
 
   return (
@@ -72,14 +93,25 @@ const App = ({ rawData }) => {
       />
       {gridView ?
         <Grid
-          data={data}
+          data={currentItems}
           handleRecordClick={handleRecordClick}
         /> :
         <List
-          data={data}
+          data={currentItems}
           handleRecordClick={handleRecordClick}
         />
       }
+      <ReactPaginate
+        breakLabel="..."
+        nextLabel="next >"
+        onPageChange={handlePaginationClick}
+        pageRangeDisplayed={2}
+        marginPagesDisplayed={2}
+        pageCount={pageCount}
+        previousLabel="< previous"
+        renderOnZeroPageCount={null}
+        className="pagination"
+      />
     </>
   )
 }
