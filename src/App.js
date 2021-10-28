@@ -22,7 +22,7 @@ const App = ({ rawData }) => {
   const [currentItems, setCurrentItems] = useState(data);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 50;
+  const itemsPerPage = 40;
 
   // Body no scroll on modal
   modalId === '' ? document.body.classList.remove('modal-open') : document.body.classList.add('modal-open');
@@ -37,7 +37,15 @@ const App = ({ rawData }) => {
     console.log(`Loading items from ${itemOffset} to ${endOffset}`);
     setCurrentItems(data.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(data.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage, sortDirection, filterType, filterInput]);
+  }, [itemOffset, itemsPerPage]);
+
+  useEffect(() => {
+    setItemOffset(0);
+    const endOffset = itemOffset + itemsPerPage;
+    console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+    setCurrentItems(data.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(data.length / itemsPerPage));
+  }, [sortDirection, filterType, filterInput]);
 
   // Invoke when user click to request another page.
   const handlePaginationClick = (event) => {
@@ -85,8 +93,9 @@ const App = ({ rawData }) => {
           </div>
         </div>
       </div>
+      
       <ModalSlick
-        data={data}
+        data={currentItems}
         slider={slider}
         handleRecordClick={handleRecordClick}
         modalId={modalId}
@@ -103,12 +112,12 @@ const App = ({ rawData }) => {
       }
       <ReactPaginate
         breakLabel="..."
-        nextLabel="next >"
+        nextLabel=">"
         onPageChange={handlePaginationClick}
-        pageRangeDisplayed={2}
-        marginPagesDisplayed={2}
+        pageRangeDisplayed={0}
+        marginPagesDisplayed={1}
         pageCount={pageCount}
-        previousLabel="< previous"
+        previousLabel="<"
         renderOnZeroPageCount={null}
         className="pagination"
       />

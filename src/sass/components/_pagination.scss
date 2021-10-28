@@ -8,6 +8,10 @@
     padding: 0;
     color: $text;
 
+    .next, .previous {
+        font-size: 1.3rem;
+    }
+
     li {
         display: inline;
         margin: 0 .4em;
