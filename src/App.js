@@ -5,7 +5,7 @@ import Filter from './Filter';
 import Sort from './Sort';
 import Grid from './Grid';
 import List from './List';
-import ModalSlick from './ModalSlick';
+import ModalSlick from './ModalSlick'; 
 import { handleFilter, handleSort, buildModalFunctionality } from './AppFunctions.js';
 
 const App = ({ rawData }) => {

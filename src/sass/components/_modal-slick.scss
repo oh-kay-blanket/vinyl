@@ -22,10 +22,6 @@
     }
 
     .modal-table {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // align-content: center;
         width: 100vw;
         position: relative;
 
@@ -74,8 +70,8 @@
             z-index: 1;
 
             &:hover {
-            opacity: .8;
-            transition: opacity .25s;
+                opacity: .8;
+                transition: opacity .25s;
             }
 
             &.icon-close {
@@ -96,11 +92,11 @@
         .modal-cell {
             position: relative;
             display: flex;
-            margin: 0px 15px;
-            padding: 15px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin: 0px 15px;
+            padding: 15px;
 
             @media (min-width: 1000px) {
                 display: flex;
@@ -115,7 +111,7 @@
                 border-radius: 3px;
 
                 @media (min-width: 1000px) {
-                width: 500px;
+                    width: 500px;
                 }
             }
 
