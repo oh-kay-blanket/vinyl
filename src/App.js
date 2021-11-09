@@ -22,7 +22,7 @@ const App = ({ rawData }) => {
   const [currentItems, setCurrentItems] = useState(data);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 40;
+  const itemsPerPage = 75;
 
   // Body no scroll on modal
   modalId === '' ? document.body.classList.remove('modal-open') : document.body.classList.add('modal-open');
