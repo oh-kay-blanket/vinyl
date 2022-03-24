@@ -18,9 +18,9 @@
   max-width: 600px;
   cursor: pointer;
   @include neumorph.neumorph;
-  box-shadow: -6px 4px 4px $primary-dark;
+  box-shadow: -6px 4px 4px $shadow;
   padding: 7px;
-  background-color: $white;
+  background-color: $shadow;
 
   @media (min-width: 545px) {
     justify-content: center;
@@ -36,7 +36,7 @@
 
   &:hover, &:active {
     @include neumorph.neumorph-hover;
-    box-shadow: -5px 5px 5px 3px $primary-dark;;
+    box-shadow: -5px 5px 5px 3px $primary-v-light;
     transform: scale(1.01, 1.01);
     width: 90.5%;
   }
@@ -48,7 +48,7 @@
   h4, p {
     margin: 1px auto;
     padding: 0px;
-    color: $text-dark;
+    // color: $text-dark;
     text-align: center;
 
     @media (min-width: 1200px) {
