@@ -16,7 +16,7 @@ const App = ({ rawData }) => {
   // const [data, setData] = useState(rawData.slice());
   const [filterType, setFilterType] = useState('artist');
   const [filterInput, setFilterInput] = useState('');
-  const [sortDirection, setSortDirection] = useState('art-asc');
+  const [sortDirection, setSortDirection] = useState('rnd');
   const [modalId, setModalId] = useState('');
   const [gridView, setGridView] = useState(true);
   const [currentItems, setCurrentItems] = useState(data);
@@ -54,6 +54,7 @@ const App = ({ rawData }) => {
       `User requested page number ${event.selected}, which is offset ${newOffset}`
     );
     setItemOffset(newOffset);
+    window.scrollTo({top: 0, behavior: 'smooth'});
   };
 
   // Listen for ESC key close modal
@@ -112,12 +113,12 @@ const App = ({ rawData }) => {
       }
       <ReactPaginate
         breakLabel="..."
-        nextLabel=">"
+        nextLabel="▶"
         onPageChange={handlePaginationClick}
         pageRangeDisplayed={0}
         marginPagesDisplayed={1}
         pageCount={pageCount}
-        previousLabel="<"
+        previousLabel="◀"
         renderOnZeroPageCount={null}
         className="pagination"
       />

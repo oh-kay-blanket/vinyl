@@ -20,6 +20,12 @@ const albumRandom = data => {
 }
 
 const artistAsc = data => {
+
+  // First sort by year
+  data.sort(function(a,b) {
+    return a.year - b.year;
+  });
+
   // sort results
   data.sort(function(a,b) {
     if(a.artist < b.artist) { return -1; }
@@ -29,6 +35,12 @@ const artistAsc = data => {
 }
 
 const artistDsc = data => {
+
+  // First sort by year
+  data.sort(function(a,b) {
+    return a.year - b.year;
+  });
+
   // sort results
   data.sort(function(a,b) {
     if(b.artist < a.artist) { return -1; }
@@ -38,6 +50,14 @@ const artistDsc = data => {
 }
 
 const yrAsc = data => {
+
+  // Fist sort by artist
+  data.sort(function(a,b) {
+    if(a.artist < b.artist) { return -1; }
+    if(a.artist > b.artist) { return 1; }
+    return 0;
+  });
+
   // sort results
   data.sort(function(a,b) {
     return a.year - b.year;
@@ -45,6 +65,14 @@ const yrAsc = data => {
 }
 
 const yrDsc = data => {
+
+  // Fist sort by artist
+  data.sort(function(a,b) {
+    if(a.artist < b.artist) { return -1; }
+    if(a.artist > b.artist) { return 1; }
+    return 0;
+  });
+
   // sort results
   data.sort(function(a,b) {
     return b.year - a.year;

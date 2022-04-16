@@ -14,7 +14,7 @@ const GridBox = ({ data, handleRecordClick }) => {
   const recordList = data.map((record, index) => (<RecordCell key={record.id} index={index} record={record} handleRecordClick={handleRecordClick} />));
 
   return(
-    <div className='record-grid'>
+    <div id='record-grid' className='record-grid'>
       {recordList}
     </div>
   );
