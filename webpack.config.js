@@ -8,11 +8,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Welcome',
+      title: 'Vinyl',
       template: "./src/index.html",
-      filename: "./index.html"
-    }),
-    new HtmlWebpackPlugin({
       favicon: "./src/img/logo.png"
     })
   ],
@@ -22,7 +19,7 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    static: './dist',
     host: '0.0.0.0'
   },
   module: {

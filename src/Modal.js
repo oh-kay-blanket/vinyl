@@ -99,7 +99,7 @@ const Modal = ({ data, modalId, setModalId }) => {
 
   }, [modalId]);
 
-  record.image = imagesLarge[`${record.id}.jpg`];
+  record.image = imagesLarge[`${record.id}.jpg`].default;
 
   if(record.genre) {
     record.genre = record.genre.replaceAll(", ", ' / ');

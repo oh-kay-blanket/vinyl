@@ -23,7 +23,7 @@ const GridBox = ({ data, handleRecordClick }) => {
 const RecordCell = ({ index, record, handleRecordClick }) => {
 
   // Build image path
-  record.image = imagesSmall[`${record.id}.jpg`];
+  record.image = imagesSmall[`${record.id}.jpg`].default;
 
   return(
     <div className='main-box' onClick={() => handleRecordClick(index)}>
