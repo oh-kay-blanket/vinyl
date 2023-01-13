@@ -73,7 +73,7 @@ const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
 
 const ModalCell = ({ record, setModalId }) => {
 
-    record.image = imagesLarge[`${record.id}.jpg`].default;
+    record.image = imagesLarge[`${record.id}.jpg`];
 
     if(record.genre) {
         record.genre = record.genre.replaceAll(", ", ' / ');
