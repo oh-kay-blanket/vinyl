@@ -9,6 +9,8 @@ function importAll(r) {
 
 const imagesSmall = importAll(require.context('./img/250', false, /\.(jpe?g)$/));
 
+console.log(imagesSmall);
+
 const GridBox = ({ data, handleRecordClick }) => {
 
   const recordList = data.map((record, index) => (<RecordCell key={record.id} index={index} record={record} handleRecordClick={handleRecordClick} />));
