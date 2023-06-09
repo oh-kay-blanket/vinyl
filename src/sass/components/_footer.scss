@@ -1,0 +1,9 @@
+@use '../base/color' as *;
+
+.footer-link {
+    display: block;
+    margin: 0 auto 2rem;
+    text-align: center;
+    color: $primary;
+    text-decoration: none;
+}

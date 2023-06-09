@@ -18,9 +18,10 @@
   max-width: 600px;
   cursor: pointer;
   @include neumorph.neumorph;
-  box-shadow: -6px 4px 4px $shadow;
+  box-shadow: -4px 3px 0px $shadow;
   padding: 7px;
-  background-color: $shadow;
+  background-color: $primary;
+  color: $white;
 
   @media (min-width: 545px) {
     justify-content: center;
@@ -36,7 +37,7 @@
 
   &:hover, &:active {
     @include neumorph.neumorph-hover;
-    box-shadow: -5px 5px 5px 3px $primary-v-light;
+    box-shadow: -4px 3px 0px 0px $primary-v-light;
     transform: scale(1.01, 1.01);
     width: 90.5%;
   }
