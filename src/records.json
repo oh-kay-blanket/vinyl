@@ -1,5 +1,33 @@
 [
   {
+    "id": 621,
+    "artist": "Foot Ox",
+    "album": "Judee & the Sun",
+    "genre": "Folk",
+    "year": 2023,
+    "discs": "",
+    "speed": 33,
+    "quality": "",
+    "cost": "",
+    "size": "",
+    "new": "",
+    "where_from": ""
+  },
+  {
+    "id": 620,
+    "artist": "Sparks",
+    "album": "The Girl is Crying in Her Latte",
+    "genre": "Art Pop, Synth Pop",
+    "year": 2023,
+    "discs": "",
+    "speed": 33,
+    "quality": "",
+    "cost": "",
+    "size": "",
+    "new": "",
+    "where_from": ""
+  },
+  {
     "id": 619,
     "artist": "Jean Michele Jarre",
     "album": "The Essential",
