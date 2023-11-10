@@ -122,7 +122,7 @@ const App = ({ rawData }) => {
         renderOnZeroPageCount={null}
         className="pagination"
       />
-      <a href="https://mrplunkett.com" className="footer-link">mrplunkett.com</a>
+      <a href="https://ohkayblanket.com" className="footer-link">ohkayblanket.com</a>
     </>
   )
 }
