@@ -6,7 +6,8 @@
     "genre": "Art Rock, Avant Pop, Electronic, Ambient Pop",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2024"
   },
   {
     "id": "628",
@@ -15,7 +16,8 @@
     "genre": "New Wave, Post Punk",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2024"
   },
   {
     "id": "627",
@@ -24,7 +26,8 @@
     "genre": "Punk",
     "year": "2023",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2024"
   },
   {
     "id": "626",
@@ -33,7 +36,8 @@
     "genre": "Folk, Pop",
     "year": "2023",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2024"
   },
   {
     "id": "625",
@@ -42,7 +46,8 @@
     "genre": "Folk, Country, Medieval, Psych Pop",
     "year": "2021",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2023"
   },
   {
     "id": "624",
@@ -51,7 +56,8 @@
     "genre": "Folk, Country, Medieval, Psych Pop",
     "year": "2023",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2023"
   },
   {
     "id": "623",
@@ -60,7 +66,8 @@
     "genre": "Folk, Punk, Experimental",
     "year": "2008",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2023"
   },
   {
     "id": "622",
@@ -69,7 +76,8 @@
     "genre": "Punk, Pop",
     "year": "2023",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2023"
   },
   {
     "id": "621",
@@ -78,7 +86,8 @@
     "genre": "Folk, Punk, Experimental",
     "year": "2023",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2023"
   },
   {
     "id": "620",
@@ -87,7 +96,8 @@
     "genre": "Art Pop, Synth Pop",
     "year": "2023",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2023"
   },
   {
     "id": "619",
@@ -96,7 +106,8 @@
     "genre": "Synth Pop, Ambient",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "618",
@@ -105,7 +116,8 @@
     "genre": "Art Rock, Experimental, Pop",
     "year": "1985",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "617",
@@ -114,7 +126,8 @@
     "genre": "Jazz, Bluegrass",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "616",
@@ -123,7 +136,8 @@
     "genre": "Synth Pop",
     "year": "2014",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "615",
@@ -132,7 +146,8 @@
     "genre": "Ska, Rock",
     "year": "2004",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "614",
@@ -141,7 +156,8 @@
     "genre": "Ska, Rock",
     "year": "2004",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2022"
   },
   {
     "id": "613",
@@ -150,7 +166,8 @@
     "genre": "Classical",
     "year": "1984",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "612",
@@ -159,7 +176,8 @@
     "genre": "Soul, Funk, R&B",
     "year": "1970",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "611",
@@ -168,7 +186,8 @@
     "genre": "Orchestral Pop, Avant Pop, Art Rock",
     "year": "1967",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "610",
@@ -177,7 +196,8 @@
     "genre": "Baroque Pop, Psychedellic Pop",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "609",
@@ -186,7 +206,8 @@
     "genre": "Hard Rock, Heavy Metal, Punk Rock",
     "year": "2001",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "608",
@@ -195,7 +216,8 @@
     "genre": "World, Steel Drum, Calypso",
     "year": "1959",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "607",
@@ -204,7 +226,8 @@
     "genre": "Progressive Folk, Baroque Pop, Indie Folk",
     "year": "2006",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "606",
@@ -213,7 +236,8 @@
     "genre": "New Wave, Post Punk, Art Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "605",
@@ -222,7 +246,8 @@
     "genre": "Ska, Punk",
     "year": "2021",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "604",
@@ -231,7 +256,8 @@
     "genre": "Ska",
     "year": "2022",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "603",
@@ -240,7 +266,8 @@
     "genre": "Rock",
     "year": "1972",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "602",
@@ -249,7 +276,8 @@
     "genre": "Art Rock, New Wave, Post Punk",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "601",
@@ -258,7 +286,8 @@
     "genre": "Synthpop, Dance",
     "year": "1985",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "600",
@@ -267,7 +296,8 @@
     "genre": "Ska, Punk",
     "year": "2021",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "599",
@@ -276,7 +306,8 @@
     "genre": "Hip Hop, Reggae, Funk, Soul",
     "year": "2022",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2022"
   },
   {
     "id": "598",
@@ -285,7 +316,8 @@
     "genre": "Soul-Jazz, Jazz-Funk",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "597",
@@ -294,7 +326,8 @@
     "genre": "Rock & Roll, Pop",
     "year": "1966",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "596",
@@ -303,7 +336,8 @@
     "genre": "Psychedelic Rock",
     "year": "2022",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "595",
@@ -312,7 +346,8 @@
     "genre": "Ska, Punk",
     "year": "2021",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "594",
@@ -321,7 +356,8 @@
     "genre": "Rock, Pop",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "593",
@@ -330,7 +366,8 @@
     "genre": "Blues",
     "year": "2019",
     "discs": "2",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "592",
@@ -339,7 +376,8 @@
     "genre": "Rock & Roll",
     "year": "2011",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2022"
   },
   {
     "id": "591",
@@ -348,7 +386,8 @@
     "genre": "Country, Folk",
     "year": "2011",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2022"
   },
   {
     "id": "590",
@@ -357,7 +396,8 @@
     "genre": "Country",
     "year": "2018",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2022"
   },
   {
     "id": "589",
@@ -366,7 +406,8 @@
     "genre": "Spoken Word",
     "year": "2009",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2022"
   },
   {
     "id": "588",
@@ -375,7 +416,8 @@
     "genre": "Rock & Roll",
     "year": "1957",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2022"
   },
   {
     "id": "587",
@@ -384,7 +426,8 @@
     "genre": "Garage Goth",
     "year": "2012",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2022"
   },
   {
     "id": "586",
@@ -393,7 +436,8 @@
     "genre": "Spoken Word",
     "year": "2022",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "585",
@@ -402,7 +446,8 @@
     "genre": "Contemporary Classical",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2022"
   },
   {
     "id": "584",
@@ -411,7 +456,8 @@
     "genre": "Art Pop",
     "year": "2020",
     "discs": "2",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2021"
   },
   {
     "id": "583",
@@ -420,7 +466,8 @@
     "genre": "Indie Rock, Electropop, Art Rock, Dance Rock",
     "year": "2015",
     "discs": "2",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "582",
@@ -429,7 +476,8 @@
     "genre": "Psychobilly",
     "year": "1999",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2021"
   },
   {
     "id": "581",
@@ -438,7 +486,8 @@
     "genre": "Rock, Funk, Cinematic",
     "year": "2008",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "580",
@@ -447,7 +496,8 @@
     "genre": "Outlaw country",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "579",
@@ -456,7 +506,8 @@
     "genre": "Ragtime, Acoustic",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "578",
@@ -465,7 +516,8 @@
     "genre": "Folk Rock",
     "year": "1972",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "577",
@@ -474,7 +526,8 @@
     "genre": "New Wave, Two-Tone, Post-Punk",
     "year": "1984",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "576",
@@ -483,7 +536,8 @@
     "genre": "Reggae, Funk, New Wave",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "575",
@@ -492,7 +546,8 @@
     "genre": "New Wave",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "574",
@@ -501,7 +556,8 @@
     "genre": "Rock",
     "year": "1965",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "573",
@@ -510,7 +566,8 @@
     "genre": "New Wave, Synth-Pop",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "572",
@@ -519,7 +576,8 @@
     "genre": "Glam Rock, Rock",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "571",
@@ -528,7 +586,8 @@
     "genre": "Country",
     "year": "1985",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "570",
@@ -537,7 +596,8 @@
     "genre": "Country",
     "year": "1939",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "569",
@@ -546,7 +606,8 @@
     "genre": "Country",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "568",
@@ -555,7 +616,8 @@
     "genre": "Hip Hop, Post Punk",
     "year": "1986",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "567",
@@ -564,7 +626,8 @@
     "genre": "New Wave",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "566",
@@ -573,7 +636,8 @@
     "genre": "Classical",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "565",
@@ -582,7 +646,8 @@
     "genre": "Salsa, Latin",
     "year": "1969",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "564",
@@ -591,7 +656,8 @@
     "genre": "Brazilian, Latin, Samba",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "563",
@@ -600,7 +666,8 @@
     "genre": "Afro Pop, Cameroon",
     "year": "1987",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "562",
@@ -609,25 +676,28 @@
     "genre": "New Wave",
     "year": "1986",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "561",
     "artist": "Claude Debussy",
     "album": "Debussy/Ravel Quartets",
     "genre": "Classical",
-    "year": "",
+    "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "560",
     "artist": "Claude Debussy",
     "album": "Images Pour Le Piano",
     "genre": "Classical",
-    "year": "",
+    "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "559",
@@ -636,7 +706,8 @@
     "genre": "New Wave, Power Pop, Ska",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "558",
@@ -645,7 +716,8 @@
     "genre": "Soul, Rock",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "557",
@@ -654,7 +726,8 @@
     "genre": "New Wave, Post Punk, Worldbeat",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "556",
@@ -663,7 +736,8 @@
     "genre": "Synth-pop, new wave, minimal synth, electronic",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "555",
@@ -672,7 +746,8 @@
     "genre": "Chamber folk, experimental, folktronica",
     "year": "2019",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "554",
@@ -681,16 +756,18 @@
     "genre": "Dance pop",
     "year": "1986",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "553",
     "artist": "Gioachino Rossini",
     "album": "Greatest Hits",
     "genre": "Classical, Opera, Symphonic",
-    "year": "",
+    "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "552",
@@ -699,7 +776,8 @@
     "genre": "Experimental, Sound Collage, Field Recording",
     "year": "2017",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "551",
@@ -708,7 +786,8 @@
     "genre": "Experimental, Sound Collage, Field Recording",
     "year": "2016",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "550",
@@ -717,7 +796,8 @@
     "genre": "Indie Punk Rock, Surf Punk, Pop Punk",
     "year": "2019",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "549",
@@ -726,7 +806,8 @@
     "genre": "Folk Rock, Art Rock",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "548",
@@ -735,7 +816,8 @@
     "genre": "Jazz",
     "year": "1959",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "547",
@@ -744,7 +826,8 @@
     "genre": "Acoustic, Folk, Ska",
     "year": "2001",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "546",
@@ -753,7 +836,8 @@
     "genre": "Rock, Soft Rock, Progressive Pop",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "545",
@@ -762,7 +846,8 @@
     "genre": "Rock",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "544",
@@ -771,7 +856,8 @@
     "genre": "",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "543",
@@ -780,7 +866,8 @@
     "genre": "Punk",
     "year": "1977",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2012"
   },
   {
     "id": "542",
@@ -789,7 +876,8 @@
     "genre": "Punk Rock, Hard Rock, Glam Rock",
     "year": "1986",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "541",
@@ -798,7 +886,8 @@
     "genre": "New Wave, Synth-Pop",
     "year": "1980",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "540",
@@ -807,7 +896,8 @@
     "genre": "Comedy",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "539",
@@ -816,7 +906,8 @@
     "genre": "Jazz, Dixieland Jazz",
     "year": "",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "538",
@@ -825,7 +916,8 @@
     "genre": "Ska, Two-Tone",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "537",
@@ -834,7 +926,8 @@
     "genre": "Pop",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "536",
@@ -843,7 +936,8 @@
     "genre": "Jazz",
     "year": "1960",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "535",
@@ -852,7 +946,8 @@
     "genre": "Country",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "534",
@@ -861,7 +956,8 @@
     "genre": "Pop Rock",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "533",
@@ -870,7 +966,8 @@
     "genre": "New Wave, Post-Punk",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "532",
@@ -879,7 +976,8 @@
     "genre": "Soundtrack",
     "year": "1940",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "531",
@@ -888,7 +986,8 @@
     "genre": "Synth-Pop, New Wave",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "530",
@@ -897,7 +996,8 @@
     "genre": "Rock, Hard Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "529",
@@ -906,7 +1006,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "528",
@@ -915,7 +1016,8 @@
     "genre": "R&B, Soul, Funk, Disco",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "527",
@@ -924,7 +1026,8 @@
     "genre": "Soft Rock, Pop Rock, Progressive Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "526",
@@ -933,7 +1036,8 @@
     "genre": "Post-Hardcore, Screamo",
     "year": "2003",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2004"
   },
   {
     "id": "525",
@@ -942,7 +1046,8 @@
     "genre": "New Wave, Post-Punk, Art Pop, Avant-Funk",
     "year": "1986",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "524",
@@ -951,7 +1056,8 @@
     "genre": "Post-Disco, R&B, Funk, Soul",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "523",
@@ -960,7 +1066,8 @@
     "genre": "Pop, New Wave, Salsa",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "522",
@@ -969,7 +1076,8 @@
     "genre": "Mexican Folk",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "521",
@@ -978,7 +1086,8 @@
     "genre": "Andean, Folk",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "520",
@@ -987,7 +1096,8 @@
     "genre": "Pop, Rock",
     "year": "1966",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "519",
@@ -996,7 +1106,8 @@
     "genre": "Southern Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "518",
@@ -1005,7 +1116,8 @@
     "genre": "Rock, Pop, New Wave",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "517",
@@ -1014,7 +1126,8 @@
     "genre": "Soul, Pop",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "516",
@@ -1023,7 +1136,8 @@
     "genre": "Rock, Hard Rock, Power Pop",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "515",
@@ -1032,7 +1146,8 @@
     "genre": "Ska Punk, J-Ska",
     "year": "2000",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "514",
@@ -1041,7 +1156,8 @@
     "genre": "Pop",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "513",
@@ -1050,7 +1166,8 @@
     "genre": "Jazz, Dixieland Jazz",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "512",
@@ -1059,7 +1176,8 @@
     "genre": "Funk, Psychedelic Funk, Avant Pop, Avant Soul",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "511",
@@ -1068,7 +1186,8 @@
     "genre": "Soundtrack",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "510",
@@ -1077,7 +1196,8 @@
     "genre": "Rock, Soft Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "509",
@@ -1086,7 +1206,8 @@
     "genre": "Progressive Rock",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "508",
@@ -1095,7 +1216,8 @@
     "genre": "Rock and Roll, Rhythm and Blues",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "507",
@@ -1104,7 +1226,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "506",
@@ -1113,7 +1236,8 @@
     "genre": "Bluegrass, Gospel, Country, Folk",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "505",
@@ -1122,7 +1246,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "504",
@@ -1131,7 +1256,8 @@
     "genre": "Punk Rock, Pop Punk, Ska Punk, Skacore",
     "year": "2000",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "503",
@@ -1140,7 +1266,8 @@
     "genre": "Rock, Pop",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "502",
@@ -1149,7 +1276,8 @@
     "genre": "Rock, Hard Rock, Power Pop",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "501",
@@ -1158,7 +1286,8 @@
     "genre": "Soundtrack, Ragtime",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "500",
@@ -1167,7 +1296,8 @@
     "genre": "Hindustani Classical",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "499",
@@ -1176,7 +1306,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "498",
@@ -1185,7 +1316,8 @@
     "genre": "Pop",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "497",
@@ -1194,7 +1326,8 @@
     "genre": "Soundtrack",
     "year": "1986",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "496",
@@ -1203,7 +1336,8 @@
     "genre": "Folk",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "495",
@@ -1212,7 +1346,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "494",
@@ -1221,7 +1356,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "493",
@@ -1230,7 +1366,8 @@
     "genre": "Synth-Pop, New Wave",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "492",
@@ -1239,7 +1376,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "491",
@@ -1248,7 +1386,8 @@
     "genre": "New Wave",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "490",
@@ -1257,7 +1396,8 @@
     "genre": "Art Rock, Progressive Pop, Soft Rock",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "489",
@@ -1266,7 +1406,8 @@
     "genre": "Pop Rock, Soft Rock",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "488",
@@ -1275,7 +1416,8 @@
     "genre": "Newgrass",
     "year": "2007",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "487",
@@ -1284,7 +1426,8 @@
     "genre": "Soundtrack",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "486",
@@ -1293,7 +1436,8 @@
     "genre": "Pop, Jazz",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "485",
@@ -1302,7 +1446,8 @@
     "genre": "Spoken Word, History",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "484",
@@ -1311,7 +1456,8 @@
     "genre": "Country",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "483",
@@ -1320,7 +1466,8 @@
     "genre": "Comedy",
     "year": "1963",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "482",
@@ -1329,7 +1476,8 @@
     "genre": "Classical, Baroque",
     "year": "1725",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "481",
@@ -1338,7 +1486,8 @@
     "genre": "Pop, French",
     "year": "1966",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "480",
@@ -1347,7 +1496,8 @@
     "genre": "Jazz, Country",
     "year": "1965",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "479",
@@ -1356,7 +1506,8 @@
     "genre": "Americana, Progressive Bluegrass, Folk",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "478",
@@ -1365,7 +1516,8 @@
     "genre": "Jazz-Funk, Synthpop, Electronic",
     "year": "1977",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "477",
@@ -1374,7 +1526,8 @@
     "genre": "Alternative Rock, New Wave, Folk Rock",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "476",
@@ -1383,7 +1536,8 @@
     "genre": "Rock, Folk",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "475",
@@ -1392,7 +1546,8 @@
     "genre": "New Wave, Power Pop",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "474",
@@ -1401,7 +1556,8 @@
     "genre": "Soundtrack",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "473",
@@ -1410,7 +1566,8 @@
     "genre": "Folk Punk, Art Rock, Psychedelic Folk, Lo-Fi",
     "year": "2016",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "472",
@@ -1419,7 +1576,8 @@
     "genre": "Art Rock, Glam Rock, New Wave",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "471",
@@ -1428,7 +1586,8 @@
     "genre": "Rock, Folk, Country",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "470",
@@ -1437,7 +1596,8 @@
     "genre": "Jazz, Big Band, Swing",
     "year": "1988",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2005"
   },
   {
     "id": "469",
@@ -1446,7 +1606,8 @@
     "genre": "Rock, Pop, Folk",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2004"
   },
   {
     "id": "468",
@@ -1455,7 +1616,8 @@
     "genre": "Orchestrated Rock",
     "year": "1965",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "467",
@@ -1464,7 +1626,8 @@
     "genre": "Pop",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "466",
@@ -1473,7 +1636,8 @@
     "genre": "New Wave, Electropop, Progressive Pop",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "465",
@@ -1482,7 +1646,8 @@
     "genre": "Hard Rock, Blues Rock",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "464",
@@ -1491,7 +1656,8 @@
     "genre": "Indie Rock",
     "year": "2011",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "463",
@@ -1500,7 +1666,8 @@
     "genre": "",
     "year": "",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "462",
@@ -1509,7 +1676,8 @@
     "genre": "Bossa Nova",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "461",
@@ -1518,7 +1686,8 @@
     "genre": "Punk Rock, New Wave",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "460",
@@ -1527,7 +1696,8 @@
     "genre": "Rock",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "459",
@@ -1536,7 +1706,8 @@
     "genre": "Jazz",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "458",
@@ -1545,7 +1716,8 @@
     "genre": "Folk Rock",
     "year": "1970",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2004"
   },
   {
     "id": "457",
@@ -1554,7 +1726,8 @@
     "genre": "Pop Rock",
     "year": "1987",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "456",
@@ -1563,7 +1736,8 @@
     "genre": "Electronica, Pop",
     "year": "2004",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2005"
   },
   {
     "id": "455",
@@ -1572,7 +1746,8 @@
     "genre": "Rock, Blues Rock",
     "year": "2012",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "454",
@@ -1581,7 +1756,8 @@
     "genre": "Jazz Fusion",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "453",
@@ -1590,7 +1766,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "452",
@@ -1599,7 +1776,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "451",
@@ -1608,7 +1786,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "450",
@@ -1617,7 +1796,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "449",
@@ -1626,7 +1806,8 @@
     "genre": "Pop, Rock and Roll",
     "year": "1989",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "448",
@@ -1635,7 +1816,8 @@
     "genre": "Pop",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "447",
@@ -1644,7 +1826,8 @@
     "genre": "Punk Rock, Rock and Roll",
     "year": "1977",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "446",
@@ -1653,7 +1836,8 @@
     "genre": "Pop",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "445",
@@ -1662,7 +1846,8 @@
     "genre": "Rock",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "444",
@@ -1671,7 +1856,8 @@
     "genre": "Rock, Hard Rock, Power Pop",
     "year": "1966",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "443",
@@ -1680,7 +1866,8 @@
     "genre": "Ska Punk, Reggae Rock, Alternative Rock",
     "year": "1996",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "442",
@@ -1689,7 +1876,8 @@
     "genre": "Jazz",
     "year": "1957",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "440",
@@ -1698,7 +1886,8 @@
     "genre": "Pop Rock, Soft Rock",
     "year": "1974",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "439",
@@ -1707,7 +1896,8 @@
     "genre": "Bluegrass",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "438",
@@ -1716,7 +1906,8 @@
     "genre": "New Wave, Post-Punk, Art Pop, Avant-Funk",
     "year": "1984",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "437",
@@ -1725,7 +1916,8 @@
     "genre": "Folk Rock, Pop Rock, Soul",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "436",
@@ -1734,7 +1926,8 @@
     "genre": "Americana, Newgrass, Gypsy Jazz",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "435",
@@ -1743,7 +1936,8 @@
     "genre": "Pop",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "434",
@@ -1752,7 +1946,8 @@
     "genre": "Art Rock, Post-Punk, New Wave",
     "year": "1978",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "433",
@@ -1761,7 +1956,8 @@
     "genre": "Jazz, Jazz Fusion",
     "year": "1986",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "432",
@@ -1770,7 +1966,8 @@
     "genre": "Jazz, Lounge",
     "year": "1960",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "431",
@@ -1779,7 +1976,8 @@
     "genre": "Pop Rock",
     "year": "1974",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "430",
@@ -1788,7 +1986,8 @@
     "genre": "Folk, Americana",
     "year": "1947",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "429",
@@ -1797,7 +1996,8 @@
     "genre": "Pop",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "428",
@@ -1806,7 +2006,8 @@
     "genre": "Punk Reggae",
     "year": "1977",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "427",
@@ -1815,7 +2016,8 @@
     "genre": "Sound",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "426",
@@ -1824,7 +2026,8 @@
     "genre": "Pop, Vocal",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "425",
@@ -1833,7 +2036,8 @@
     "genre": "Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "424",
@@ -1842,7 +2046,8 @@
     "genre": "Counrty Rock",
     "year": "1972",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "423",
@@ -1851,7 +2056,8 @@
     "genre": "R&B, Soul",
     "year": "1977",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2011"
   },
   {
     "id": "422",
@@ -1860,7 +2066,8 @@
     "genre": "Blue-Eyed Soul, Rock, Blues Rock, Soft Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "421",
@@ -1869,7 +2076,8 @@
     "genre": "Soundtrack",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "420",
@@ -1878,7 +2086,8 @@
     "genre": "Folk Rock",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "419",
@@ -1887,7 +2096,8 @@
     "genre": "Soundtrack",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "418",
@@ -1896,7 +2106,8 @@
     "genre": "Folk, Blues",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "417",
@@ -1905,7 +2116,8 @@
     "genre": "Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "416",
@@ -1914,7 +2126,8 @@
     "genre": "Soft Rock, Pop",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "415",
@@ -1923,7 +2136,8 @@
     "genre": "Country Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "414",
@@ -1932,7 +2146,8 @@
     "genre": "Group Sounds, Baroque Pop",
     "year": "1968",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "413",
@@ -1941,7 +2156,8 @@
     "genre": "Punk Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "412",
@@ -1950,7 +2166,8 @@
     "genre": "Soundtrack",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "411",
@@ -1959,7 +2176,8 @@
     "genre": "Ska Punk, J-Ska",
     "year": "1999",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "410",
@@ -1968,7 +2186,8 @@
     "genre": "Soul, R&B, Blues",
     "year": "1966",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "409",
@@ -1977,7 +2196,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "408",
@@ -1986,7 +2206,8 @@
     "genre": "Hard Rock",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "407",
@@ -1995,7 +2216,8 @@
     "genre": "Relaxation, Self-Improvement",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "406",
@@ -2004,7 +2226,8 @@
     "genre": "Instrumental",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "405",
@@ -2013,7 +2236,8 @@
     "genre": "Post-Punk, Power Pop",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "404",
@@ -2022,7 +2246,8 @@
     "genre": "Spoken Word",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "403",
@@ -2031,7 +2256,8 @@
     "genre": "Punk Rock, New Wave",
     "year": "1978",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2012"
   },
   {
     "id": "402",
@@ -2040,7 +2266,8 @@
     "genre": "Jazz, Croon",
     "year": "1962",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "401",
@@ -2049,7 +2276,8 @@
     "genre": "Synth-Pop, New Wave",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "400",
@@ -2058,7 +2286,8 @@
     "genre": "Synth-Pop, New Wave",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "399",
@@ -2067,7 +2296,8 @@
     "genre": "Rock, Hard Rock, Power Pop",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "398",
@@ -2076,7 +2306,8 @@
     "genre": "Pop, R&B, Rock, Psychedelia, New Wave, Funk",
     "year": "1984",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "397",
@@ -2085,7 +2316,8 @@
     "genre": "Pop Rock, Blue-Eyed Soul, Soft Rock",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "396",
@@ -2094,7 +2326,8 @@
     "genre": "Rock, Country Rock",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "395",
@@ -2103,7 +2336,8 @@
     "genre": "Country Rock",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "394",
@@ -2112,16 +2346,18 @@
     "genre": "Ska Punk, J-Ska",
     "year": "1997",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "393",
     "artist": "Various",
     "album": "Playboy Manbaby, Petty Things, Cherie Cherie",
     "genre": "Rock",
-    "year": "",
+    "year": "2011",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2011"
   },
   {
     "id": "392",
@@ -2130,7 +2366,8 @@
     "genre": "Rock, Pop Rock",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "391",
@@ -2139,7 +2376,8 @@
     "genre": "Pop Rock, Soft Rock, Country Rock",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "390",
@@ -2148,7 +2386,8 @@
     "genre": "Indie Rock",
     "year": "2012",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "389",
@@ -2157,7 +2396,8 @@
     "genre": "Punk Reggae",
     "year": "1977",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "388",
@@ -2166,7 +2406,8 @@
     "genre": "Synth-Pop, New Wave",
     "year": "1981",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "387",
@@ -2175,7 +2416,8 @@
     "genre": "Indie Rock",
     "year": "2003",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2004"
   },
   {
     "id": "386",
@@ -2184,7 +2426,8 @@
     "genre": "Pop Rock, Rock",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "385",
@@ -2193,7 +2436,8 @@
     "genre": "Folk Rock",
     "year": "1986",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "384",
@@ -2202,7 +2446,8 @@
     "genre": "Rock and Roll",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "383",
@@ -2211,7 +2456,8 @@
     "genre": "Electronic, New Wave, Synth-Pop, Experimental",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "382",
@@ -2220,7 +2466,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "381",
@@ -2229,7 +2476,8 @@
     "genre": "Garge Punk, Rockabilly, Doo-Wop",
     "year": "2018",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2018"
   },
   {
     "id": "380",
@@ -2238,7 +2486,8 @@
     "genre": "Pop",
     "year": "1981",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "379",
@@ -2247,7 +2496,8 @@
     "genre": "Progressive Rock",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "378",
@@ -2256,7 +2506,8 @@
     "genre": "Pop Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "377",
@@ -2265,7 +2516,8 @@
     "genre": "Bluegrass, Gospel, Country, Folk",
     "year": "1974",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "376",
@@ -2274,7 +2526,8 @@
     "genre": "Rock",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "375",
@@ -2283,7 +2536,8 @@
     "genre": "Comedy",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "374",
@@ -2292,7 +2546,8 @@
     "genre": "Southern Rock, Blues Rock, Hard Rock",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "373",
@@ -2301,7 +2556,8 @@
     "genre": "Pop Rock",
     "year": "1972",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "372",
@@ -2310,7 +2566,8 @@
     "genre": "Pop Rock, Blue-Eyed Soul, Soft Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "371",
@@ -2319,7 +2576,8 @@
     "genre": "Rock, Soft Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "370",
@@ -2328,7 +2586,8 @@
     "genre": "Hard Rock, Arena Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "369",
@@ -2337,7 +2596,8 @@
     "genre": "Gong",
     "year": "2012",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "368",
@@ -2346,7 +2606,8 @@
     "genre": "",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "367",
@@ -2355,7 +2616,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "366",
@@ -2364,7 +2626,8 @@
     "genre": "Ska Punk, Punk Rock, Indie Rock",
     "year": "1999",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "365",
@@ -2373,7 +2636,8 @@
     "genre": "Beat, Pop",
     "year": "1963",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "364",
@@ -2382,7 +2646,8 @@
     "genre": "Pop",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "363",
@@ -2391,7 +2656,8 @@
     "genre": "Ska, Two Tone",
     "year": "1980",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "362",
@@ -2400,7 +2666,8 @@
     "genre": "Hard Rock, Progressive Rock",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "361",
@@ -2409,7 +2676,8 @@
     "genre": "Soundtrack",
     "year": "2018",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2018"
   },
   {
     "id": "360",
@@ -2418,7 +2686,8 @@
     "genre": "Jazz, Hard Bop",
     "year": "1958",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "359",
@@ -2427,7 +2696,8 @@
     "genre": "Jazz Fusion",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "358",
@@ -2436,7 +2706,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "357",
@@ -2445,7 +2716,8 @@
     "genre": "",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "356",
@@ -2454,7 +2726,8 @@
     "genre": "Garage Rock Revival, Art Punk",
     "year": "2003",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2004"
   },
   {
     "id": "355",
@@ -2463,7 +2736,8 @@
     "genre": "Pop",
     "year": "1967",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "354",
@@ -2472,7 +2746,8 @@
     "genre": "Spoken Word",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "353",
@@ -2481,7 +2756,8 @@
     "genre": "History",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "352",
@@ -2490,7 +2766,8 @@
     "genre": "Ska, Two Tone",
     "year": "1988",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "351",
@@ -2499,7 +2776,8 @@
     "genre": "Ska, Two Tone",
     "year": "1985",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "350",
@@ -2508,7 +2786,8 @@
     "genre": "Rock, Latin, Funk, Soul, Country",
     "year": "2011",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "349",
@@ -2517,7 +2796,8 @@
     "genre": "Pop",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "348",
@@ -2526,7 +2806,8 @@
     "genre": "Punk Rock, New Wave",
     "year": "1977",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2013"
   },
   {
     "id": "347",
@@ -2535,7 +2816,8 @@
     "genre": "Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "346",
@@ -2544,7 +2826,8 @@
     "genre": "Pop Rock, Blue-Eyed Soul, Soft Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "345",
@@ -2553,7 +2836,8 @@
     "genre": "Rock, Hard Rock, Power Pop",
     "year": "1970",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "344",
@@ -2562,7 +2846,8 @@
     "genre": "Jazz",
     "year": "1964",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "343",
@@ -2571,7 +2856,8 @@
     "genre": "Comedy",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "342",
@@ -2580,7 +2866,8 @@
     "genre": "Psychedelic Rock",
     "year": "1967",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2013"
   },
   {
     "id": "341",
@@ -2589,7 +2876,8 @@
     "genre": "Indie Rock, Indie Folk",
     "year": "2002",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2004"
   },
   {
     "id": "340",
@@ -2598,7 +2886,8 @@
     "genre": "Soft Rock",
     "year": "1974",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "339",
@@ -2607,7 +2896,8 @@
     "genre": "Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "338",
@@ -2616,7 +2906,8 @@
     "genre": "R&B, Soul",
     "year": "1981",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "337",
@@ -2625,7 +2916,8 @@
     "genre": "Jazz, Jazz Fusion",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "336",
@@ -2634,7 +2926,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   },
   {
     "id": "335",
@@ -2643,7 +2936,8 @@
     "genre": "Pop Rock",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "334",
@@ -2652,7 +2946,8 @@
     "genre": "New Wave, Alternative Rock",
     "year": "1987",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "333",
@@ -2661,7 +2956,8 @@
     "genre": "Disco, Funk",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "332",
@@ -2670,7 +2966,8 @@
     "genre": "Folk Rock, Country Rock, Country",
     "year": "1967",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "331",
@@ -2679,7 +2976,8 @@
     "genre": "Musical",
     "year": "1970",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "330",
@@ -2688,7 +2986,8 @@
     "genre": "Hard Rock, Heavy Metal, Pop, Arena Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2005"
   },
   {
     "id": "329",
@@ -2697,7 +2996,8 @@
     "genre": "Classical, Baroque",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "328",
@@ -2706,7 +3006,8 @@
     "genre": "Rock and Roll, Blues Rock, Funk Rock",
     "year": "1974",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "327",
@@ -2715,7 +3016,8 @@
     "genre": "Rock, Pop Rock, New Wave",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "326",
@@ -2724,7 +3026,8 @@
     "genre": "Jazz",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "325",
@@ -2733,7 +3036,8 @@
     "genre": "Brit Funk, Soul",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   },
   {
     "id": "324",
@@ -2742,7 +3046,8 @@
     "genre": "Bluegrass, Gospel, Country, Folk",
     "year": "1952",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   },
   {
     "id": "323",
@@ -2751,7 +3056,8 @@
     "genre": "Hard Rock, Pop Rock",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "322",
@@ -2760,7 +3066,8 @@
     "genre": "Rock",
     "year": "1987",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "321",
@@ -2769,7 +3076,8 @@
     "genre": "Afropop, Jazz, African",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "320",
@@ -2778,7 +3086,8 @@
     "genre": "Soft Rock, Pop",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "319",
@@ -2787,7 +3096,8 @@
     "genre": "Punk Rock, New Wave",
     "year": "1977",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "318",
@@ -2796,7 +3106,8 @@
     "genre": "Pop",
     "year": "1974",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "317",
@@ -2805,7 +3116,8 @@
     "genre": "Indie Folk",
     "year": "1999",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "316",
@@ -2814,7 +3126,8 @@
     "genre": "Folk, Pop",
     "year": "1975",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2012"
   },
   {
     "id": "315",
@@ -2823,7 +3136,8 @@
     "genre": "Jazz, Dixieland Jazz",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "314",
@@ -2832,7 +3146,8 @@
     "genre": "Progressive Rock, Art Rock, Sophisti-pop, Experimental",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "313",
@@ -2841,7 +3156,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "312",
@@ -2850,7 +3166,8 @@
     "genre": "Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "311",
@@ -2859,7 +3176,8 @@
     "genre": "Folk Jazz, Folk Rock, Psychedelic Rock",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "310",
@@ -2868,7 +3186,8 @@
     "genre": "Pop Rock, Blue-Eyed Soul, Soft Rock",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "309",
@@ -2877,7 +3196,8 @@
     "genre": "Gregorian Chant",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "308",
@@ -2886,7 +3206,8 @@
     "genre": "Rock, Pop, Glam Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "307",
@@ -2895,7 +3216,8 @@
     "genre": "Pop",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "306",
@@ -2904,7 +3226,8 @@
     "genre": "Soul, Pop",
     "year": "1967",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "305",
@@ -2913,7 +3236,8 @@
     "genre": "Soft Rock, Folk Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "303",
@@ -2922,7 +3246,8 @@
     "genre": "Rock, Pop, Glam Rock",
     "year": "1974",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "302",
@@ -2931,7 +3256,8 @@
     "genre": "Folk, Pop, Psychedelia",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "301",
@@ -2940,7 +3266,8 @@
     "genre": "Musical",
     "year": "1971",
     "discs": "2",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "300",
@@ -2949,7 +3276,8 @@
     "genre": "Rock, Pop, Glam Rock",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "299",
@@ -2958,7 +3286,8 @@
     "genre": "Folk Punk, Art Rock, Psychedelic Folk, Lo-Fi",
     "year": "2020",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "298",
@@ -2967,7 +3296,8 @@
     "genre": "Progressive Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "297",
@@ -2976,7 +3306,8 @@
     "genre": "Doo-Wop",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "296",
@@ -2985,7 +3316,8 @@
     "genre": "Surf Rock",
     "year": "1967",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2006"
   },
   {
     "id": "295",
@@ -2994,7 +3326,8 @@
     "genre": "Barbershop",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "294",
@@ -3003,7 +3336,8 @@
     "genre": "Blues Rock, Soft Rock, Soul",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "293",
@@ -3012,7 +3346,8 @@
     "genre": "Power Pop, New Wave",
     "year": "1979",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "292",
@@ -3021,7 +3356,8 @@
     "genre": "Soul, R&B, Blues",
     "year": "1966",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "291",
@@ -3030,7 +3366,8 @@
     "genre": "Psychedelic Folk",
     "year": "2009",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "290",
@@ -3039,7 +3376,8 @@
     "genre": "Pop",
     "year": "1990",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "289",
@@ -3048,7 +3386,8 @@
     "genre": "Urban, Soul, R&B, Post-Disco",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "288",
@@ -3057,7 +3396,8 @@
     "genre": "Progressive Rock",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "287",
@@ -3066,7 +3406,8 @@
     "genre": "Soft Rock, Folk Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "286",
@@ -3075,7 +3416,8 @@
     "genre": "Classical",
     "year": "1878",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "285",
@@ -3084,7 +3426,8 @@
     "genre": "Ska, Two-Tone",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "284",
@@ -3093,7 +3436,8 @@
     "genre": "R&B, Soul, Funk, Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "283",
@@ -3102,7 +3446,8 @@
     "genre": "Rock, Psychedelic Pop",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "282",
@@ -3111,7 +3456,8 @@
     "genre": "Soft Rock, Pop",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "281",
@@ -3120,7 +3466,8 @@
     "genre": "Folk Rock",
     "year": "1967",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "280",
@@ -3129,7 +3476,8 @@
     "genre": "Jazz, Smooth Jazz",
     "year": "1989",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "279",
@@ -3138,7 +3486,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "278",
@@ -3147,7 +3496,8 @@
     "genre": "Soft Rock",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "277",
@@ -3156,7 +3506,8 @@
     "genre": "Hard Rock",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "276",
@@ -3165,7 +3516,8 @@
     "genre": "Progressive Rock",
     "year": "1971",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "275",
@@ -3174,7 +3526,8 @@
     "genre": "Punk Rock, Power pop, New Wave",
     "year": "1978",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2011"
   },
   {
     "id": "274",
@@ -3183,7 +3536,8 @@
     "genre": "Pop Rock, Soft Rock, Disco",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "273",
@@ -3192,7 +3546,8 @@
     "genre": "Pop",
     "year": "1984",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "270",
@@ -3201,7 +3556,8 @@
     "genre": "Progressive rock",
     "year": "1974",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "269",
@@ -3210,7 +3566,8 @@
     "genre": "New Wave, Punk Rock",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "268",
@@ -3219,7 +3576,8 @@
     "genre": "Jazz, Smooth Jazz, Pop",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "267",
@@ -3228,7 +3586,8 @@
     "genre": "Hard Rock, Heavy Metal",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "266",
@@ -3237,7 +3596,8 @@
     "genre": "Ska Punk",
     "year": "1993",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "265",
@@ -3246,16 +3606,18 @@
     "genre": "Hip Hip, Electronica",
     "year": "1990",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "263",
     "artist": "Pete Fountain",
     "album": "Dixieland",
     "genre": "Jazz, Dixieland Jazz",
-    "year": "",
+    "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "262",
@@ -3264,7 +3626,8 @@
     "genre": "Soundtrack",
     "year": "2016",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "261",
@@ -3273,7 +3636,8 @@
     "genre": "Hard Rock, Blues Rock",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "260",
@@ -3282,7 +3646,8 @@
     "genre": "Folk Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "259",
@@ -3291,7 +3656,8 @@
     "genre": "Soft Rock, Pop, Folk",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "258",
@@ -3300,7 +3666,8 @@
     "genre": "Americana, Newgrass, Jazz",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "257",
@@ -3309,7 +3676,8 @@
     "genre": "Ska",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "256",
@@ -3318,7 +3686,8 @@
     "genre": "Neue Deutsche Welle, New Wave, Minimalism",
     "year": "1981",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2012"
   },
   {
     "id": "255",
@@ -3327,16 +3696,18 @@
     "genre": "Punk Rock",
     "year": "1985",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "254",
     "artist": "La Sabrosona",
     "album": "Cuarteto Ysidoro Flores y Otros",
     "genre": "",
-    "year": "",
+    "year": "1987",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "253",
@@ -3345,7 +3716,8 @@
     "genre": "Country",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "252",
@@ -3354,7 +3726,8 @@
     "genre": "Progressive Rock",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "251",
@@ -3363,7 +3736,8 @@
     "genre": "Hard Rock, Pop Rock",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "250",
@@ -3372,7 +3746,8 @@
     "genre": "Rock",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "249",
@@ -3381,7 +3756,8 @@
     "genre": "Ska Punk, Punk Rock, Indie Rock",
     "year": "1997",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "248",
@@ -3390,7 +3766,8 @@
     "genre": "Jazz, Big Band, Swing",
     "year": "1937",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2006"
   },
   {
     "id": "247",
@@ -3399,7 +3776,8 @@
     "genre": "Rock",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "246",
@@ -3408,7 +3786,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "245",
@@ -3417,7 +3796,8 @@
     "genre": "Pop Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "244",
@@ -3426,7 +3806,8 @@
     "genre": "Indie Rock",
     "year": "2003",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2003"
   },
   {
     "id": "243",
@@ -3435,7 +3816,8 @@
     "genre": "Pop, Rock, Soft Rock",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "242",
@@ -3444,7 +3826,8 @@
     "genre": "Childrens",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "241",
@@ -3453,7 +3836,8 @@
     "genre": "Rock, Glam Rock, Art Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "240",
@@ -3462,7 +3846,8 @@
     "genre": "Glam Rock, Art Rock",
     "year": "1971",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2011"
   },
   {
     "id": "239",
@@ -3471,7 +3856,8 @@
     "genre": "Jazz, Free Jazz",
     "year": "1960",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "238",
@@ -3480,7 +3866,8 @@
     "genre": "Pop",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "237",
@@ -3489,7 +3876,8 @@
     "genre": "Soft Rock, Folk Rock",
     "year": "1972",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "236",
@@ -3498,7 +3886,8 @@
     "genre": "",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "235",
@@ -3507,7 +3896,8 @@
     "genre": "New Wave, Reggae Rock, Pop Rock",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "234",
@@ -3516,7 +3906,8 @@
     "genre": "Rock, Glam Rock",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "233",
@@ -3525,7 +3916,8 @@
     "genre": "Folk Rock",
     "year": "1970",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "232",
@@ -3534,7 +3926,8 @@
     "genre": "Soundtrack, Orchestral Pop",
     "year": "1984",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   },
   {
     "id": "231",
@@ -3543,7 +3936,8 @@
     "genre": "R&B, Pop, Soul",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "230",
@@ -3552,7 +3946,8 @@
     "genre": "Hard Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "229",
@@ -3561,7 +3956,8 @@
     "genre": "Folk Rock",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "228",
@@ -3570,7 +3966,8 @@
     "genre": "Indie Rock",
     "year": "2013",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "227",
@@ -3579,7 +3976,8 @@
     "genre": "Lo-Fi",
     "year": "2009",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "226",
@@ -3588,7 +3986,8 @@
     "genre": "Folk, Adult Contemporary",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "225",
@@ -3597,7 +3996,8 @@
     "genre": "Pop Rock, Blue-Eyed Soul, Soft Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "224",
@@ -3606,7 +4006,8 @@
     "genre": "Marching Band",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "223",
@@ -3615,7 +4016,8 @@
     "genre": "Pop Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "222",
@@ -3624,7 +4026,8 @@
     "genre": "Hard Rock, Pop, Progressive Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "221",
@@ -3633,7 +4036,8 @@
     "genre": "Punk Rock, Pop Punk",
     "year": "1979",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2010"
   },
   {
     "id": "220",
@@ -3642,7 +4046,8 @@
     "genre": "Ska, Two-Tone",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "219",
@@ -3651,7 +4056,8 @@
     "genre": "Pop",
     "year": "1987",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   },
   {
     "id": "218",
@@ -3660,7 +4066,8 @@
     "genre": "Hard Rock, Heavy Metal, Arena Rock",
     "year": "1980",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   },
   {
     "id": "217",
@@ -3669,7 +4076,8 @@
     "genre": "Folk Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "216",
@@ -3678,7 +4086,8 @@
     "genre": "Pop, Euro Disco",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "215",
@@ -3687,7 +4096,8 @@
     "genre": "Rock, Jazz, Blues",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "214",
@@ -3696,7 +4106,8 @@
     "genre": "Electronic, New Wave, Synth-Pop, Experimental",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "213",
@@ -3705,7 +4116,8 @@
     "genre": "Pop",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "212",
@@ -3714,7 +4126,8 @@
     "genre": "Rock, Disco",
     "year": "1980",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2014"
   },
   {
     "id": "211",
@@ -3723,7 +4136,8 @@
     "genre": "Pop Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "210",
@@ -3732,7 +4146,8 @@
     "genre": "Pop Rock, Soft Rock, Doo-Wop",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "209",
@@ -3741,7 +4156,8 @@
     "genre": "Folk",
     "year": "2013",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "208",
@@ -3750,7 +4166,8 @@
     "genre": "Folk, Parlor",
     "year": "2009",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "207",
@@ -3759,7 +4176,8 @@
     "genre": "Counrty, Pop, Rock and Roll",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "206",
@@ -3768,7 +4186,8 @@
     "genre": "Progressive Rock, Pop Rock",
     "year": "1983",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "205",
@@ -3777,7 +4196,8 @@
     "genre": "Disco, Funk",
     "year": "1975",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "204",
@@ -3786,7 +4206,8 @@
     "genre": "Grunge, Rock",
     "year": "1991",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2013"
   },
   {
     "id": "203",
@@ -3795,7 +4216,8 @@
     "genre": "Classical, Experimental",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "202",
@@ -3804,7 +4226,8 @@
     "genre": "Jazz Rock",
     "year": "1977",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "201",
@@ -3813,7 +4236,8 @@
     "genre": "Comedy",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "200",
@@ -3822,7 +4246,8 @@
     "genre": "Progressive Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "199",
@@ -3831,7 +4256,8 @@
     "genre": "Progressive Rock",
     "year": "1970",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "198",
@@ -3840,7 +4266,8 @@
     "genre": "Rock, Jazz Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "197",
@@ -3849,7 +4276,8 @@
     "genre": "Ska Punk, Reggae Rock",
     "year": "1992",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "196",
@@ -3858,7 +4286,8 @@
     "genre": "Rock 'N' Roll",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "195",
@@ -3867,7 +4296,8 @@
     "genre": "Soundtrack",
     "year": "1968",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "194",
@@ -3876,7 +4306,8 @@
     "genre": "Rock and Roll, Rockabilly, Pop, Country",
     "year": "1958",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2005"
   },
   {
     "id": "193",
@@ -3885,7 +4316,8 @@
     "genre": "Country",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "192",
@@ -3894,7 +4326,8 @@
     "genre": "R&B, Soul, Pop",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "191",
@@ -3903,7 +4336,8 @@
     "genre": "Folk, Country, American Primitive Guitar",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "190",
@@ -3912,7 +4346,8 @@
     "genre": "Classical",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "189",
@@ -3921,7 +4356,8 @@
     "genre": "Pop",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "188",
@@ -3930,7 +4366,8 @@
     "genre": "Folk",
     "year": "1970",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "187",
@@ -3939,7 +4376,8 @@
     "genre": "Folk, Bedroom Pop",
     "year": "2007",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "186",
@@ -3948,7 +4386,8 @@
     "genre": "Pop, R&B",
     "year": "1985",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "185",
@@ -3957,7 +4396,8 @@
     "genre": "French, Pop",
     "year": "",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2020"
   },
   {
     "id": "184",
@@ -3966,7 +4406,8 @@
     "genre": "Progressive Rock, Jazz Rock, R&B, Hard Rock",
     "year": "1978",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "183",
@@ -3975,7 +4416,8 @@
     "genre": "Rock",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "182",
@@ -3984,7 +4426,8 @@
     "genre": "R&B, Soul, Disco, Funk",
     "year": "1979",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "181",
@@ -3993,7 +4436,8 @@
     "genre": "Progressive rock",
     "year": "1973",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "180",
@@ -4002,7 +4446,8 @@
     "genre": "R&B, Soul, Post-Disco, Funk",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "179",
@@ -4011,7 +4456,8 @@
     "genre": "Progressive Rock, Pop Rock",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "178",
@@ -4020,7 +4466,8 @@
     "genre": "Folk Rock,   Soft Rock, Blues Rock, Jazz Rock",
     "year": "1969",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "177",
@@ -4029,7 +4476,8 @@
     "genre": "Rock",
     "year": "1976",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "176",
@@ -4038,7 +4486,8 @@
     "genre": "New Wave, Synth-Pop",
     "year": "1984",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "175",
@@ -4047,7 +4496,8 @@
     "genre": "Synth-pop, prog rock, progressive rock, new wave, rock opera, post-disco",
     "year": "1981",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "173",
@@ -4056,7 +4506,8 @@
     "genre": "Ska, Two Tone",
     "year": "1980",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2016"
   },
   {
     "id": "172",
@@ -4065,7 +4516,8 @@
     "genre": "Psychedelic Pop",
     "year": "2008",
     "discs": "",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2008"
   },
   {
     "id": "171",
@@ -4074,7 +4526,8 @@
     "genre": "R&B, funk, pop, synth-pop, art pop",
     "year": "1982",
     "discs": "",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "170",
@@ -4083,7 +4536,8 @@
     "genre": "Rock N' Roll",
     "year": "2017",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2017"
   },
   {
     "id": "163",
@@ -4092,7 +4546,8 @@
     "genre": "Rock",
     "year": "1959",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2020"
   },
   {
     "id": "162",
@@ -4101,7 +4556,8 @@
     "genre": "Pop",
     "year": "1945",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2020"
   },
   {
     "id": "160",
@@ -4110,7 +4566,8 @@
     "genre": "Pop",
     "year": "1979",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2016"
   },
   {
     "id": "159",
@@ -4119,7 +4576,8 @@
     "genre": "Ska, Two Tone",
     "year": "1984",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2016"
   },
   {
     "id": "158",
@@ -4128,7 +4586,8 @@
     "genre": "Rock",
     "year": "1982",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2016"
   },
   {
     "id": "157",
@@ -4137,7 +4596,8 @@
     "genre": "Rock",
     "year": "1980",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2012"
   },
   {
     "id": "156",
@@ -4146,7 +4606,8 @@
     "genre": "Rock",
     "year": "1980",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2012"
   },
   {
     "id": "155",
@@ -4155,7 +4616,8 @@
     "genre": "Soft Rock",
     "year": "1976",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2012"
   },
   {
     "id": "154",
@@ -4164,7 +4626,8 @@
     "genre": "Punk",
     "year": "1981",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "152",
@@ -4173,7 +4636,8 @@
     "genre": "Folk",
     "year": "2016",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "151",
@@ -4182,7 +4646,8 @@
     "genre": "Punk",
     "year": "1998",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   },
   {
     "id": "150",
@@ -4191,7 +4656,8 @@
     "genre": "Experimental",
     "year": "2013",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2017"
   },
   {
     "id": "149",
@@ -4200,7 +4666,8 @@
     "genre": "Ska, Two Tone",
     "year": "2014",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   },
   {
     "id": "148",
@@ -4209,7 +4676,8 @@
     "genre": "Rock",
     "year": "1969",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2017"
   },
   {
     "id": "147",
@@ -4218,7 +4686,8 @@
     "genre": "New Wave",
     "year": "1983",
     "discs": "1",
-    "speed": "45"
+    "speed": "45",
+    "bought": "2013"
   },
   {
     "id": "145",
@@ -4227,7 +4696,8 @@
     "genre": "Rock, Psychedelic Rock",
     "year": "1970",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "144",
@@ -4236,7 +4706,8 @@
     "genre": "World, Cuban",
     "year": "1968",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "143",
@@ -4245,7 +4716,8 @@
     "genre": "Pop, Folk, World",
     "year": "1977",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "142",
@@ -4254,7 +4726,8 @@
     "genre": "Pop, Folk, World",
     "year": "1986",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "141",
@@ -4263,7 +4736,8 @@
     "genre": "Rock N' Roll, Gospel, R&B",
     "year": "1959",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "140",
@@ -4272,7 +4746,8 @@
     "genre": "Funk",
     "year": "1973",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "138",
@@ -4281,7 +4756,8 @@
     "genre": "New Wave, Punk",
     "year": "1982",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "137",
@@ -4290,7 +4766,8 @@
     "genre": "Rock, Prog Rock",
     "year": "1979",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "136",
@@ -4299,7 +4776,8 @@
     "genre": "Indie Rock, Punk",
     "year": "2009",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "135",
@@ -4308,7 +4786,8 @@
     "genre": "Indie, Rock",
     "year": "2012",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "134",
@@ -4317,7 +4796,8 @@
     "genre": "Indie, Rock",
     "year": "2013",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "133",
@@ -4326,7 +4806,8 @@
     "genre": "Punk, New Wave",
     "year": "1980",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2018"
   },
   {
     "id": "132",
@@ -4335,7 +4816,8 @@
     "genre": "Grunge, Rock",
     "year": "1990",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2021"
   },
   {
     "id": "131",
@@ -4344,7 +4826,8 @@
     "genre": "Jazz, Country",
     "year": "1974",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "130",
@@ -4353,7 +4836,8 @@
     "genre": "Musical",
     "year": "1981",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "129",
@@ -4362,7 +4846,8 @@
     "genre": "Rock, Pop, R&B",
     "year": "1985",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "128",
@@ -4371,7 +4856,8 @@
     "genre": "Hard Rock, Symphonic Rock, Pop, Glam Rock",
     "year": "1976",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2006"
   },
   {
     "id": "127",
@@ -4380,7 +4866,8 @@
     "genre": "Progressive Rock, Pop, Heavy Metal, Hard Rock, Avant Pop",
     "year": "1975",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2006"
   },
   {
     "id": "126",
@@ -4389,7 +4876,8 @@
     "genre": "Jazz, Gypsy Jazz",
     "year": "1945",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "125",
@@ -4398,7 +4886,8 @@
     "genre": "Jazz, Brazilian, World",
     "year": "1969",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "124",
@@ -4407,7 +4896,8 @@
     "genre": "Musical, Glam Rock, Rock, Soundtrack",
     "year": "1975",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "123",
@@ -4416,7 +4906,8 @@
     "genre": "Rock",
     "year": "1965",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "122",
@@ -4425,7 +4916,8 @@
     "genre": "Rock",
     "year": "1969",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "121",
@@ -4434,7 +4926,8 @@
     "genre": "Rock",
     "year": "1972",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "120",
@@ -4443,7 +4936,8 @@
     "genre": "Rock",
     "year": "1978",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "119",
@@ -4452,7 +4946,8 @@
     "genre": "Rock",
     "year": "1980",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2017"
   },
   {
     "id": "118",
@@ -4461,7 +4956,8 @@
     "genre": "Jam, Funk, World, Fusion",
     "year": "2014",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "117",
@@ -4470,7 +4966,8 @@
     "genre": "Rock, Folk, Psychedelic",
     "year": "1974",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "116",
@@ -4479,7 +4976,8 @@
     "genre": "Jazz, Funk, Fusion",
     "year": "1973",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2004"
   },
   {
     "id": "115",
@@ -4488,7 +4986,8 @@
     "genre": "Pop",
     "year": "1979",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "114",
@@ -4497,7 +4996,8 @@
     "genre": "Punk, Mod, New Wave",
     "year": "1978",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "113",
@@ -4506,7 +5006,8 @@
     "genre": "Rock, Pop, Piano Rock",
     "year": "1980",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "112",
@@ -4515,7 +5016,8 @@
     "genre": "Rock",
     "year": "1970",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "111",
@@ -4524,7 +5026,8 @@
     "genre": "Rock N' Roll",
     "year": "1975",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "110",
@@ -4533,7 +5036,8 @@
     "genre": "Ska, Two-Tone",
     "year": "1979",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "109",
@@ -4542,7 +5046,8 @@
     "genre": "Ska, Two-Tone",
     "year": "1980",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "108",
@@ -4551,7 +5056,8 @@
     "genre": "Ska, Two Tone",
     "year": "1984",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "107",
@@ -4560,7 +5066,8 @@
     "genre": "Ska, Two Tone",
     "year": "1982",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "106",
@@ -4569,7 +5076,8 @@
     "genre": "Reggae",
     "year": "1977",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "105",
@@ -4578,7 +5086,8 @@
     "genre": "Jazz",
     "year": "1959",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2006"
   },
   {
     "id": "104",
@@ -4587,7 +5096,8 @@
     "genre": "Classical",
     "year": "1968",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "103",
@@ -4596,7 +5106,8 @@
     "genre": "Classical",
     "year": "1969",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2005"
   },
   {
     "id": "101",
@@ -4605,7 +5116,8 @@
     "genre": "Rock",
     "year": "1985",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "100",
@@ -4614,7 +5126,8 @@
     "genre": "Folk",
     "year": "1963",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "99",
@@ -4623,7 +5136,8 @@
     "genre": "Folk",
     "year": "1965",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "98",
@@ -4632,7 +5146,8 @@
     "genre": "Rock, Art Rock",
     "year": "1979",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "97",
@@ -4641,7 +5156,8 @@
     "genre": "Jazz",
     "year": "1956",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2009"
   },
   {
     "id": "96",
@@ -4650,7 +5166,8 @@
     "genre": "Country",
     "year": "1969",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "95",
@@ -4659,7 +5176,8 @@
     "genre": "Country",
     "year": "1965",
     "discs": "2",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "94",
@@ -4668,7 +5186,8 @@
     "genre": "Rock, Power Pop",
     "year": "1985",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2005"
   },
   {
     "id": "93",
@@ -4677,7 +5196,8 @@
     "genre": "R&B",
     "year": "1959",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "92",
@@ -4686,7 +5206,8 @@
     "genre": "Rock N' Roll",
     "year": "1987",
     "discs": "2",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2006"
   },
   {
     "id": "91",
@@ -4695,7 +5216,8 @@
     "genre": "Punk",
     "year": "1982",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "90",
@@ -4704,7 +5226,8 @@
     "genre": "Jazz",
     "year": "1965",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2008"
   },
   {
     "id": "89",
@@ -4713,7 +5236,8 @@
     "genre": "Rock",
     "year": "1969",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "88",
@@ -4722,7 +5246,8 @@
     "genre": "Glam Rock, Art Rock",
     "year": "1971",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "87",
@@ -4731,7 +5256,8 @@
     "genre": "Rock, Funk, Krautrock",
     "year": "1976",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "86",
@@ -4740,7 +5266,8 @@
     "genre": "Pop",
     "year": "1983",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "85",
@@ -4749,7 +5276,8 @@
     "genre": "Art Rock, Experimental Rock",
     "year": "2016",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2016"
   },
   {
     "id": "84",
@@ -4758,7 +5286,8 @@
     "genre": "Art Rock, World",
     "year": "1981",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2018"
   },
   {
     "id": "83",
@@ -4767,7 +5296,8 @@
     "genre": "Rock",
     "year": "1979",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2018"
   },
   {
     "id": "39",
@@ -4776,7 +5306,8 @@
     "genre": "Indie Pop",
     "year": "2014",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "20",
@@ -4785,7 +5316,8 @@
     "genre": "Art Pop, Noise Pop",
     "year": "2011",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "19",
@@ -4794,7 +5326,8 @@
     "genre": "Art Pop, Worldbeat",
     "year": "2014",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2014"
   },
   {
     "id": "18",
@@ -4803,7 +5336,8 @@
     "genre": "New Wave",
     "year": "1981",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2006"
   },
   {
     "id": "17",
@@ -4812,7 +5346,8 @@
     "genre": "Progressive Rock",
     "year": "1972",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "16",
@@ -4821,7 +5356,8 @@
     "genre": "New Wave",
     "year": "1983",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "15",
@@ -4830,7 +5366,8 @@
     "genre": "New Wave",
     "year": "1978",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "13",
@@ -4839,7 +5376,8 @@
     "genre": "Glam Rock",
     "year": "1972",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "12",
@@ -4848,7 +5386,8 @@
     "genre": "Punk",
     "year": "1979",
     "discs": "2",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2013"
   },
   {
     "id": "11",
@@ -4857,7 +5396,8 @@
     "genre": "Soul, R&B, Neo Soul",
     "year": "2006",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "10",
@@ -4866,7 +5406,8 @@
     "genre": "Soundtrack, Indian",
     "year": "2007",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "9",
@@ -4875,7 +5416,8 @@
     "genre": "Folk",
     "year": "2011",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2011"
   },
   {
     "id": "8",
@@ -4884,7 +5426,8 @@
     "genre": "Folk",
     "year": "2010",
     "discs": "2",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2010"
   },
   {
     "id": "7",
@@ -4893,7 +5436,8 @@
     "genre": "New Wave",
     "year": "1980",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2004"
   },
   {
     "id": "6",
@@ -4902,7 +5446,8 @@
     "genre": "Country",
     "year": "1936",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2007"
   },
   {
     "id": "5",
@@ -4911,7 +5456,8 @@
     "genre": "New Wave",
     "year": "1982",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2012"
   },
   {
     "id": "4",
@@ -4920,7 +5466,8 @@
     "genre": "Soundtrack",
     "year": "2013",
     "discs": "1",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   },
   {
     "id": "3",
@@ -4929,6 +5476,7 @@
     "genre": "Folk",
     "year": "2015",
     "discs": "2",
-    "speed": "33"
+    "speed": "33",
+    "bought": "2015"
   }
 ]

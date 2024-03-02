@@ -12,6 +12,8 @@ const Sort = ({ setSortDirection }) => {
           <option value='art-dsc'>Z-A</option>
           <option value='yr-asc'>Year (asc)</option>
           <option value='yr-dsc'>Year (dsc)</option>
+          <option value='pr-asc'>Purchased (asc)</option>
+          <option value='pr-dsc'>Purchased (dsc)</option>
         </select>
       </p>
     </div>

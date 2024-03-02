@@ -79,6 +79,30 @@ const yrDsc = data => {
   });
 }
 
+const prAsc = data => {
+  // sort by id first
+  data.sort(function(a,b) {
+    return a.id - b.id;
+  });
+
+  // then by bought
+  data.sort(function(a,b) {
+    return a.bought - b.bought;
+  });
+}
+
+const prDsc = data => {
+  // sort by id first
+  data.sort(function(a,b) {
+    return b.id - a.id;
+  });
+
+  // then by bought
+  data.sort(function(a,b) {
+    return b.bought - a.bought;
+  });
+}
+
 const handleSort = (data, sortDirection) => {
   switch(sortDirection) {
     case 'alb-rnd':
@@ -95,6 +119,12 @@ const handleSort = (data, sortDirection) => {
       break;
     case 'yr-dsc':
       yrDsc(data);
+      break;
+    case 'pr-asc':
+      prAsc(data);
+      break;
+    case 'pr-dsc':
+      prDsc(data);
       break;
     default:
       break;
