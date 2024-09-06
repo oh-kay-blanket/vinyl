@@ -16,7 +16,7 @@ const App = ({ rawData }) => {
   // const [data, setData] = useState(rawData.slice());
   const [filterType, setFilterType] = useState('artist');
   const [filterInput, setFilterInput] = useState('');
-  const [sortDirection, setSortDirection] = useState('rnd');
+  const [sortDirection, setSortDirection] = useState('art-asc'); 
   const [modalId, setModalId] = useState('');
   const [gridView, setGridView] = useState(true);
   const [currentItems, setCurrentItems] = useState(data);
