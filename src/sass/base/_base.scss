@@ -1,12 +1,13 @@
-@use '../base/color';
+@use "../base/color";
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;1,100;1,500;1,700;);
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap);
 
 body {
   margin: 0px;
   font-size: 16px;
-  font-family: "Roboto", 'Open Sans', Sans;
-  background-color: color.$white;
+  font-family: "Roboto", "Open Sans", Sans;
+  background-color: color.$primary;
   box-sizing: border-box;
   color: color.$black;
 
@@ -15,50 +16,40 @@ body {
   }
 }
 
-h1 {
-  // font-family: "Helvetica", 'Open Sans', Sans;
-  margin: 0px auto;
-  padding: 20px 0px;
-  font-size: 9rem;
-  font-weight: 800;
-  line-height: 1;
-  text-align: center;
-  background-color: color.$white;
-  color: color.$white;
-  text-shadow:
-    -1px 1px 0px color.$primary,
-    -1px 2px 0px color.$primary,
-    -2px 3px 0px color.$primary,
-    -2px 4px 0px color.$primary,
-    -3px 5px 0px color.$primary,
-    -3px 6px 0px color.$primary,
-    -4px 7px 0px color.$primary,
-    -4px 8px 0px color.$primary,
-    -5px 9px 0px color.$primary,
-    -5px 10px 0px color.$primary,
-    -6px 11px 0px color.$primary,
-    -7px 12px 0px color.$primary,
-    -8px 13px 0px color.$shadow,
-    -10px 14px 0px color.$shadow,
-    -12px 15px 0px color.$shadow,
-    -14px 16px 0px color.$shadow,
-    -16px 17px 0px color.$shadow,
-    -18px 18px 0px color.$shadow,
-    -20px 19px 0px color.$shadow,
-    -22px 20px 0px color.$shadow,
-    -24px 21px 0px color.$shadow,
-    -26px 22px 0px color.$shadow,
-    -28px 23px 0px color.$shadow,
-    -30px 24px 0px color.$shadow,
-    -32px 25px 0px color.$shadow,
-    -34px 26px 0px color.$shadow,
-    -36px 27px 0px color.$shadow;
+.title-liquid {
+  filter: url(#goo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
 
-    @media (min-width: 1000px) {
-        font-size: 14rem;
-    }
+  @media (min-width: 1000px) {
+    padding-top: 50px;
+  }
 }
 
-h2 {
-  // font-family: "Roboto", 'Open Sans', Sans;
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 7rem;
+  letter-spacing: 0px;
+  font-family: "Nunito", "Roboto", "Open Sans", sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  color: #ff1312;
+  position: relative;
+  z-index: 2;
+  text-shadow:
+    0 -2px 1px #ff82a022,
+    0 -1px 0 #ff82a011,
+    0 1px 1px #ff82a066,
+    0 2px 2px #ff82a044,
+    0 4px 4px #ff82a022,
+    0 3px 6px #ff82a011;
+
+  @media (min-width: 1000px) {
+    font-size: 8rem;
+    letter-spacing: -2px;
+  }
 }

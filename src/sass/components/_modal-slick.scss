@@ -11,7 +11,7 @@
     top: 0;
     width: 100vw; /* Full width */
     height: 100vh; /* Full height */
-    background-color: #fcfaf4cc;
+    background-color: rgba(255, 130, 160, 0.85);
 
     &.hidden {
         display: none;
@@ -31,7 +31,7 @@
         }
 
         .slick-arrow {
-            color: $primary;
+            color: $black;
         }
 
         .slick-prev, .slick-next {
@@ -44,7 +44,7 @@
 
             &:before {
                 // font-size: 2.2rem;
-                color: $primary;
+                color: $black;
             }
         }
 
@@ -71,7 +71,7 @@
             align-items: center;
             width: 30px;
             height: 30px;
-            color: $primary;
+            color: $black;
             z-index: 2;
             border-radius: 50%;
             opacity: 1;

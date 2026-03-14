@@ -8,7 +8,7 @@
 }
 
 i {
-  color: color.$primary;
+  color: color.$black;
 }
 
 input{
@@ -40,9 +40,10 @@ input{
     padding-left: 0px;
     margin-right: 5px;
     // color: color.$text;
-    background-color: color.$white;
+    background-color: transparent;
     font-weight: bold;
     font-size: 1rem;
+    color: color.$black;
     border: none;
   }
 }
@@ -67,6 +68,10 @@ input{
     border: 0px;
     border-bottom: 1px solid;
     // color: color.$text;
+
+    &::placeholder {
+      color: color.$gray;
+    }
 
     &:focus {
       outline: none;
@@ -99,12 +104,12 @@ input{
 
     &.active {
       i {
-        color: color.$primary;
+        color: color.$black;
       }
     }
 
     i {
-      color: color.$primary-v-light;
+      color: color.$gray;
     }
   }
 }
