@@ -48,10 +48,12 @@
 }
 
 .img {
-  background-size: cover;
+  background: color.$primary-v-dark;
 	display: block;
   margin: auto;
   width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
   transition: opacity .25s, box-shadow .25s;
   border-radius: 3px;
   box-shadow:
