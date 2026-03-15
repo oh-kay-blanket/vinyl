@@ -4,15 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Build 'images' var for development
-function importAll(r) {
-    let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-    return images;
-}
-
-
-const imagesLarge = importAll(require.context('./img/600', false, /\.(jpe?g)$/));
+const placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect fill='%23ddd' width='200' height='200'/%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%23ccc' stroke-width='2'/%3E%3Ccircle cx='100' cy='100' r='60' fill='none' stroke='%23ccc' stroke-width='1'/%3E%3Ccircle cx='100' cy='100' r='40' fill='none' stroke='%23ccc' stroke-width='1'/%3E%3Ccircle cx='100' cy='100' r='15' fill='%23ccc'/%3E%3Ccircle cx='100' cy='100' r='5' fill='%23bbb'/%3E%3C/svg%3E";
 
 const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
 
@@ -35,34 +27,12 @@ const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
         ]
     }
 
-  // HandleKeyPress
-    // const handleKeyPress = e => {
-    //     if (e.keyCode === 37) {
-    //     // modalAction('prev');
-    //     }
-
-    //     // Forward
-    //     if (e.keyCode === 39) {
-    //     // modalAction('next');
-    //     }
-    // }
-
-    // Keypress listen
-    // useEffect(() => {
-    //     document.addEventListener('keydown', handleKeyPress);
-
-    //     return () => {
-    //     document.removeEventListener('keydown', handleKeyPress);
-    //     };
-
-    // }, [modalId]);
-
     const modalList = modalId !== "" && data.map((record) => (<ModalCell key={record.id} record={record} />));
 
     return(
         <div className={modalId === "" ? 'modal hidden': 'modal'}>
             <div id="modal-table" className="modal-table">
-                <div className="icon icon-close" onClick={() => handleRecordClick(0,"")}><i className="fa fa-times" aria-hidden="true"></i></div>
+                <div className="icon icon-close" onClick={() => handleRecordClick(0,"")}><span className="material-symbols-rounded">close</span></div>
                 <Slider ref={slider} {...sliderSettings}>
                     {modalList}
                 </Slider>
@@ -71,47 +41,35 @@ const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
     );
 }
 
-const ModalCell = ({ record, setModalId }) => {
+const ModalCell = ({ record }) => {
 
-    record.image = imagesLarge[`${record.id}.jpg`];
+    const displayGenre = record.genre ? record.genre.replaceAll(", ", ' / ') : '';
 
-    if(record.genre) {
-        record.genre = record.genre.replaceAll(", ", ' / ');
-    }
-  
     return(
         <div className="modal-cell">
             <div className="caption">
                 <h2>{record.album}</h2>
                 <h3>{record.artist}</h3>
-                <p className="record__genre">{record.genre}</p>
+                <p className="record__genre">{displayGenre}</p>
                 <p className="record__year">{record.year}</p>
                 <p className="record__speed">{record.speed} rpm</p>
             </div>
-            <img loading="lazy" alt='' src={record.image}></img>
+            <img loading="lazy" alt='' src={record.cover_image || placeholder} onError={e => e.target.src = placeholder}></img>
         </div>
     );
 }
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
+      <div className={className} onClick={onClick} />
     );
   }
-  
+
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "green" }}
-        onClick={onClick}
-      />
+      <div className={className} onClick={onClick} />
     );
   }
 

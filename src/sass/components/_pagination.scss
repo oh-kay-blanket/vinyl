@@ -1,29 +1,31 @@
-@use '../base/color' as *;
+@use "../base/color" as *;
 
 .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-    padding: 0;
-    color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 0;
+  color: $black;
 
-    .previous {
-        font-size: 1rem;
+  .previous,
+  .next {
+    .material-symbols-rounded {
+      font-size: 3rem;
+      vertical-align: middle;
+      color: #ff1312;
+      filter: url(#goo-md);
     }
+  }
 
-    .next {
-        font-size: 1.3rem;
+  li {
+    display: inline;
+    margin: 0 0.4em;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+    &.selected {
+      font-weight: 800;
     }
-
-    li {
-        display: inline;
-        margin: 0 .4em;
-        cursor: pointer;
-
-        &.selected {
-            font-weight: 800;
-            font-size: 1.3rem;
-        }
-    }
+  }
 }

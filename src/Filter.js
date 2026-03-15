@@ -5,8 +5,8 @@ const Filter = ({ filterType, setFilterType, filterInput, setFilterInput }) => {
   return (
     <div className='filter-box'>
       <p>
-        <i className="fas fa-filter"></i>
-        <select onChange={e => setFilterType(e.target.value)}>
+        <span className="material-symbols-rounded">filter_alt</span>
+        <select value={filterType} onChange={e => setFilterType(e.target.value)}>
           <option value='artist'>Artist</option>
           <option value='album'>Album</option>
           <option value='genre'>Genre</option>
@@ -16,7 +16,7 @@ const Filter = ({ filterType, setFilterType, filterInput, setFilterInput }) => {
         <input
           className='input-box'
           type="text"
-          placeholder='Query'
+          placeholder='search'
           value={filterInput}
           onChange={e => setFilterInput(e.target.value)}
           autoFocus
