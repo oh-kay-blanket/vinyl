@@ -5,7 +5,7 @@ const Sort = ({ setSortDirection }) => {
   return (
     <div className='sort-box'>
       <p>
-      <i className="fas fa-sort"></i>
+      <span className="material-symbols-rounded">sort</span>
         <select onChange={e => setSortDirection(e.target.value)}>
           <option value='alb-rnd'>Random</option>
           <option value='art-asc'>A-Z</option>

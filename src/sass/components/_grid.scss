@@ -1,5 +1,5 @@
-@use '../base/color';
-@use '../mixins/neumorph';
+@use "../base/color";
+@use "../mixins/neumorph";
 /* GRID */
 
 .record-grid {
@@ -10,19 +10,23 @@
   grid-auto-flow: dense;
 
   @media (min-width: 1000px) {
-    max-width: 90%;
+    width: 90%;
+    max-width: 1200px;
   }
 }
 
 .main-box {
   display: flex;
   justify-content: center;
-	align-items: center;
+  align-items: center;
   margin: 1%;
   width: 30%;
   height: 30%;
 
-  h2, h3, h4, p {
+  h2,
+  h3,
+  h4,
+  p {
     margin: 0px;
   }
 
@@ -34,33 +38,30 @@
     &:hover {
       cursor: pointer;
 
-      .img{
+      .img {
         opacity: 0.5;
-        transition: opacity .25s;
-    	}
+        transition: opacity 0.25s;
+      }
 
       #record-info {
-    	  opacity: 1;
-        transition: opacity .25s;
-    	}
+        opacity: 1;
+        transition: opacity 0.25s;
+      }
     }
   }
 }
 
 .img {
-  background: color.$primary-v-dark;
-	display: block;
+  background: #ff131255;
+  display: block;
   margin: auto;
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  transition: opacity .25s, box-shadow .25s;
-  border-radius: 3px;
-  box-shadow:
-    0 -1px 1px rgba(255, 255, 255, 0.15),
-    0 2px 4px rgba(0, 0, 0, 0.25),
-    0 6px 12px rgba(0, 0, 0, 0.15),
-    0 0 20px rgba(0, 0, 0, 0.1);
+  transition:
+    opacity 0.25s,
+    box-shadow 0.25s;
+  border-radius: 1rem;
 }
 
 #record-info {
@@ -80,11 +81,12 @@
     flex-direction: column;
     justify-content: center;
     margin: 0px;
-    transition: opacity .25s;
+    transition: opacity 0.25s;
     overflow: hidden;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     color: color.$white;
     text-align: center;
     padding-left: 5px;

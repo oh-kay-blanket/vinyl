@@ -1,73 +1,97 @@
-@use '../mixins/neumorph';
-@use '../base/color';
+@use "../mixins/neumorph";
+@use "../base/color";
 
 /* FILTER */
 
-.fas {
-  margin-right: 7px;
+.material-symbols-rounded {
+  margin-right: 5px;
+  font-size: 1.8rem;
+  vertical-align: middle;
+  color: #ff1312;
+  filter: url(#goo-sm);
+  text-shadow:
+    0 -2px 1px #ff82a022,
+    0 -1px 0 #ff82a011,
+    0 1px 1px #ff82a066,
+    0 2px 2px #ff82a044,
+    0 4px 4px #ff82a022,
+    0 3px 6px #ff82a011;
 }
 
-i {
-  color: color.$black;
-}
-
-input{
+input {
   margin-left: 0px;
   padding-left: 0px;
   font-size: 1rem;
 }
 
-.functions-box { 
+.functions-box {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0px 0px 5px 0px;
-  padding: 10px 10px;
-  font-size: 1rem;
-  // color: color.$text;
-  // background-color: color.$primary;
+  padding: 8px 5px;
+
+  @media (min-width: 389px) {
+    padding: 10px 20px;
+  }
 
   @media (min-width: 1000px) {
-    justify-content: center;
-    align-items: center;
     margin: 0px 0px 15px 0px;
     padding: 20px 50px;
+    font-size: 1.3rem;
   }
 
   select {
     margin-left: 0px;
-    padding-left: 0px;
-    margin-right: 5px;
-    // color: color.$text;
+    margin-right: 3px;
+    padding: 8px 4px;
     background-color: transparent;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: inherit;
     color: color.$black;
     border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
 // FILTER & SORT BOX
-.filter-box, .sort-box {
-  margin: 5px;
+.filter-box,
+.sort-box {
+  margin: 0 3px;
+
+  @media (min-width: 500px) {
+    margin: 0 10px;
+  }
+
+  @media (min-width: 1000px) {
+    margin: 0 20px;
+  }
 
   p {
-    margin: 5px;
+    margin: 3px;
   }
 }
 
 .filter-box {
-  padding-right: 10px;
   text-align: center;
 
   input {
     background: none;
-    margin-right: 10px;
-    width: 120px;
+    width: 80px;
     border: 0px;
     border-bottom: 1px solid;
-    // color: color.$text;
+    font-size: inherit;
+
+    @media (min-width: 1000px) {
+      width: 120px;
+    }
 
     &::placeholder {
       color: color.$gray;
@@ -75,41 +99,6 @@ input{
 
     &:focus {
       outline: none;
-    }
-  }
-}
-
-
-// DISPLAY
-.display-select {
-  display: flex;
-
-  @media (min-width: 1000px) {
-    margin-left: 15px;
-  }
-
-  & > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 5px;
-    width: 36px;
-    height: 36px;
-    font-size: 1.7rem;
-
-    &:focus {
-      outline: none;
-    }
-
-    &.active {
-      i {
-        color: color.$black;
-      }
-    }
-
-    i {
-      color: color.$gray;
     }
   }
 }

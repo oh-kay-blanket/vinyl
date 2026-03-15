@@ -10,7 +10,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Vinyl',
       template: "./src/index.html",
-      favicon: "./src/img/logo.png"
+      favicon: "./src/favicon.png"
     })
   ],
   output: {

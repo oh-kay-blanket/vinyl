@@ -4,7 +4,6 @@ import ReactPaginate from "react-paginate";
 import Filter from "./Filter";
 import Sort from "./Sort";
 import Grid from "./Grid";
-import List from "./List";
 import ModalSlick from "./ModalSlick";
 import {
   handleFilter,
@@ -21,7 +20,6 @@ const App = ({ rawData }) => {
   const [filterInput, setFilterInput] = useState("");
   const [sortDirection, setSortDirection] = useState("alb-rnd");
   const [modalId, setModalId] = useState("");
-  const [gridView, setGridView] = useState(true);
   const [currentItems, setCurrentItems] = useState(data);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
@@ -102,6 +100,48 @@ const App = ({ rawData }) => {
               />
               <feComposite in="SourceGraphic" in2="goo" operator="atop" />
             </filter>
+            <filter id="goo-sm">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="1.5"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                type="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 8 -3"
+                result="goo"
+              />
+              <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+            <filter id="goo-md">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="2.5"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                type="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 12 -5"
+                result="goo"
+              />
+              <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+            <filter id="goo-lg">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="4"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                type="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 16 -6"
+                result="goo"
+              />
+              <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
           </defs>
         </svg>
         <div className="title-liquid">
@@ -109,32 +149,17 @@ const App = ({ rawData }) => {
         </div>
       </div>
       <div className="functions-box">
+        <Sort
+          data={data}
+          sortDirection={sortDirection}
+          setSortDirection={setSortDirection}
+        />
         <Filter
           filterType={filterType}
           setFilterType={setFilterType}
           filterInput={filterInput}
           setFilterInput={setFilterInput}
         />
-        <Sort
-          data={data}
-          sortDirection={sortDirection}
-          setSortDirection={setSortDirection}
-        />
-        <div className="display-select">
-          <div
-            className={gridView && `active`}
-            onClick={() => setGridView(true)}
-          >
-            <i className="fa fa-th-large"></i>
-          </div>
-
-          <div
-            className={!gridView && `active`}
-            onClick={() => setGridView(false)}
-          >
-            <i className="fa fa-list"></i>
-          </div>
-        </div>
       </div>
 
       <ModalSlick
@@ -143,19 +168,15 @@ const App = ({ rawData }) => {
         handleRecordClick={handleRecordClick}
         modalId={modalId}
       />
-      {gridView ? (
-        <Grid data={currentItems} handleRecordClick={handleRecordClick} />
-      ) : (
-        <List data={currentItems} handleRecordClick={handleRecordClick} />
-      )}
+      <Grid data={currentItems} handleRecordClick={handleRecordClick} />
       <ReactPaginate
         breakLabel="..."
-        nextLabel="▶"
+        nextLabel={<span className="material-symbols-rounded">chevron_right</span>}
         onPageChange={handlePaginationClick}
         pageRangeDisplayed={0}
         marginPagesDisplayed={1}
         pageCount={pageCount}
-        previousLabel="◀"
+        previousLabel={<span className="material-symbols-rounded">chevron_left</span>}
         renderOnZeroPageCount={null}
         className="pagination"
       />
