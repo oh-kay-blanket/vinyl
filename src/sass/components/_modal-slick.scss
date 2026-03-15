@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1; /* Sit on top */
+  z-index: 10; /* Sit on top */
   left: 0;
   top: 0;
   width: 100vw; /* Full width */
@@ -153,6 +153,22 @@
         }
       }
 
+      .img-desktop {
+        display: none;
+
+        @media (min-width: 1000px) {
+          display: block;
+        }
+      }
+
+      .img-mobile {
+        display: block;
+
+        @media (min-width: 1000px) {
+          display: none;
+        }
+      }
+
       /* MODAL TEXT */
       .caption {
         box-sizing: border-box;
@@ -166,10 +182,54 @@
         width: 80vw;
         height: 80vw;
         overflow-y: auto;
-        background-color: #222;
-        border: 5px solid #333;
+        position: relative;
+        border: 8px solid #313131;
         border-radius: 50%;
         z-index: -1;
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          background:
+            radial-gradient(
+              circle at center,
+              #383838 0%,
+              #3a3a3a 22%,
+              #3a3a3a 22.5%,
+              #555 22.5%,
+              #555 23.5%,
+              #333 23.5%,
+              transparent 24%
+            ),
+            radial-gradient(
+              circle at center,
+              transparent 32%,
+              rgba(255, 255, 255, 0.03) 32.5%,
+              transparent 33%,
+              transparent 45%,
+              rgba(255, 255, 255, 0.03) 45.5%,
+              transparent 46%,
+              transparent 58%,
+              rgba(255, 255, 255, 0.03) 58.5%,
+              transparent 59%,
+              transparent 71%,
+              rgba(255, 255, 255, 0.03) 71.5%,
+              transparent 72%,
+              transparent 84%,
+              rgba(255, 255, 255, 0.03) 84.5%,
+              transparent 85%
+            ),
+            #222;
+          -webkit-mask: radial-gradient(
+            circle at center,
+            transparent 3px,
+            black 4px
+          );
+          mask: radial-gradient(circle at center, transparent 3px, black 4px);
+          z-index: -1;
+        }
 
         @media (min-width: 1000px) {
           margin: 0 0 0 -100px;

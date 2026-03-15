@@ -171,17 +171,21 @@ const App = ({ rawData }) => {
       <Grid data={currentItems} handleRecordClick={handleRecordClick} />
       <ReactPaginate
         breakLabel="..."
-        nextLabel={<span className="material-symbols-rounded">chevron_right</span>}
+        nextLabel={
+          <span className="material-symbols-rounded">chevron_right</span>
+        }
         onPageChange={handlePaginationClick}
         pageRangeDisplayed={0}
         marginPagesDisplayed={1}
         pageCount={pageCount}
-        previousLabel={<span className="material-symbols-rounded">chevron_left</span>}
+        previousLabel={
+          <span className="material-symbols-rounded">chevron_left</span>
+        }
         renderOnZeroPageCount={null}
         className="pagination"
       />
-      <a href="https://ohkayblanket.com" className="footer-link">
-        ohkayblanket.com
+      <a href="https://ohkaycomputer.com" className="footer-link">
+        Oh, Kay
       </a>
     </>
   );

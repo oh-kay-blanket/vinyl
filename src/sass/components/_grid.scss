@@ -70,9 +70,51 @@
   @media (min-width: 1000px) {
     display: flex;
     position: absolute;
-    background-color: #222;
-    border: 3px solid #333;
+    border: 5px solid #313131;
     border-radius: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background:
+        radial-gradient(
+          circle at center,
+          #383838 0%,
+          #3a3a3a 22%,
+          #3a3a3a 22.5%,
+          #555 22.5%,
+          #555 23.5%,
+          #333 23.5%,
+          transparent 24%
+        ),
+        radial-gradient(
+          circle at center,
+          transparent 32%,
+          rgba(255, 255, 255, 0.03) 32.5%,
+          transparent 33%,
+          transparent 45%,
+          rgba(255, 255, 255, 0.03) 45.5%,
+          transparent 46%,
+          transparent 58%,
+          rgba(255, 255, 255, 0.03) 58.5%,
+          transparent 59%,
+          transparent 71%,
+          rgba(255, 255, 255, 0.03) 71.5%,
+          transparent 72%,
+          transparent 84%,
+          rgba(255, 255, 255, 0.03) 84.5%,
+          transparent 85%
+        ),
+        #222;
+      -webkit-mask: radial-gradient(
+        circle at center,
+        transparent 3px,
+        black 4px
+      );
+      mask: radial-gradient(circle at center, transparent 3px, black 4px);
+    }
     box-sizing: border-box;
     color: color.$text;
     width: 195px;
@@ -91,6 +133,8 @@
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
+    position: relative;
+    z-index: 1;
   }
 
   h2 {
