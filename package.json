@@ -26,6 +26,7 @@
     "csv-loader": "^3.0.3",
     "dotenv": "^17.3.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.5.0",
     "papaparse": "^5.2.0",
     "sass-loader": "^13.2.0",
