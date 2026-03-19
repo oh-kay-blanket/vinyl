@@ -186,6 +186,11 @@
         border: 8px solid #313131;
         border-radius: 50%;
         z-index: -1;
+        animation: vinyl-spin 3s linear infinite paused;
+
+        &.spinning {
+          animation-play-state: running;
+        }
 
         &::before {
           content: "";
@@ -285,5 +290,14 @@
         }
       }
     }
+  }
+}
+
+@keyframes vinyl-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

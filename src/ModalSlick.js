@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
+import AudioPreview from "./AudioPreview";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,6 +15,8 @@ const placeholderMobile =
   "%3Cline x1='5' y1='0' x2='5' y2='200' stroke='%23d5d0c9' stroke-width='0.5'/%3E%3Cline x1='195' y1='0' x2='195' y2='200' stroke='%23d5d0c9' stroke-width='0.5'/%3E%3Cline x1='60' y1='15' x2='60' y2='185' stroke='%23ddd8d2' stroke-width='0.3' opacity='0.5'/%3E%3Cline x1='140' y1='15' x2='140' y2='185' stroke='%23ddd8d2' stroke-width='0.3' opacity='0.5'/%3E%3C/svg%3E";
 
 const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
   var sliderSettings = {
     infinite: true,
     speed: 500,
@@ -22,6 +25,7 @@ const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
     arrows: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    afterChange: (index) => setActiveSlideIndex(index),
     responsive: [
       {
         breakpoint: 768,
@@ -35,7 +39,13 @@ const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
 
   const modalList =
     modalId !== "" &&
-    data.map((record) => <ModalCell key={record.id} record={record} />);
+    data.map((record, index) => (
+      <ModalCell
+        key={record.id}
+        record={record}
+        isActive={modalId !== "" && index === activeSlideIndex}
+      />
+    ));
 
   return (
     <div className={modalId === "" ? "modal hidden" : "modal"}>
@@ -54,15 +64,18 @@ const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
   );
 };
 
-const ModalCell = ({ record }) => {
+const ModalCell = ({ record, isActive }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
   const displayGenre = record.genre ? record.genre.replaceAll(", ", " / ") : "";
   const titleLen = record.album.length + record.artist.length;
   const titleSize = titleLen > 70 ? "1.2rem" : titleLen > 50 ? "1.3rem" : null;
   const artistSize = titleLen > 70 ? "1.1rem" : titleLen > 50 ? "1.2rem" : null;
 
+  const captionClass = `caption${isPlaying ? " spinning" : ""}`;
+
   return (
     <div className="modal-cell">
-      <div className="caption">
+      <div className={captionClass}>
         <h2 style={titleSize ? { fontSize: titleSize } : undefined}>
           {record.album}
         </h2>
@@ -74,6 +87,12 @@ const ModalCell = ({ record }) => {
           <p className="record__year">{record.year}</p>
         )}
         {record.speed && <p className="record__speed">{record.speed} rpm</p>}
+        <AudioPreview
+          artist={record.artist}
+          album={record.album}
+          isActive={isActive}
+          onPlayStateChange={setIsPlaying}
+        />
       </div>
       <img
         className="img-desktop"

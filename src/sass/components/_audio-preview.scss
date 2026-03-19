@@ -1,0 +1,86 @@
+@use "../base/color" as *;
+
+.audio-preview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-top: 12px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &__ring {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__ring-bg {
+    stroke: rgba(255, 255, 255, 0.15);
+  }
+
+  &__ring-progress {
+    stroke: $primary;
+    transition: stroke-dashoffset 0.25s linear;
+    stroke-linecap: round;
+  }
+
+  &__icon {
+    font-size: 1.6rem;
+    color: $primary;
+    z-index: 1;
+    transition: opacity 0.2s;
+  }
+
+  &:hover &__icon {
+    opacity: 0.8;
+  }
+
+  // Loading state
+  &--loading &__icon {
+    animation: preview-pulse 1s ease-in-out infinite;
+  }
+
+  // Not found / error
+  &--not-found,
+  &--error {
+    cursor: default;
+  }
+
+  &--not-found &__icon,
+  &--error &__icon {
+    opacity: 0.35;
+    color: $white;
+  }
+
+  &--not-found &__ring-bg,
+  &--error &__ring-bg {
+    stroke: rgba(255, 255, 255, 0.06);
+  }
+
+  // Error is retryable
+  &--error {
+    cursor: pointer;
+  }
+
+  &--error &__icon {
+    opacity: 0.5;
+  }
+}
+
+@keyframes preview-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
