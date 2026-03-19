@@ -71,7 +71,17 @@ const ModalCell = ({ record }) => {
         </h3>
         <p className="record__genre">{displayGenre}</p>
         {record.year && record.year !== "0" && (
-          <p className="record__year">{record.year}</p>
+          <p className="record__year">
+            {record.original_year ? (
+              <>
+                <span className="record__year--original">{record.original_year}</span>
+                {" "}
+                <span className="record__year--pressing">({record.year} pressing)</span>
+              </>
+            ) : (
+              record.year
+            )}
+          </p>
         )}
         {record.speed && <p className="record__speed">{record.speed} rpm</p>}
       </div>
