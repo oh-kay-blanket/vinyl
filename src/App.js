@@ -20,6 +20,7 @@ const App = ({ rawData }) => {
   const [filterInput, setFilterInput] = useState("");
   const [sortDirection, setSortDirection] = useState("alb-rnd");
   const [modalId, setModalId] = useState("");
+  const [modalIndex, setModalIndex] = useState(0);
   const [currentItems, setCurrentItems] = useState(data);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
@@ -69,6 +70,7 @@ const App = ({ rawData }) => {
   // Open Modal
   function handleRecordClick(index, id) {
     setModalId(id);
+    setModalIndex(index);
     slider.current.slickGoTo(index, true);
   }
 
@@ -167,6 +169,7 @@ const App = ({ rawData }) => {
         slider={slider}
         handleRecordClick={handleRecordClick}
         modalId={modalId}
+        modalIndex={modalIndex}
       />
       <Grid data={currentItems} handleRecordClick={handleRecordClick} />
       <ReactPaginate

@@ -12,9 +12,10 @@
   top: 0;
   width: 100vw; /* Full width */
   height: 100vh; /* Full height */
-  background-color: rgba(255, 130, 160, 0.3);
+  background: rgb(10 3 4 / 68%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  -webkit-tap-highlight-color: transparent;
 
   &.hidden {
     display: none;
@@ -101,7 +102,7 @@
       color: #ff1312;
       z-index: 2;
       border-radius: 50%;
-      opacity: 1;
+      opacity: 0.7;
       transition: opacity 0.25s;
 
       &:hover {
@@ -119,8 +120,8 @@
         }
 
         .material-symbols-rounded {
-          font-size: 4.5rem;
-          filter: url(#goo-lg);
+          font-size: 3rem;
+          filter: url(#goo-md);
         }
       }
     }
@@ -133,66 +134,171 @@
       align-items: center;
       height: 100vh;
       margin: 0px 15px;
-      padding: 15px;
+      padding: 40px 15px;
       box-sizing: border-box;
-
-      @media (min-width: 1000px) {
-        display: flex;
-        flex-flow: row-reverse;
-        justify-content: center;
-        align-items: center;
-      }
 
       /* IMAGE */
       img {
         position: relative;
         z-index: 1;
-        width: 85vw;
-        border-radius: 3px;
+        width: 65vw;
+        max-width: 425px;
+        object-fit: contain;
+        transform: perspective(800px) rotateX(-4deg) rotateY(1deg);
+        border-radius: 2px;
+        box-shadow:
+          0 1px 0 rgba(255, 255, 255, 0.08),
+          0 2px 4px rgba(0, 0, 0, 0.2),
+          0 6px 12px rgba(0, 0, 0, 0.15),
+          0 12px 24px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        outline: 1px solid rgba(255, 255, 255, 0.05);
 
         @media (min-width: 1000px) {
-          width: 500px;
-        }
-      }
-
-      .img-desktop {
-        display: none;
-
-        @media (min-width: 1000px) {
-          display: block;
-        }
-      }
-
-      .img-mobile {
-        display: block;
-
-        @media (min-width: 1000px) {
-          display: none;
+          width: 425px;
         }
       }
 
       .vinyl-wrapper {
         position: relative;
-        margin: 0 0 -55px 0;
-        width: 80vw;
-        height: 80vw;
+        margin-top: -25px;
+        width: 65vw;
+        max-width: 40vh;
+        height: 65vw;
+        max-height: 40vh;
+        transform: perspective(800px) rotateX(40deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 50px 30px 20px;
+        box-sizing: content-box;
+        background: linear-gradient(
+          160deg,
+          #787878 0%,
+          #4f4444 40%,
+          #828282 100%
+        );
+        border-radius: 12px;
+        box-shadow:
+          0 2px 0 #333,
+          0 4px 0 #2a2a2a,
+          0 6px 0 #222,
+          0 10px 20px rgba(0, 0, 0, 0.4),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+        // Tonearm pivot (static cylinder)
+        &::before {
+          content: "";
+          position: absolute;
+          top: 30px;
+          right: 25px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          z-index: 2;
+          // Top face
+          background:
+            radial-gradient(
+              circle at 40% 40%,
+              rgba(255, 255, 255, 0.3),
+              transparent 50%
+            ),
+            radial-gradient(circle, #888 0%, #666 70%, #555 100%);
+          // Cylinder wall + shadow
+          box-shadow:
+            0 1px 0 #666,
+            0 2px 0 #5a5a5a,
+            0 3px 0 #505050,
+            0 4px 0 #454545,
+            0 5px 0 #3a3a3a,
+            0 6px 0 #333,
+            0 7px 0 #2a2a2a,
+            0 8px 4px rgba(0, 0, 0, 0.4),
+            inset 0 1px 1px rgba(255, 255, 255, 0.3);
+        }
+
+        // Tonearm arm
+        .tonearm {
+          position: absolute;
+          top: 37px;
+          right: 31px;
+          width: 5px;
+          height: 55%;
+          background: linear-gradient(
+            to right,
+            #555,
+            #888 40%,
+            #999 50%,
+            #888 60%,
+            #555
+          );
+          border-radius: 2px;
+          transform-origin: top center;
+          transform: rotate(0deg);
+          transition: transform 0.6s ease-in-out;
+          box-shadow:
+            0 2px 0 #3a3a3a,
+            0 4px 6px rgba(0, 0, 0, 0.5),
+            inset 1px 0 1px rgba(255, 255, 255, 0.2),
+            inset -1px 0 1px rgba(0, 0, 0, 0.3);
+          z-index: 1;
+          pointer-events: none;
+
+          // Headshell
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-8deg);
+            width: 10px;
+            height: 25px;
+            background: linear-gradient(to bottom, #777, #666);
+            border-radius: 2px 2px 1px 1px;
+            box-shadow:
+              0 2px 0 #3a3a3a,
+              0 4px 6px rgba(0, 0, 0, 0.5),
+              inset 0 1px 0 rgba(255, 255, 255, 0.15);
+          }
+        }
+
+        &:has(> .audio-preview) .tonearm {
+          transform: rotate(17deg);
+        }
 
         @media (min-width: 1000px) {
-          margin: 0 0 0 -100px;
           width: 489px;
           height: 489px;
+          margin-top: -72px;
+          transform: perspective(1000px) rotateX(40deg);
         }
 
         > .audio-preview {
           position: absolute;
-          bottom: 60px;
-          right: 0;
+          bottom: 16px;
+          right: 16px;
           z-index: 2;
           margin: 0;
+        }
+      }
 
-          @media (min-width: 1000px) {
-            bottom: 0;
-          }
+      .vinyl-shadow {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        bottom: 30px;
+        left: 20px;
+        border-radius: 50%;
+        box-shadow:
+          0 2px 0 #1a1a1a,
+          0 4px 8px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+
+        @media (min-width: 1000px) {
+          top: 35px;
+          right: 60px;
+          bottom: 35px;
+          left: 60px;
         }
       }
 
@@ -207,9 +313,9 @@
         filter: url(#goo-sm);
         width: 100%;
         height: 100%;
-        overflow-y: auto;
+        overflow: hidden;
         position: relative;
-        border: 8px solid #313131;
+        border: 8px solid #2d2d2d;
         border-radius: 50%;
         animation: vinyl-spin 3s linear infinite paused;
 
@@ -266,46 +372,113 @@
         p {
           display: block;
           text-align: center;
-          margin: 3px 0px 4px;
+          margin: 2px 0px 3px;
           color: $white;
+          font-family: "Inter", sans-serif;
+          max-width: 65%;
 
           @media (min-width: 1000px) {
             max-width: 60%;
+            margin: 3px 0px 5px;
           }
         }
 
         // Album
         h2 {
           font-size: 1.4rem;
+          font-weight: 700;
+          line-height: 1.2;
 
           @media (min-width: 1000px) {
-            font-size: 2rem;
+            font-size: 2.2rem;
           }
         }
 
         // Artist
         h3 {
           font-weight: 400;
-          font-size: 1.3rem;
-          line-height: 1.3;
+          font-size: 1.2rem;
+          line-height: 1.2;
+
+          @media (min-width: 1000px) {
+            font-size: 1.6rem;
+          }
         }
 
         .record__year {
           opacity: 0.8;
-          font-size: 1.1rem;
+          font-size: 1rem;
           font-weight: 600;
+
+          @media (min-width: 1000px) {
+            font-size: 1.2rem;
+          }
         }
 
         .record__genre {
-          // font-weight: 500;
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           text-transform: uppercase;
           letter-spacing: 1.2px;
+
+          @media (min-width: 1000px) {
+            font-size: 0.9rem;
+            letter-spacing: 1.5px;
+          }
         }
 
         .record__speed {
           opacity: 0.5;
-          font-size: 0.9rem;
+          font-size: 0.85rem;
+
+          @media (min-width: 1000px) {
+            font-size: 1rem;
+          }
+        }
+
+        // Long text size variants
+        &--md {
+          h2 {
+            font-size: 1rem;
+            @media (min-width: 1000px) {
+              font-size: 1.6rem;
+            }
+          }
+          h3 {
+            font-size: 0.95rem;
+            @media (min-width: 1000px) {
+              font-size: 1.3rem;
+            }
+          }
+        }
+
+        &--sm {
+          h2 {
+            font-size: 0.9rem;
+            @media (min-width: 1000px) {
+              font-size: 1.4rem;
+            }
+          }
+          h3 {
+            font-size: 0.85rem;
+            @media (min-width: 1000px) {
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        &--xs {
+          h2 {
+            font-size: 0.8rem;
+            @media (min-width: 1000px) {
+              font-size: 1.2rem;
+            }
+          }
+          h3 {
+            font-size: 0.75rem;
+            @media (min-width: 1000px) {
+              font-size: 1rem;
+            }
+          }
         }
       }
     }

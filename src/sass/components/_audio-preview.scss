@@ -5,16 +5,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   margin-top: 12px;
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: transparent;
   cursor: pointer;
   outline: none;
   -webkit-tap-highlight-color: transparent;
+
+  // Raised button surface — matches turntable
+  background: linear-gradient(160deg, #626262 0%, #786969 40%, #797575 100%);
+  box-shadow:
+    0 2px 0 #2a2a2a,
+    0 3px 6px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow:
+      0 0 0 #2a2a2a,
+      0 1px 3px rgba(0, 0, 0, 0.2),
+      inset 0 1px 1px rgba(255, 255, 255, 0.1),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.2);
+  }
 
   &__ring {
     position: absolute;
@@ -44,6 +64,8 @@
     align-items: center;
     justify-content: center;
     margin-right: 0;
+    filter: none;
+    text-shadow: none;
   }
 
   &:hover &__icon {
