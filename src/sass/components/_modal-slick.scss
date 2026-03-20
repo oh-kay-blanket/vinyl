@@ -145,6 +145,8 @@
 
       /* IMAGE */
       img {
+        position: relative;
+        z-index: 1;
         width: 85vw;
         border-radius: 3px;
 
@@ -169,6 +171,31 @@
         }
       }
 
+      .vinyl-wrapper {
+        position: relative;
+        margin: 0 0 -55px 0;
+        width: 80vw;
+        height: 80vw;
+
+        @media (min-width: 1000px) {
+          margin: 0 0 0 -100px;
+          width: 489px;
+          height: 489px;
+        }
+
+        > .audio-preview {
+          position: absolute;
+          bottom: 60px;
+          right: 0;
+          z-index: 2;
+          margin: 0;
+
+          @media (min-width: 1000px) {
+            bottom: 0;
+          }
+        }
+      }
+
       /* MODAL TEXT */
       .caption {
         box-sizing: border-box;
@@ -176,16 +203,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 0 -55px 0;
         padding: 20px;
         filter: url(#goo-sm);
-        width: 80vw;
-        height: 80vw;
+        width: 100%;
+        height: 100%;
         overflow-y: auto;
         position: relative;
         border: 8px solid #313131;
         border-radius: 50%;
-        z-index: -1;
         animation: vinyl-spin 3s linear infinite paused;
 
         &.spinning {
@@ -234,12 +259,6 @@
           );
           mask: radial-gradient(circle at center, transparent 3px, black 4px);
           z-index: -1;
-        }
-
-        @media (min-width: 1000px) {
-          margin: 0 0 0 -100px;
-          width: 489px;
-          height: 489px;
         }
 
         h2,

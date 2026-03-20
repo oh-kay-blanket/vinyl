@@ -44,6 +44,10 @@ const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
         key={record.id}
         record={record}
         isActive={modalId !== "" && index === activeSlideIndex}
+        loadPreview={
+          modalId !== "" &&
+          Math.abs(index - activeSlideIndex) <= 1
+        }
       />
     ));
 
@@ -64,7 +68,7 @@ const ModalSlick = ({ data, modalId, slider, handleRecordClick }) => {
   );
 };
 
-const ModalCell = ({ record, isActive }) => {
+const ModalCell = ({ record, isActive, loadPreview }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const displayGenre = record.genre ? record.genre.replaceAll(", ", " / ") : "";
   const titleLen = record.album.length + record.artist.length;
@@ -75,24 +79,28 @@ const ModalCell = ({ record, isActive }) => {
 
   return (
     <div className="modal-cell">
-      <div className={captionClass}>
-        <h2 style={titleSize ? { fontSize: titleSize } : undefined}>
-          {record.album}
-        </h2>
-        <h3 style={artistSize ? { fontSize: artistSize } : undefined}>
-          {record.artist}
-        </h3>
-        <p className="record__genre">{displayGenre}</p>
-        {record.year && record.year !== "0" && (
-          <p className="record__year">{record.year}</p>
+      <div className="vinyl-wrapper">
+        <div className={captionClass}>
+          <h2 style={titleSize ? { fontSize: titleSize } : undefined}>
+            {record.album}
+          </h2>
+          <h3 style={artistSize ? { fontSize: artistSize } : undefined}>
+            {record.artist}
+          </h3>
+          <p className="record__genre">{displayGenre}</p>
+          {record.year && record.year !== "0" && (
+            <p className="record__year">{record.year}</p>
+          )}
+          {record.speed && <p className="record__speed">{record.speed} rpm</p>}
+        </div>
+        {loadPreview && (
+          <AudioPreview
+            artist={record.artist}
+            album={record.album}
+            isActive={isActive}
+            onPlayStateChange={setIsPlaying}
+          />
         )}
-        {record.speed && <p className="record__speed">{record.speed} rpm</p>}
-        <AudioPreview
-          artist={record.artist}
-          album={record.album}
-          isActive={isActive}
-          onPlayStateChange={setIsPlaying}
-        />
       </div>
       <img
         className="img-desktop"

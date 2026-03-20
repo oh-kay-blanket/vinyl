@@ -11,12 +11,21 @@ function normalize(str) {
   return str.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
+function buildUrl(query) {
+  const params = `term=${query}&media=music&entity=song&limit=10`;
+  // In development, webpack-dev-server proxies /api/itunes to iTunes
+  if (window.location.hostname === "localhost") {
+    return `/api/itunes?${params}`;
+  }
+  return `https://itunes.apple.com/search?${params}`;
+}
+
 export async function fetchPreviewUrl(artist, album) {
   const key = `${artist}|||${album}`;
   if (cache.has(key)) return cache.get(key);
 
   const query = encodeURIComponent(`${sanitize(artist)} ${sanitize(album)}`);
-  const url = `https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=10`;
+  const url = buildUrl(query);
 
   try {
     const res = await fetch(url);

@@ -23,64 +23,49 @@
   }
 
   &__ring-bg {
-    stroke: rgba(255, 255, 255, 0.15);
+    stroke: rgba(#ff1312, 0.25);
   }
 
   &__ring-progress {
-    stroke: $primary;
+    stroke: #ff1312;
     transition: stroke-dashoffset 0.25s linear;
     stroke-linecap: round;
   }
 
   &__icon {
     font-size: 1.6rem;
-    color: $primary;
+    color: #ff1312;
     z-index: 1;
     transition: opacity 0.2s;
+    line-height: 1;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
   }
 
   &:hover &__icon {
     opacity: 0.8;
   }
 
-  // Loading state
-  &--loading &__icon {
-    animation: preview-pulse 1s ease-in-out infinite;
-  }
-
-  // Not found / error
-  &--not-found,
-  &--error {
-    cursor: default;
-  }
-
-  &--not-found &__icon,
-  &--error &__icon {
-    opacity: 0.35;
-    color: $white;
-  }
-
-  &--not-found &__ring-bg,
-  &--error &__ring-bg {
-    stroke: rgba(255, 255, 255, 0.06);
+  // Buffering state
+  &--buffering &__icon {
+    animation: preview-spin 1s linear infinite;
   }
 
   // Error is retryable
-  &--error {
-    cursor: pointer;
-  }
-
   &--error &__icon {
     opacity: 0.5;
   }
 }
 
-@keyframes preview-pulse {
-  0%,
-  100% {
-    opacity: 1;
+@keyframes preview-spin {
+  from {
+    transform: rotate(0deg);
   }
-  50% {
-    opacity: 0.3;
+  to {
+    transform: rotate(360deg);
   }
 }

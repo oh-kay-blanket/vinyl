@@ -4,7 +4,7 @@ import { fetchPreviewUrl } from "./iTunesApi";
 const CIRCUMFERENCE = Math.PI * 2 * 20; // r=20
 
 const AudioPreview = ({ artist, album, isActive, onPlayStateChange }) => {
-  const [status, setStatus] = useState("idle"); // idle|loading|playing|paused|not-found|error
+  const [status, setStatus] = useState("loading"); // loading|idle|playing|paused|error
   const [progress, setProgress] = useState(0);
   const audioRef = useRef(null);
   const previewDataRef = useRef(null);
@@ -19,10 +19,40 @@ const AudioPreview = ({ artist, album, isActive, onPlayStateChange }) => {
     onPlayStateChange && onPlayStateChange(false);
   }, [onPlayStateChange]);
 
+  // Pre-fetch preview URL on mount, with retry on failure
+  useEffect(() => {
+    let cancelled = false;
+    let retryTimer;
+
+    const attempt = (retries) => {
+      fetchPreviewUrl(artist, album)
+        .then((data) => {
+          if (cancelled) return;
+          if (data) {
+            previewDataRef.current = data;
+            setStatus("idle");
+          } else {
+            setStatus("not-found");
+          }
+        })
+        .catch(() => {
+          if (cancelled) return;
+          if (retries > 0) {
+            retryTimer = setTimeout(() => attempt(retries - 1), 5000);
+          } else {
+            setStatus("not-found");
+          }
+        });
+    };
+
+    attempt(1);
+    return () => { cancelled = true; clearTimeout(retryTimer); };
+  }, [artist, album]);
+
   // Stop playback when slide becomes inactive
   useEffect(() => {
-    if (!isActive) cleanup();
-  }, [isActive, cleanup]);
+    if (!isActive && status !== "loading" && status !== "not-found") cleanup();
+  }, [isActive, cleanup, status]);
 
   // Cleanup on unmount
   useEffect(() => {
@@ -33,6 +63,9 @@ const AudioPreview = ({ artist, album, isActive, onPlayStateChange }) => {
       }
     };
   }, []);
+
+  // Hide button if no preview available or still loading
+  if (status === "not-found" || status === "loading") return null;
 
   const handleClick = async (e) => {
     e.stopPropagation();
@@ -51,21 +84,12 @@ const AudioPreview = ({ artist, album, isActive, onPlayStateChange }) => {
       return;
     }
 
-    if (status === "not-found") return;
+    if (status === "buffering") return;
 
-    // idle or error — attempt to fetch and play
-    setStatus("loading");
+    // idle or error — attempt to play
+    setStatus("buffering");
 
     try {
-      if (!previewDataRef.current) {
-        const data = await fetchPreviewUrl(artist, album);
-        if (!data) {
-          setStatus("not-found");
-          return;
-        }
-        previewDataRef.current = data;
-      }
-
       const audio = new Audio(previewDataRef.current.previewUrl);
       audioRef.current = audio;
 
@@ -98,26 +122,21 @@ const AudioPreview = ({ artist, album, isActive, onPlayStateChange }) => {
   const iconName =
     status === "playing"
       ? "pause"
-      : status === "not-found" || status === "error"
-        ? "music_off"
+      : status === "buffering"
+        ? "progress_activity"
         : "play_arrow";
-
-  const isDisabled = status === "not-found";
   const dashOffset = CIRCUMFERENCE * (1 - progress);
 
   return (
     <button
       className={`audio-preview audio-preview--${status}`}
       onClick={handleClick}
-      disabled={isDisabled}
       title={
-        status === "not-found"
-          ? "No preview available"
-          : status === "error"
-            ? "Error — click to retry"
-            : previewDataRef.current
-              ? previewDataRef.current.trackName
-              : "Play preview"
+        status === "error"
+          ? "Error — click to retry"
+          : previewDataRef.current
+            ? previewDataRef.current.trackName
+            : "Play preview"
       }
     >
       <svg className="audio-preview__ring" viewBox="0 0 48 48">
