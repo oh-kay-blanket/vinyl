@@ -4,7 +4,8 @@ const placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg
 
 const GridBox = ({ data, handleRecordClick }) => {
 
-  const recordList = data.map((record, index) => (<RecordCell key={record.id} index={index} record={record} handleRecordClick={handleRecordClick} />));
+  const total = data.length;
+  const recordList = data.map((record, index) => (<RecordCell key={record.id} index={index} record={record} handleRecordClick={handleRecordClick} zIndex={total - index} />));
 
   return(
     <div id='record-grid' className='record-grid'>
@@ -13,13 +14,13 @@ const GridBox = ({ data, handleRecordClick }) => {
   );
 }
 
-const RecordCell = ({ index, record, handleRecordClick }) => {
+const RecordCell = ({ index, record, handleRecordClick, zIndex }) => {
   const titleLen = record.album.length + record.artist.length;
   const titleSize = titleLen > 60 ? '1rem' : titleLen > 40 ? '1.15rem' : '1.3rem';
   const artistSize = titleLen > 60 ? '0.85rem' : titleLen > 40 ? '0.9rem' : '1rem';
 
   return(
-    <div className='main-box' onClick={() => handleRecordClick(index)}>
+    <div className='main-box' style={{ zIndex }} onClick={() => handleRecordClick(index)}>
       <img className='img' loading="lazy" alt='' src={record.cover_image || placeholder} onError={e => e.target.src = placeholder}></img>
       <div id='record-info'>
         <h2 id="main-box-title" style={{ fontSize: titleSize }}>{record.album}</h2>

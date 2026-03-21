@@ -5,6 +5,7 @@ import Filter from "./Filter";
 import Sort from "./Sort";
 import Grid from "./Grid";
 import ModalSlick from "./ModalSlick";
+import ohKayLogo from "./oh-kay.png";
 import {
   handleFilter,
   handleSort,
@@ -24,7 +25,7 @@ const App = ({ rawData }) => {
   const [currentItems, setCurrentItems] = useState(data);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 75;
+  const itemsPerPage = 50;
 
   // Body no scroll on modal
   modalId === ""
@@ -188,7 +189,7 @@ const App = ({ rawData }) => {
         className="pagination"
       />
       <a href="https://ohkaycomputer.com" className="footer-link">
-        Oh, Kay
+        <img src={ohKayLogo} alt="Oh, Kay" className="footer-logo" />
       </a>
     </>
   );

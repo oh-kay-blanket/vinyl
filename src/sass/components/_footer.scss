@@ -4,6 +4,16 @@
   display: block;
   margin: 0 auto 2rem;
   text-align: center;
-  color: $black;
   text-decoration: none;
+
+  .footer-logo {
+    width: 60px;
+    height: auto;
+    // opacity: 0.7;
+    transition: opacity 0.25s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

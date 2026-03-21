@@ -6,7 +6,7 @@
 body {
   margin: 0px;
   font-size: 18px;
-  font-family: "Nunito", "Open Sans", sans-serif;
+  font-family: "Inter", "Nunito", sans-serif;
   background-color: color.$primary;
   box-sizing: border-box;
   color: color.$black;
@@ -37,7 +37,8 @@ h1 {
   font-weight: 900;
   line-height: 1;
   text-align: center;
-  color: #ff1312;
+  // color: #ff1312;
+  color: #232323;
   position: relative;
   z-index: 2;
   text-shadow:

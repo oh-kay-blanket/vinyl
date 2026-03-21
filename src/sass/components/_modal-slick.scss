@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10; /* Sit on top */
+  z-index: 10000; /* Sit on top */
   left: 0;
   top: 0;
   width: 100vw; /* Full width */
@@ -16,9 +16,23 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   -webkit-tap-highlight-color: transparent;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease, visibility 0s 0s, backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease;
 
   &.hidden {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    transition: opacity 0.35s ease, visibility 0s 0.35s, backdrop-filter 0.35s ease, -webkit-backdrop-filter 0.35s ease;
+
+    .icon-close {
+      opacity: 0 !important;
+      transform: translateY(-30px);
+    }
+
   }
 
   &:hover {
@@ -44,7 +58,7 @@
     }
 
     .slick-arrow {
-      color: #ff1312;
+      color: #232323;
     }
 
     .slick-prev,
@@ -61,15 +75,11 @@
       &:before {
         font-family: "Material Symbols Rounded";
         font-size: 5rem;
-        color: #ff1312;
+        color: $primary-light;
         filter: url(#goo-lg);
         text-shadow:
-          0 -2px 1px #ff82a022,
-          0 -1px 0 #ff82a011,
-          0 1px 1px #ff82a066,
-          0 2px 2px #ff82a044,
-          0 4px 4px #ff82a022,
-          0 3px 6px #ff82a011;
+          0 1px 2px rgba(0, 0, 0, 0.15),
+          0 2px 4px rgba(0, 0, 0, 0.1);
         opacity: 0.85;
         transition: opacity 0.25s;
       }
@@ -81,12 +91,14 @@
 
     .slick-prev {
       transform: translateX(-100%);
+      animation: fly-in-left 0.4s ease-out 0.2s both;
       &:before {
         content: "chevron_left";
       }
     }
 
     .slick-next {
+      animation: fly-in-right 0.4s ease-out 0.2s both;
       &:before {
         content: "chevron_right";
       }
@@ -99,7 +111,7 @@
       align-items: center;
       width: 30px;
       height: 30px;
-      color: #ff1312;
+      color: $primary-light;
       z-index: 2;
       border-radius: 50%;
       opacity: 0.7;
@@ -113,6 +125,7 @@
       &.icon-close {
         top: 35px;
         right: 10px;
+        transition: opacity 0.3s ease 0.15s, transform 0.3s ease 0.15s;
 
         @media (max-width: 1000px) {
           top: 20px;
@@ -122,6 +135,7 @@
         .material-symbols-rounded {
           font-size: 3rem;
           filter: url(#goo-md);
+          color: $primary-light;
         }
       }
     }
@@ -145,6 +159,7 @@
         max-width: 425px;
         object-fit: contain;
         transform: perspective(800px) rotateX(-4deg) rotateY(1deg);
+        animation: fly-in-top 0.45s ease-out both;
         border-radius: 2px;
         box-shadow:
           0 1px 0 rgba(255, 255, 255, 0.08),
@@ -167,6 +182,7 @@
         height: 65vw;
         max-height: 40vh;
         transform: perspective(800px) rotateX(40deg);
+        animation: fly-in-bottom 0.5s ease-out 0.1s both;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -491,5 +507,49 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fly-in-top {
+  from {
+    opacity: 0;
+    transform: perspective(800px) rotateX(-4deg) rotateY(1deg) translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(800px) rotateX(-4deg) rotateY(1deg);
+  }
+}
+
+@keyframes fly-in-bottom {
+  from {
+    opacity: 0;
+    transform: perspective(800px) rotateX(40deg) translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(800px) rotateX(40deg);
+  }
+}
+
+@keyframes fly-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fly-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
