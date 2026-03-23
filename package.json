@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open",
     "build": "webpack --mode production",
-    "predeploy": "npm run sync && npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist --cname vinyl.ohkaycomputer.com",
     "sync": "node scripts/sync-discogs.js"
   },
