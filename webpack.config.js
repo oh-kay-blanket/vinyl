@@ -17,6 +17,23 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devServer: {
+    proxy: {
+      '/api/itunes': {
+        target: 'https://itunes.apple.com',
+        changeOrigin: true,
+        pathRewrite: { '^/api/itunes': '/search' },
+        onProxyReq: (proxyReq) => {
+          // Strip all browser headers that Apple may reject, then set a clean User-Agent
+          const keep = ['host', 'accept-encoding'];
+          for (const name of proxyReq.getHeaderNames()) {
+            if (!keep.includes(name)) proxyReq.removeHeader(name);
+          }
+          proxyReq.setHeader('User-Agent', 'Mozilla/5.0 (compatible; VinylApp/1.0)');
+        },
+      },
+    },
+  },
   devtool: 'inline-source-map',
   module: {
     rules: [
