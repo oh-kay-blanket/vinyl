@@ -47,17 +47,35 @@ function extractSpeed(descriptions) {
   return '';
 }
 
-function transformRelease(release) {
+function fetchMaster(masterId) {
+  return new Promise((resolve, reject) => {
+    const url = `https://api.discogs.com/masters/${masterId}?token=${TOKEN}`;
+    https.get(url, { headers: { 'User-Agent': 'VinylApp/1.0' } }, (res) => {
+      let body = '';
+      res.on('data', (chunk) => body += chunk);
+      res.on('end', () => {
+        if (res.statusCode !== 200) {
+          resolve(null);
+          return;
+        }
+        resolve(JSON.parse(body));
+      });
+    }).on('error', () => resolve(null));
+  });
+}
+
+function transformRelease(release, originalYear) {
   const info = release.basic_information;
   const format = info.formats && info.formats[0];
   const genres = [...(info.genres || []), ...(info.styles || [])];
 
-  return {
+  const record = {
     id: String(info.id),
     artist: stripDisambiguation(info.artists[0].name),
     album: info.title,
     genre: genres.join(', '),
     year: String(info.year),
+    original_year: originalYear && originalYear !== String(info.year) ? originalYear : '',
     discs: format ? format.qty : '',
     speed: format ? extractSpeed(format.descriptions) : '',
     bought: release.date_added ? release.date_added.substring(0, 4) : '',
@@ -65,6 +83,8 @@ function transformRelease(release) {
     thumb: info.thumb || '',
     cover_image: info.cover_image || '',
   };
+
+  return record;
 }
 
 async function main() {
@@ -85,7 +105,31 @@ async function main() {
     console.log(`Page ${page}/${totalPages} (${data.releases.length} records)`);
   }
 
-  const records = allReleases.map(transformRelease);
+  // Fetch master releases to get original release years
+  const masterCache = {};
+  const releasesWithMasters = [];
+
+  for (let i = 0; i < allReleases.length; i++) {
+    const release = allReleases[i];
+    const masterId = release.basic_information.master_id;
+    let originalYear = '';
+
+    if (masterId && masterId !== 0) {
+      if (masterCache[masterId] !== undefined) {
+        originalYear = masterCache[masterId];
+      } else {
+        await delay(1000);
+        const master = await fetchMaster(masterId);
+        originalYear = master && master.year ? String(master.year) : '';
+        masterCache[masterId] = originalYear;
+        console.log(`Master ${Object.keys(masterCache).length}: ${release.basic_information.title} (${originalYear || 'unknown'})`);
+      }
+    }
+
+    releasesWithMasters.push(transformRelease(release, originalYear));
+  }
+
+  const records = releasesWithMasters;
   fs.writeFileSync(OUTPUT, JSON.stringify(records, null, 2) + '\n');
   console.log(`Successfully wrote ${records.length} records to ${OUTPUT}`);
 }

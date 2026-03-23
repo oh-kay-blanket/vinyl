@@ -8,7 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 const placeholder =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3Cmask id='hole'%3E%3Crect width='200' height='200' fill='white' rx='5'/%3E%3Ccircle cx='100' cy='100' r='24' fill='black'/%3E%3C/mask%3E%3C/defs%3E%3Crect fill='%23e8e4df' width='200' height='200' rx='5' mask='url(%23hole)'/%3E%3Ccircle cx='100' cy='100' r='24' fill='none' stroke='%23d5d0c9' stroke-width='1'/%3E%3Cline x1='5' y1='0' x2='5' y2='200' stroke='%23d5d0c9' stroke-width='0.5'/%3E%3Cline x1='195' y1='0' x2='195' y2='200' stroke='%23d5d0c9' stroke-width='0.5'/%3E%3Cline x1='60' y1='15' x2='60' y2='185' stroke='%23ddd8d2' stroke-width='0.3' opacity='0.5'/%3E%3Cline x1='140' y1='15' x2='140' y2='185' stroke='%23ddd8d2' stroke-width='0.3' opacity='0.5'/%3E%3C/svg%3E";
 
-const ModalSlick = ({ data, modalId, modalIndex, slider, handleRecordClick }) => {
+const ModalSlick = ({
+  data,
+  modalId,
+  modalIndex,
+  slider,
+  handleRecordClick,
+}) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(modalIndex);
 
   // Sync activeSlideIndex when modal opens on a specific record
@@ -45,10 +51,7 @@ const ModalSlick = ({ data, modalId, modalIndex, slider, handleRecordClick }) =>
         key={record.id}
         record={record}
         isActive={modalId !== "" && index === activeSlideIndex}
-        loadPreview={
-          modalId !== "" &&
-          Math.abs(index - activeSlideIndex) <= 1
-        }
+        loadPreview={modalId !== "" && Math.abs(index - activeSlideIndex) <= 1}
       />
     ));
 
@@ -71,9 +74,31 @@ const ModalSlick = ({ data, modalId, modalIndex, slider, handleRecordClick }) =>
 
 const ModalCell = ({ record, isActive, loadPreview }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const displayGenre = record.genre ? record.genre.replaceAll(", ", " / ") : "";
+  const displayGenre = record.genre
+    ? record.genre.split(", ").reduce((acc, part) => {
+        if (part.startsWith("& ") && acc.length) {
+          const parts = [part];
+          let limit = 2;
+          while (limit > 0 && acc.length && !acc[acc.length - 1].includes(" ")) {
+            parts.unshift(acc.pop());
+            limit--;
+          }
+          acc.push(parts.join(", "));
+        } else {
+          acc.push(part);
+        }
+        return acc;
+      }, []).slice(0, 5).join(" / ")
+    : "";
   const titleLen = record.album.length + record.artist.length;
-  const sizeClass = titleLen > 90 ? "caption--xs" : titleLen > 70 ? "caption--sm" : titleLen > 50 ? "caption--md" : "";
+  const sizeClass =
+    titleLen > 90
+      ? "caption--xs"
+      : titleLen > 70
+        ? "caption--sm"
+        : titleLen > 50
+          ? "caption--md"
+          : "";
 
   const captionClass = `caption${isPlaying ? " spinning" : ""}${sizeClass ? ` ${sizeClass}` : ""}`;
 
@@ -93,7 +118,17 @@ const ModalCell = ({ record, isActive, loadPreview }) => {
           <h3>{record.artist}</h3>
           <p className="record__genre">{displayGenre}</p>
           {record.year && record.year !== "0" && (
-            <p className="record__year">{record.year}</p>
+            <p className="record__year">
+              {record.original_year ? (
+                <>
+                  <span className="record__year--original">{record.original_year}</span>
+                  {" "}
+                  <span className="record__year--pressing">({record.year} pressing)</span>
+                </>
+              ) : (
+                record.year
+              )}
+            </p>
           )}
           {record.speed && <p className="record__speed">{record.speed} rpm</p>}
         </div>
