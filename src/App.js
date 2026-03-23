@@ -5,6 +5,7 @@ import Filter from "./Filter";
 import Sort from "./Sort";
 import Grid from "./Grid";
 import ModalSlick from "./ModalSlick";
+import ohKayLogo from "./oh-kay.png";
 import {
   handleFilter,
   handleSort,
@@ -20,10 +21,11 @@ const App = ({ rawData }) => {
   const [filterInput, setFilterInput] = useState("");
   const [sortDirection, setSortDirection] = useState("alb-rnd");
   const [modalId, setModalId] = useState("");
+  const [modalIndex, setModalIndex] = useState(0);
   const [currentItems, setCurrentItems] = useState(data);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 75;
+  const itemsPerPage = 50;
 
   // Body no scroll on modal
   modalId === ""
@@ -69,6 +71,7 @@ const App = ({ rawData }) => {
   // Open Modal
   function handleRecordClick(index, id) {
     setModalId(id);
+    setModalIndex(index);
     slider.current.slickGoTo(index, true);
   }
 
@@ -167,6 +170,7 @@ const App = ({ rawData }) => {
         slider={slider}
         handleRecordClick={handleRecordClick}
         modalId={modalId}
+        modalIndex={modalIndex}
       />
       <Grid data={currentItems} handleRecordClick={handleRecordClick} />
       <ReactPaginate
@@ -185,7 +189,7 @@ const App = ({ rawData }) => {
         className="pagination"
       />
       <a href="https://ohkaycomputer.com" className="footer-link">
-        Oh, Kay
+        <img src={ohKayLogo} alt="Oh, Kay" className="footer-logo" />
       </a>
     </>
   );
