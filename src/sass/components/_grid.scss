@@ -36,41 +36,13 @@
     height: 200px;
     margin: 5px;
     perspective: 600px;
-    transition: transform 0.4s ease-in-out;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -80%;
-      width: 360%;
-      height: 200%;
-      z-index: -1;
-      pointer-events: none;
-      backdrop-filter: blur(0px);
-      -webkit-backdrop-filter: blur(0px);
-      -webkit-mask: radial-gradient(ellipse at center, black 20%, transparent 70%);
-      mask: radial-gradient(ellipse at center, black 20%, transparent 70%);
-      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 10%, transparent 65%);
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out, -webkit-backdrop-filter 0.5s ease-in-out, background 0.5s ease-in-out;
-    }
 
     &:hover {
       cursor: pointer;
       z-index: 9999 !important;
-      transition: transform 0.4s ease-in-out;
-      transform: translateX(-40%) scale(1.08);
-
-      &::before {
-        opacity: 1;
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 10%, transparent 65%);
-      }
 
       .img {
-        transform: rotateY(-6deg);
+        transform: translateX(-40%) scale(1.08) rotateY(-6deg);
         transform-origin: left center;
         box-shadow:
           0 4px 8px rgba(0, 0, 0, 0.15),
@@ -80,7 +52,7 @@
       }
 
       #record-info {
-        transform: translateX(100%) rotateY(-6deg);
+        transform: translateX(calc(100% - 70px)) scale(1.13) rotateY(-12deg);
         box-shadow:
           0 4px 8px rgba(0, 0, 0, 0.15),
           0 12px 24px rgba(0, 0, 0, 0.15),
@@ -122,6 +94,7 @@
     // border: 5px solid #313131;
     border-radius: 50%;
     z-index: 0;
+    pointer-events: none;
     transform: translateX(0);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     transition:
@@ -185,8 +158,8 @@
   h3 {
     color: color.$white;
     text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     position: relative;
     z-index: 1;
   }

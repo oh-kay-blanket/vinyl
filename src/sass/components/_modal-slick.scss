@@ -246,9 +246,9 @@
         .tonearm {
           position: absolute;
           top: 37px;
-          right: 31px;
-          width: 5px;
-          height: 55%;
+          right: 30px;
+          width: 6px;
+          height: 65%;
           background: linear-gradient(
             to right,
             #555,
@@ -273,9 +273,9 @@
           &::after {
             content: "";
             position: absolute;
-            bottom: -2px;
+            bottom: -8px;
             left: 1px;
-            transform: translateX(-50%) rotate(8deg);
+            transform: translateX(-50%) rotate(10deg);
             width: 10px;
             height: 25px;
             background: linear-gradient(to bottom, #777, #666);
@@ -288,7 +288,7 @@
         }
 
         &:has(> .audio-preview) .tonearm {
-          transform: rotate(17deg);
+          transform: rotate(18deg);
         }
 
         @media (min-width: 1000px) {
@@ -340,7 +340,7 @@
         height: 100%;
         overflow: hidden;
         position: relative;
-        border: 8px solid #2d2d2d;
+        border: 8px solid #262525;
         border-radius: 50%;
         animation: vinyl-spin 3s linear infinite paused;
 
