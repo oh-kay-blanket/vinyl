@@ -75,20 +75,28 @@ const ModalSlick = ({
 const ModalCell = ({ record, isActive, loadPreview }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const displayGenre = record.genre
-    ? record.genre.split(", ").reduce((acc, part) => {
-        if (part.startsWith("& ") && acc.length) {
-          const parts = [part];
-          let limit = 2;
-          while (limit > 0 && acc.length && !acc[acc.length - 1].includes(" ")) {
-            parts.unshift(acc.pop());
-            limit--;
+    ? record.genre
+        .split(", ")
+        .reduce((acc, part) => {
+          if (part.startsWith("& ") && acc.length) {
+            const parts = [part];
+            let limit = 2;
+            while (
+              limit > 0 &&
+              acc.length &&
+              !acc[acc.length - 1].includes(" ")
+            ) {
+              parts.unshift(acc.pop());
+              limit--;
+            }
+            acc.push(parts.join(", "));
+          } else {
+            acc.push(part);
           }
-          acc.push(parts.join(", "));
-        } else {
-          acc.push(part);
-        }
-        return acc;
-      }, []).slice(0, 5).join(" / ")
+          return acc;
+        }, [])
+        .slice(0, 5)
+        .join(" / ")
     : "";
   const titleLen = record.album.length + record.artist.length;
   const sizeClass =
@@ -120,11 +128,9 @@ const ModalCell = ({ record, isActive, loadPreview }) => {
           {record.year && record.year !== "0" && (
             <p className="record__year">
               {record.original_year ? (
-                <>
-                  <span className="record__year--original">{record.original_year}</span>
-                  {" "}
-                  <span className="record__year--pressing">({record.year} pressing)</span>
-                </>
+                <span className="record__year--original">
+                  {record.original_year}
+                </span>
               ) : (
                 record.year
               )}
